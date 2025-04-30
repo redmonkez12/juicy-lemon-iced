@@ -1,29 +1,43 @@
-use reqwest::blocking::get;
 use serde::Deserialize;
 
-#[derive(Deserialize)]
-struct ExchangeInfo {
-    symbols: Vec<SymbolInfo>,
-}
-
-#[derive(Deserialize)]
-struct SymbolInfo {
+#[derive(Deserialize, Debug)]
+struct Instrument {
     status: String,
     symbol: String,
 }
 
-fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let url = "https://api.binance.com/api/v3/exchangeInfo";
-    let response = get(url)?.json::<ExchangeInfo>()?;
+#[derive(Deserialize, Debug)]
+struct Response {
+    symbols: Vec<Instrument>,
+}
 
-    let tradable_pairs: Vec<String> = response
-        .symbols
-        .into_iter()
-        .filter(|s| s.status == "TRADING")
-        .map(|s| s.symbol)
-        .collect();
+async fn get_symbols() -> Result<Vec<String>, String> {
+    match reqwest::get("https://api.binance.com/api/v3/exchangeInfo").await {
+        Ok(response) => {
+            let json = response.json::<Response>().await.unwrap();
+            let symbols = json
+                .symbols
+                .into_iter()
+                .filter(|i| i.status == "TRADING")
+                .map(|i| i.symbol)
+                .collect();
+            Ok(symbols)
+        }
+        Err(err) => {
+            println!("Error: {}", err);
+            Err(String::from("Cannot fetch instruments"))
+        }
+    }
+}
 
-    println!("Tradable pairs: {:?}", tradable_pairs);
-    
-    Ok(())
+#[tokio::main]
+async fn main() {
+    match get_symbols().await {
+        Ok(instruments) => {
+            for symbol in instruments {
+                println!("{}", symbol);
+            }
+        }
+        Err(e) => eprintln!("Error: {}", e),
+    }
 }
