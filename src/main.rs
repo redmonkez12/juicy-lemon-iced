@@ -2,7 +2,7 @@ mod symbols;
 use iced::Task;
 
 use crate::symbols::get_symbols;
-use iced::widget::{Column, text, Row, Scrollable};
+use iced::widget::{Column, text, Row, Scrollable, button, text_input};
 use iced::{Element, Theme};
 use tokio::runtime::Runtime;
 
@@ -10,12 +10,16 @@ use tokio::runtime::Runtime;
 enum Message {
     FetchSymbols,
     SymbolsFetched(Result<Vec<String>, String>),
+    AddSymbol,
+    SymbolChanged(String),
 }
 
 #[derive(Default)]
 struct State {
     instruments: Vec<String>,
+    watchlist: Vec<String>,
     loading: bool,
+    symbol: String,
 }
 
 fn theme(_: &State) -> Theme {
@@ -31,21 +35,38 @@ fn view(state: &State) -> Element<Message> {
         return text("Nothing found").size(20).into();
     }
 
-    println!("{:?}", &state.instruments);
+    let input_row = Row::new()
+        .spacing(10)
+        .push(text_input("Add instrument...", &state.symbol).on_input(Message::SymbolChanged))
+        .push(button(text("Add to watchlist")).on_press(Message::AddSymbol));
 
-    let mut instrument_list = Column::new().spacing(10);
+    let mut watch_list = Column::new().spacing(10);
 
-    for instrument in &state.instruments {
-        let row = Row::new().push(text(instrument).size(20));
-        instrument_list = instrument_list.push(row);
+    for item in &state.watchlist {
+        let row = Row::new().push(text(item).size(20));
+        watch_list = watch_list.push(row);
     }
 
-    Scrollable::new(instrument_list).into()
+    Column::new()
+        .spacing(20)
+        .padding(20)
+        .push(input_row)
+        .push(Scrollable::new(watch_list))
+        .into()
 }
 
 
 fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
+        Message::SymbolChanged(symbol) => {
+            state.symbol = symbol;
+            Task::none()
+        }
+        Message::AddSymbol => {
+            state.watchlist.push(state.symbol.clone());
+            state.symbol = "".to_string();
+            Task::none()
+        },
         Message::FetchSymbols => {
             let rt = Runtime::new().unwrap();
             println!("Fetching symbols");
@@ -72,6 +93,8 @@ fn update(state: &mut State, message: Message) -> Task<Message> {
 fn init() -> (State, Task<Message>) {
     let state = State {
         instruments: Vec::new(),
+        watchlist: Vec::new(),
+        symbol: "".to_string(),
         loading: true,
     };
     let rt = Runtime::new().unwrap();
