@@ -1,6 +1,6 @@
-use iced::Element;
-use iced::widget::{button, text, text_input, Column, Row, Scrollable};
 use crate::{Message, State};
+use iced::Element;
+use iced::widget::{Column, Row, Scrollable, button, text, text_input};
 
 pub fn view(state: &State) -> Element<Message> {
     if state.loading {
@@ -24,10 +24,12 @@ pub fn view(state: &State) -> Element<Message> {
     let mut watch_list = Column::new().spacing(10);
 
     for item in &state.watchlist {
+        println!("{}", item.decimals);
+
         let formatted_price = item
             .price
             .parse::<f64>()
-            .map(|p| format!("{:.4}", p))
+            .map(|p| format!("{:.*}", item.decimals as usize, p))
             .unwrap_or_else(|_| "N/A".to_string());
 
         let row = Row::new().push(text(format!("{} - ${}", item.symbol, formatted_price)).size(20));
@@ -37,6 +39,7 @@ pub fn view(state: &State) -> Element<Message> {
     Column::new()
         .spacing(20)
         .padding(20)
+        .push(text(state.error_message.clone()))
         .push(input_row)
         .push(Scrollable::new(watch_list))
         .into()

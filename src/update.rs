@@ -43,19 +43,26 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         }
         Message::AddSymbol => {
             println!("Symbol added");
-            let rt = Runtime::new().unwrap();
-            let prices = rt
-                .block_on(fetch_symbol_prices(vec![state.symbol.clone()]))
-                .unwrap();
+            if let Some(valid_symbol) = state.instruments.iter().find(|i| i.symbol == state.symbol) {
+                let rt = Runtime::new().unwrap();
+                let prices = rt
+                    .block_on(fetch_symbol_prices(vec![valid_symbol.symbol.clone()]))
+                    .unwrap();
 
-            if let Some(instrument_response) = prices.get(0) {
-                state.watchlist.push(WatchListItem::new(
-                    state.symbol.clone(),
-                    instrument_response.price.clone(),
-                ));
+                if let Some(instrument_response) = prices.get(0) {
+                    state.watchlist.push(WatchListItem::new(
+                        state.symbol.clone(),
+                        instrument_response.price.clone(),
+                        valid_symbol.decimals,
+                    ));
+                }
+
+                state.symbol = "".to_string();
+                state.error_message = "".to_string();
+            } else {
+                state.error_message = "Invalid symbol".to_string();
             }
 
-            state.symbol = "".to_string();
             Task::none()
         }
         Message::FetchSymbols => {

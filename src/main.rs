@@ -8,12 +8,12 @@ use iced::{time, Subscription, Task};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
-use crate::symbols::InstrumentPriceResponse;
+use crate::symbols::{InstrumentPriceResponse, Symbol};
 
 #[derive(Debug, Clone)]
 enum Message {
     FetchSymbols,
-    SymbolsFetched(Result<Vec<String>, String>),
+    SymbolsFetched(Result<Vec<Symbol>, String>),
     RefetchPrice,
     AddSymbol,
     SymbolChanged(String),
@@ -25,23 +25,26 @@ enum Message {
 struct WatchListItem {
     price: String,
     symbol: String,
+    decimals: usize,
 }
 
 impl WatchListItem {
-    fn new(symbol: String, price: String) -> Self {
+    fn new(symbol: String, price: String, decimals: usize) -> Self {
         Self {
             symbol,
             price,
+            decimals,
         }
     }
 }
 
 #[derive(Default)]
 struct State {
-    instruments: Vec<String>,
+    instruments: Vec<Symbol>,
     watchlist: Vec<WatchListItem>,
     loading: bool,
     symbol: String,
+    error_message: String,
 }
 
 fn theme(_: &State) -> Theme {
@@ -53,6 +56,7 @@ fn init() -> (State, Task<Message>) {
         instruments: Vec::new(),
         watchlist: Vec::new(),
         symbol: "".to_string(),
+        error_message: "".to_string(),
         loading: true,
     };
     (state, Task::perform(async {}, |_| Message::FetchSymbols))
