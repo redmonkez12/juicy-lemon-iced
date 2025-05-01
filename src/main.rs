@@ -1,6 +1,7 @@
 mod symbols;
 mod update;
 mod view;
+mod utils;
 
 use std::time::Duration;
 use iced::{time, Subscription, Task};
@@ -8,7 +9,7 @@ use iced::{time, Subscription, Task};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
-use crate::symbols::{InstrumentPriceResponse, Symbol};
+use crate::symbols::{SymbolWithPrice, Symbol};
 
 #[derive(Debug, Clone)]
 enum Message {
@@ -17,8 +18,9 @@ enum Message {
     RefetchPrice,
     AddSymbol,
     SymbolChanged(String),
+    SymbolRemove(String),
     FetchError(String),
-    PricesUpdated(Vec<InstrumentPriceResponse>),
+    PricesUpdated(Vec<SymbolWithPrice>),
 }
 
 #[derive(Default)]

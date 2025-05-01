@@ -32,7 +32,10 @@ pub fn view(state: &State) -> Element<Message> {
             .map(|p| format!("{:.*}", item.decimals as usize, p))
             .unwrap_or_else(|_| "N/A".to_string());
 
-        let row = Row::new().push(text(format!("{} - ${}", item.symbol, formatted_price)).size(20));
+        let row = Row::new()
+            .spacing(10)
+            .push(text(format!("{} - ${}", item.symbol, formatted_price)).size(20))
+            .push(iced::widget::button(text("Remove")).on_press(Message::SymbolRemove(item.symbol.clone())));
         watch_list = watch_list.push(row);
     }
 

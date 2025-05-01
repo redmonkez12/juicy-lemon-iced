@@ -5,10 +5,16 @@ use tokio::runtime::Runtime;
 
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
+        Message::SymbolRemove(symbol) => {
+            state
+                .watchlist
+                .retain(|w| w.symbol != symbol);
+            Task::none()
+        }
         Message::FetchError(error) => {
             println!("Error fetching prices: {}", error);
             Task::none()
-        },
+        }
         Message::PricesUpdated(prices) => {
             for item in state.watchlist.iter_mut() {
                 if let Some(instrument_response) = prices.iter().find(|p| p.symbol == item.symbol) {
@@ -17,7 +23,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             }
 
             Task::none()
-        },
+        }
         Message::RefetchPrice => {
             println!("Refetching price");
             if state.watchlist.is_empty() {
@@ -35,7 +41,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 },
                 |msg| msg,
             )
-        },
+        }
         Message::SymbolChanged(symbol) => {
             println!("Symbol changed: {}", symbol);
             state.symbol = symbol;
@@ -43,7 +49,8 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         }
         Message::AddSymbol => {
             println!("Symbol added");
-            if let Some(valid_symbol) = state.instruments.iter().find(|i| i.symbol == state.symbol) {
+            if let Some(valid_symbol) = state.instruments.iter().find(|i| i.symbol == state.symbol)
+            {
                 let rt = Runtime::new().unwrap();
                 let prices = rt
                     .block_on(fetch_symbol_prices(vec![valid_symbol.symbol.clone()]))
@@ -69,10 +76,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             println!("Fetching symbols");
             let rt = Runtime::new().unwrap();
             state.loading = true;
-            Task::perform(
-                async { get_symbols().await },
-                Message::SymbolsFetched,
-            )
+            Task::perform(async { get_symbols().await }, Message::SymbolsFetched)
         }
         Message::SymbolsFetched(Ok(instruments)) => {
             println!("Symbols fetched: {} instruments", instruments.len());

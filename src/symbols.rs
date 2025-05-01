@@ -1,4 +1,5 @@
 use serde::Deserialize;
+use crate::utils::get_decimals;
 
 #[derive(Deserialize, Debug)]
 pub struct Filter {
@@ -13,11 +14,11 @@ pub struct Filter {
 pub struct Instrument {
     status: String,
     symbol: String,
-    filters: Vec<Filter>,
+    pub filters: Vec<Filter>,
 }
 
 #[derive(Deserialize, Debug, Clone)]
-pub struct InstrumentPriceResponse {
+pub struct SymbolWithPrice {
     pub symbol: String,
     pub price: String,
 }
@@ -48,29 +49,9 @@ pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
                 .into_iter()
                 .filter(|i| i.status == "TRADING")
                 .map(|i| {
-                    let mut decimals: usize = 8;
-                    if let Some(found_decimals) = i.filters.iter().find_map(|f| {
-                        if f.filter_type == "PRICE_FILTER" {
-                            let decimal_size = f.tick_size
-                                .as_deref()
-                                .and_then(|s| s.parse::<f64>().ok())
-                                .map(|n| {
-                                    let s = format!("{}", n);
-                                    s.split('.').nth(1).map_or(0, |frac| frac.len())
-                                })
-                                .unwrap_or(0);
-                            
-                            Some(decimal_size)
-                        } else {
-                            None
-                        }
-                    }) {
-                        decimals = found_decimals;
-                    }
-
                     Symbol {
                         symbol: i.symbol.clone(),
-                        decimals,
+                        decimals: get_decimals(&i),
                     }
                 })
                 .collect();
@@ -85,22 +66,20 @@ pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
 
 pub async fn fetch_symbol_prices(
     symbols: Vec<String>,
-) -> Result<Vec<InstrumentPriceResponse>, String> {
-    println!("Fetching symbols {}", symbols.join(", "));
-
+) -> Result<Vec<SymbolWithPrice>, String> {
     let url = format!(
         "https://www.binance.com/api/v3/ticker/price?symbols=[{}]",
         symbols
             .iter()
             .map(|s| format!("\"{}\"", s))
-            .collect::<Vec<_>>()
+            .collect::<Vec<String>>()
             .join(",")
     );
 
     match reqwest::get(&url).await {
         Ok(response) => {
             let json = response
-                .json::<Vec<InstrumentPriceResponse>>()
+                .json::<Vec<SymbolWithPrice>>()
                 .await
                 .unwrap();
             Ok(json)
