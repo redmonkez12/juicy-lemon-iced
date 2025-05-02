@@ -1,6 +1,13 @@
 use crate::{Message, State};
-use iced::Element;
-use iced::widget::{Column, Row, Scrollable, button, text, text_input};
+use iced::widget::{Column, Row, Rule, button, text, text_input};
+use iced::{Element, Length, widget};
+
+fn vertical_rule() -> Column<'static, Message> {
+    Column::new()
+        .height(50)
+        .width(Length::Shrink)
+        .push(Rule::vertical(1))
+}
 
 pub fn view(state: &State) -> Element<Message> {
     if state.loading {
@@ -21,22 +28,39 @@ pub fn view(state: &State) -> Element<Message> {
         .push(text_input("Add instrument...", &state.symbol).on_input(Message::SymbolChanged))
         .push(button);
 
-    let mut watch_list = Column::new().spacing(10);
+    let mut watch_list = Column::new();
+
+    if !state.watchlist.is_empty() {
+        watch_list = watch_list.push(Rule::horizontal(1));
+    }
 
     for item in &state.watchlist {
-        println!("{}", item.decimals);
-
         let formatted_price = item
             .price
             .parse::<f64>()
-            .map(|p| format!("{:.*}", item.decimals as usize, p))
+            .map(|p| format!("{:.*}", item.decimals, p))
             .unwrap_or_else(|_| "N/A".to_string());
 
-        let row = Row::new()
-            .spacing(10)
-            .push(text(format!("{} - ${}", item.symbol, formatted_price)).size(20))
-            .push(iced::widget::button(text("Remove")).on_press(Message::SymbolRemove(item.symbol.clone())));
-        watch_list = watch_list.push(row);
+        let table_row = widget::row![
+            vertical_rule(),
+            widget::container(widget::text(item.symbol.clone()))
+                .width(Length::FillPortion(1))
+                .padding(14),
+            vertical_rule(),
+            widget::container(widget::text(formatted_price))
+                .width(Length::FillPortion(3))
+                .padding(14),
+            vertical_rule(),
+            widget::container(
+                iced::widget::button(text("Remove"))
+                    .on_press(Message::SymbolRemove(item.symbol.clone()))
+            )
+            .width(Length::Shrink)
+            .padding(10),
+            vertical_rule(),
+        ];
+
+        watch_list = watch_list.push(table_row).push(Rule::horizontal(1));
     }
 
     Column::new()
@@ -44,6 +68,6 @@ pub fn view(state: &State) -> Element<Message> {
         .padding(20)
         .push(text(state.error_message.clone()))
         .push(input_row)
-        .push(Scrollable::new(watch_list))
+        .push(watch_list)
         .into()
 }

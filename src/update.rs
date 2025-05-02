@@ -25,10 +25,11 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             Task::none()
         }
         Message::RefetchPrice => {
-            println!("Refetching price");
             if state.watchlist.is_empty() {
                 return Task::none();
             }
+
+            println!("Refetching price");
 
             let symbols = state.watchlist.iter().map(|s| s.symbol.clone()).collect();
 
@@ -62,6 +63,8 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                         instrument_response.price.clone(),
                         valid_symbol.decimals,
                     ));
+
+                    state.watchlist.sort_by(|a, b| a.symbol.cmp(&b.symbol));
                 }
 
                 state.symbol = "".to_string();
