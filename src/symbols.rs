@@ -47,11 +47,14 @@ pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
             let symbols = json
                 .symbols
                 .into_iter()
-                .filter(|i| i.status == "TRADING")
-                .map(|i| {
-                    Symbol {
-                        symbol: i.symbol.clone(),
-                        decimals: get_decimals(&i),
+                .filter_map(|i| {
+                    if i.status == "TRADING" {
+                        Some(Symbol {
+                            symbol: i.symbol.clone(),
+                            decimals: get_decimals(&i),
+                        })
+                    } else {
+                        None
                     }
                 })
                 .collect();
@@ -72,7 +75,7 @@ pub async fn fetch_symbol_prices(
         symbols
             .iter()
             .map(|s| format!("\"{}\"", s))
-            .collect::<Vec<String>>()
+            .collect::<Vec<_>>()
             .join(",")
     );
     

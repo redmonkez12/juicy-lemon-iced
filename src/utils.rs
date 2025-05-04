@@ -39,11 +39,14 @@ pub fn get_current_select_state(
 
     let mut sorted_instruments = instruments
         .iter()
-        .filter(|i| {
-            i.symbol.to_lowercase().contains(&lowercase_input)
-                && !watchlist_symbols.contains(&i.symbol)
+        .filter_map(|i| {
+            if i.symbol.to_lowercase().contains(&lowercase_input)
+                && !watchlist_symbols.contains(&i.symbol) {
+                Some(i.symbol.clone())
+            } else {
+                None
+            }
         })
-        .map(|i| i.symbol.clone())
         .collect::<Vec<_>>();
 
     sorted_instruments.sort();
@@ -62,7 +65,12 @@ pub fn get_default_select_state(instruments: Vec<Symbol>, watchlist: &Vec<WatchL
     sorted_instruments
         .iter()
         .take(10)
-        .filter(|i| !watchlist_symbols.contains(&i.symbol))
-        .map(|i| i.symbol.clone())
+        .filter_map(|i| {
+            if !watchlist_symbols.contains(&i.symbol) {
+                Some(i.symbol.clone())
+            } else {
+                None
+            }
+        })
         .collect()
 }
