@@ -58,7 +58,7 @@ pub fn get_default_select_state(instruments: Vec<Symbol>, watchlist: &Vec<WatchL
     let watchlist_symbols: HashSet<String> = watchlist.iter()
         .map(|item| item.symbol.clone())
         .collect();
-    
+
     sorted_instruments
         .iter()
         .take(10)

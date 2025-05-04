@@ -16,13 +16,14 @@ use iced::widget::combo_box;
 #[derive(Debug, Clone)]
 enum Message {
     FetchSymbols,
-    SymbolsFetched(Result<Vec<Symbol>, String>),
+    SymbolsFetched(Vec<Symbol>),
     RefetchPrice,
     AddSymbol(String),
     SymbolRemove(String),
     FetchError(String),
     PricesUpdated(Vec<SymbolWithPrice>),
     FilterInput(String),
+    UpdateSelectOptions,
 }
 
 #[derive(Default)]

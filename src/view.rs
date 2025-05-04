@@ -1,5 +1,5 @@
 use crate::{Message, State};
-use iced::widget::{Column, Row, Rule, button, text, text_input};
+use iced::widget::{Column, Row, Rule, text};
 use iced::{Element, Length, widget};
 use crate::ui::instrument_select::render_select;
 
