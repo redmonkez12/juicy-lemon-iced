@@ -3,7 +3,6 @@ use crate::utils::{get_current_select_state, get_default_select_state};
 use crate::{Message, State, WatchListItem};
 use iced::Task;
 use iced::widget::combo_box;
-use tokio::runtime::Runtime;
 
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
@@ -72,26 +71,14 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 state.error_message = "".to_string();
                 return Task::perform(async {}, |_| Message::UpdateSelectOptions);
             }
-            
-            let rt = Runtime::new().unwrap();
-            let valid_symbol = state
-                .instruments
-                .iter()
-                .find(|i| i.symbol == symbol)
-                .unwrap();
-            let prices = rt
-                .block_on(fetch_symbol_prices(vec![symbol.clone()]))
-                .unwrap();
 
-            if let Some(instrument_response) = prices.get(0) {
-                state.watchlist.push(WatchListItem::new(
-                    symbol,
-                    instrument_response.price.clone(),
-                    valid_symbol.decimals,
-                ));
+            state.watchlist.push(WatchListItem::new(
+                symbol,
+                "-9999".to_string(),
+                8,
+            ));
 
-                state.watchlist.sort_by(|a, b| a.symbol.cmp(&b.symbol));
-            }
+            state.watchlist.sort_by(|a, b| a.symbol.cmp(&b.symbol));
 
             state.input_text = "".to_string();
             state.error_message = "".to_string();

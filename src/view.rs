@@ -1,7 +1,7 @@
+use crate::ui::instrument_select::render_select;
 use crate::{Message, State};
 use iced::widget::{Column, Row, Rule, text};
 use iced::{Element, Length, widget};
-use crate::ui::instrument_select::render_select;
 
 fn vertical_rule() -> Column<'static, Message> {
     Column::new()
@@ -19,9 +19,7 @@ pub fn view(state: &State) -> Element<Message> {
         return text("Nothing found").size(20).into();
     }
 
-    let input_row = Row::new()
-        .spacing(10)
-        .push(render_select(&state));
+    let input_row = Row::new().spacing(10).push(render_select(&state));
 
     let mut watch_list = Column::new();
 
@@ -30,11 +28,14 @@ pub fn view(state: &State) -> Element<Message> {
     }
 
     for item in &state.watchlist {
-        let formatted_price = item
-            .price
-            .parse::<f64>()
-            .map(|p| format!("{:.*}", item.decimals, p))
-            .unwrap_or_else(|_| "N/A".to_string());
+        let formatted_price = if item.price == "-9999" {
+            "Loading...".to_string()
+        } else {
+            item.price
+                .parse::<f64>()
+                .map(|p| format!("{:.1$}", p, item.decimals))
+                .unwrap_or_else(|_| "N/A".to_string())
+        };
 
         let table_row = widget::row![
             vertical_rule(),

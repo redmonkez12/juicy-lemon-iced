@@ -73,7 +73,7 @@ fn init() -> (State, Task<Message>) {
 
 fn subscription(state: &State) -> Subscription<Message> {
     if !state.instruments.is_empty() {
-        return time::every(Duration::from_secs(1)).map(|_| Message::RefetchPrice);
+        return time::every(Duration::from_secs(2)).map(|_| Message::RefetchPrice);
     }
 
     Subscription::none()
