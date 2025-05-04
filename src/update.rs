@@ -3,18 +3,14 @@ use crate::{Message, State, WatchListItem};
 use iced::Task;
 use iced::widget::combo_box;
 use tokio::runtime::Runtime;
+use crate::utils::{get_current_select_state, get_default_select_state};
 
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
         Message::FilterInput(input) => {
             println!("Input text: {}", input);
 
-            let filtered_options = state
-                .instruments
-                .iter()
-                .filter(|i| i.symbol.to_lowercase().contains(&input.to_lowercase()))
-                .map(|i| i.symbol.clone())
-                .collect::<Vec<_>>();
+            let filtered_options = get_current_select_state(&state.instruments, &input, &state.watchlist);
 
             state.symbol_select_state = combo_box::State::with_selection(filtered_options, Some(&input));
             state.input_text = input;
@@ -76,7 +72,9 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                     state.watchlist.sort_by(|a, b| a.symbol.cmp(&b.symbol));
                 }
 
+                let new_options = get_default_select_state(state.instruments.clone(), &state.watchlist);
                 state.input_text = "".to_string();
+                state.symbol_select_state = combo_box::State::with_selection(new_options, Some(&state.input_text));
                 state.error_message = "".to_string();
             } else {
                 state.error_message = "Invalid symbol".to_string();
@@ -86,25 +84,14 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         }
         Message::FetchSymbols => {
             println!("Fetching symbols");
-            let rt = Runtime::new().unwrap();
             state.loading = true;
             Task::perform(async { get_symbols().await }, Message::SymbolsFetched)
         }
         Message::SymbolsFetched(Ok(instruments)) => {
             println!("Symbols fetched: {} instruments", instruments.len());
             state.instruments = instruments.clone();
-            let mut sorted_instruments = instruments.clone();
-            sorted_instruments.sort_by_key(|i| i.symbol.clone());
 
-            let select_state = combo_box::State::new(
-                sorted_instruments
-                    .iter()
-                    .take(10)
-                    .map(|i| i.symbol.clone())
-                    .collect(),
-            );
-
-            state.symbol_select_state = select_state;
+            state.symbol_select_state = combo_box::State::new(get_default_select_state(instruments, &state.watchlist));
             state.loading = false;
             Task::none()
         }

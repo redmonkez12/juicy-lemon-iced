@@ -13,7 +13,7 @@ pub struct Filter {
 #[derive(Deserialize, Debug)]
 pub struct Instrument {
     status: String,
-    symbol: String,
+    pub symbol: String,
     pub filters: Vec<Filter>,
 }
 

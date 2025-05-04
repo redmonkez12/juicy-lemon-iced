@@ -1,4 +1,7 @@
-use crate::symbols::Instrument;
+use std::collections::HashSet;
+use iced::widget::combo_box;
+use crate::symbols::{Instrument, Symbol};
+use crate::WatchListItem;
 
 pub fn get_decimals(instrument: &Instrument) -> usize {
     let mut decimals: usize = 8;
@@ -21,4 +24,45 @@ pub fn get_decimals(instrument: &Instrument) -> usize {
     }
     
     decimals
+}
+
+pub fn get_current_select_state(
+    instruments: &Vec<Symbol>,
+    input: &str,
+    watchlist: &Vec<WatchListItem>,
+) -> Vec<String> {
+    let lowercase_input = input.to_lowercase();
+
+    let watchlist_symbols: HashSet<String> = watchlist.iter()
+        .map(|item| item.symbol.clone())
+        .collect();
+
+    let mut sorted_instruments = instruments
+        .iter()
+        .filter(|i| {
+            i.symbol.to_lowercase().contains(&lowercase_input)
+                && !watchlist_symbols.contains(&i.symbol)
+        })
+        .map(|i| i.symbol.clone())
+        .collect::<Vec<_>>();
+
+    sorted_instruments.sort();
+
+    sorted_instruments
+}
+
+pub fn get_default_select_state(instruments: Vec<Symbol>, watchlist: &Vec<WatchListItem>) -> Vec<String> {
+    let mut sorted_instruments = instruments;
+    sorted_instruments.sort_by_key(|i| i.symbol.clone());
+
+    let watchlist_symbols: HashSet<String> = watchlist.iter()
+        .map(|item| item.symbol.clone())
+        .collect();
+    
+    sorted_instruments
+        .iter()
+        .take(10)
+        .filter(|i| !watchlist_symbols.contains(&i.symbol))
+        .map(|i| i.symbol.clone())
+        .collect()
 }
