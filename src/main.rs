@@ -1,26 +1,28 @@
 mod symbols;
+mod ui;
 mod update;
-mod view;
 mod utils;
+mod view;
 
+use iced::{Subscription, Task, time};
 use std::time::Duration;
-use iced::{time, Subscription, Task};
 
+use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
-use crate::symbols::{SymbolWithPrice, Symbol};
+use iced::widget::combo_box;
 
 #[derive(Debug, Clone)]
 enum Message {
     FetchSymbols,
     SymbolsFetched(Result<Vec<Symbol>, String>),
     RefetchPrice,
-    AddSymbol,
-    SymbolChanged(String),
+    AddSymbol(String),
     SymbolRemove(String),
     FetchError(String),
     PricesUpdated(Vec<SymbolWithPrice>),
+    FilterInput(String),
 }
 
 #[derive(Default)]
@@ -45,8 +47,10 @@ struct State {
     instruments: Vec<Symbol>,
     watchlist: Vec<WatchListItem>,
     loading: bool,
-    symbol: String,
+    input_text: String,
     error_message: String,
+    symbol_select_state: combo_box::State<String>,
+    selected_symbol: Option<String>,
 }
 
 fn theme(_: &State) -> Theme {
@@ -57,9 +61,11 @@ fn init() -> (State, Task<Message>) {
     let state = State {
         instruments: Vec::new(),
         watchlist: Vec::new(),
-        symbol: "".to_string(),
         error_message: "".to_string(),
+        input_text: "".to_string(),
         loading: true,
+        selected_symbol: None,
+        symbol_select_state: combo_box::State::default(),
     };
     (state, Task::perform(async {}, |_| Message::FetchSymbols))
 }

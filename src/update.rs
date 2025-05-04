@@ -1,14 +1,28 @@
 use crate::symbols::{fetch_symbol_prices, get_symbols};
 use crate::{Message, State, WatchListItem};
 use iced::Task;
+use iced::widget::combo_box;
 use tokio::runtime::Runtime;
 
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
+        Message::FilterInput(input) => {
+            println!("Input text: {}", input);
+
+            let filtered_options = state
+                .instruments
+                .iter()
+                .filter(|i| i.symbol.to_lowercase().contains(&input.to_lowercase()))
+                .map(|i| i.symbol.clone())
+                .collect::<Vec<_>>();
+
+            state.symbol_select_state = combo_box::State::with_selection(filtered_options, Some(&input));
+            state.input_text = input;
+
+            Task::none()
+        }
         Message::SymbolRemove(symbol) => {
-            state
-                .watchlist
-                .retain(|w| w.symbol != symbol);
+            state.watchlist.retain(|w| w.symbol != symbol);
             Task::none()
         }
         Message::FetchError(error) => {
@@ -43,14 +57,9 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 |msg| msg,
             )
         }
-        Message::SymbolChanged(symbol) => {
-            println!("Symbol changed: {}", symbol);
-            state.symbol = symbol;
-            Task::none()
-        }
-        Message::AddSymbol => {
+        Message::AddSymbol(symbol) => {
             println!("Symbol added");
-            if let Some(valid_symbol) = state.instruments.iter().find(|i| i.symbol == state.symbol)
+            if let Some(valid_symbol) = state.instruments.iter().find(|i| i.symbol == symbol)
             {
                 let rt = Runtime::new().unwrap();
                 let prices = rt
@@ -59,7 +68,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
 
                 if let Some(instrument_response) = prices.get(0) {
                     state.watchlist.push(WatchListItem::new(
-                        state.symbol.clone(),
+                        symbol,
                         instrument_response.price.clone(),
                         valid_symbol.decimals,
                     ));
@@ -67,7 +76,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                     state.watchlist.sort_by(|a, b| a.symbol.cmp(&b.symbol));
                 }
 
-                state.symbol = "".to_string();
+                state.input_text = "".to_string();
                 state.error_message = "".to_string();
             } else {
                 state.error_message = "Invalid symbol".to_string();
@@ -83,7 +92,19 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         }
         Message::SymbolsFetched(Ok(instruments)) => {
             println!("Symbols fetched: {} instruments", instruments.len());
-            state.instruments = instruments;
+            state.instruments = instruments.clone();
+            let mut sorted_instruments = instruments.clone();
+            sorted_instruments.sort_by_key(|i| i.symbol.clone());
+
+            let select_state = combo_box::State::new(
+                sorted_instruments
+                    .iter()
+                    .take(10)
+                    .map(|i| i.symbol.clone())
+                    .collect(),
+            );
+
+            state.symbol_select_state = select_state;
             state.loading = false;
             Task::none()
         }

@@ -75,14 +75,28 @@ pub async fn fetch_symbol_prices(
             .collect::<Vec<String>>()
             .join(",")
     );
+    
+    println!("Fetching prices: {}", url);
 
     match reqwest::get(&url).await {
         Ok(response) => {
-            let json = response
-                .json::<Vec<SymbolWithPrice>>()
-                .await
-                .unwrap();
-            Ok(json)
+            match response.text().await {
+                Ok(body) => {
+                    println!("Response body: {}", body);
+
+                    match serde_json::from_str::<Vec<SymbolWithPrice>>(&body) {
+                        Ok(json) => Ok(json),
+                        Err(err) => {
+                            println!("Error parsing JSON: {}", err);
+                            Err(String::from("Failed to parse JSON"))
+                        }
+                    }
+                }
+                Err(err) => {
+                    println!("Error reading response body: {}", err);
+                    Err(String::from("Failed to read response body"))
+                }
+            }
         }
         Err(err) => {
             println!("Error: {}", err);

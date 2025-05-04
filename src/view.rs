@@ -1,6 +1,7 @@
 use crate::{Message, State};
 use iced::widget::{Column, Row, Rule, button, text, text_input};
 use iced::{Element, Length, widget};
+use crate::ui::instrument_select::render_select;
 
 fn vertical_rule() -> Column<'static, Message> {
     Column::new()
@@ -18,15 +19,9 @@ pub fn view(state: &State) -> Element<Message> {
         return text("Nothing found").size(20).into();
     }
 
-    let mut button = button(text("Add to watchlist"));
-    if !state.symbol.is_empty() {
-        button = button.on_press(Message::AddSymbol);
-    }
-
     let input_row = Row::new()
         .spacing(10)
-        .push(text_input("Add instrument...", &state.symbol).on_input(Message::SymbolChanged))
-        .push(button);
+        .push(render_select(&state));
 
     let mut watch_list = Column::new();
 
