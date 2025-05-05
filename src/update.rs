@@ -1,4 +1,7 @@
-use crate::symbols::{fetch_symbol_prices, get_symbols};
+use std::fs;
+use std::fs::File;
+use std::io::Write;
+use crate::symbols::{fetch_symbol_prices, get_symbols, Symbol};
 use crate::utils::{get_current_select_state, get_default_select_state};
 use crate::{Message, State, WatchListItem};
 use iced::Task;
@@ -72,10 +75,12 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 return Task::perform(async {}, |_| Message::UpdateSelectOptions);
             }
 
+            let instrument = state.instruments.iter().find(|s| s.symbol == symbol).unwrap();
+
             state.watchlist.push(WatchListItem::new(
                 symbol,
                 "-9999".to_string(),
-                8,
+                instrument.decimals,
             ));
 
             state.watchlist.sort_by(|a, b| a.symbol.cmp(&b.symbol));
@@ -90,6 +95,17 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             state.loading = true;
             Task::perform(
                 async move {
+                    let cached: Option<Vec<Symbol>> = fs::read_to_string("symbols.json")
+                        .ok()
+                        .and_then(|data| serde_json::from_str(&data).ok());
+
+                    if let Some(symbols) = cached {
+                        if !symbols.is_empty() {
+                            println!("Loaded symbols from file");
+                            return Message::SymbolsFetched(symbols);
+                        }
+                    }
+
                     match get_symbols().await {
                         Ok(symbols) => Message::SymbolsFetched(symbols),
                         Err(err) => Message::FetchError(err.to_string()),
@@ -101,8 +117,20 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         Message::SymbolsFetched(instruments) => {
             println!("Symbols fetched: {} instruments", instruments.len());
             state.instruments = instruments.clone();
-
             state.loading = false;
+
+            if let Ok(json) = serde_json::to_string_pretty(&instruments) {
+                if let Ok(mut file) = File::create("symbols.json") {
+                    if let Err(e) = file.write_all(json.as_bytes()) {
+                        eprintln!("Failed to write instruments to file: {}", e);
+                    }
+                } else {
+                    eprintln!("Failed to create file for instruments");
+                }
+            } else {
+                eprintln!("Failed to serialize instruments to JSON");
+            }
+
             Task::perform(async {}, |_| Message::UpdateSelectOptions)
         }
     }

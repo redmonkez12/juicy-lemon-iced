@@ -1,4 +1,4 @@
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use crate::utils::get_decimals;
 
 #[derive(Deserialize, Debug)]
@@ -28,7 +28,7 @@ pub struct Response {
     symbols: Vec<Instrument>,
 }
 
-#[derive(Deserialize, Debug, Clone)]
+#[derive(Deserialize, Debug, Clone, Serialize)]
 pub struct Symbol {
     pub symbol: String,
     pub decimals: usize,

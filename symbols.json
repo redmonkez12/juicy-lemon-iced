@@ -1,0 +1,5666 @@
+[
+  {
+    "symbol": "ETHBTC",
+    "decimals": 5
+  },
+  {
+    "symbol": "LTCBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "BNBBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "NEOBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "QTUMETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "EOSETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "GASBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "BNBETH",
+    "decimals": 4
+  },
+  {
+    "symbol": "BTCUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "ETHUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "LRCBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "LRCETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "QTUMBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ZRXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "KNCBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "IOTABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "IOTAETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "LINKBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "LINKETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "XVGETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "MTLBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "EOSBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ETCETH",
+    "decimals": 5
+  },
+  {
+    "symbol": "ETCBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "ZECBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "ZECETH",
+    "decimals": 5
+  },
+  {
+    "symbol": "DASHBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "DASHETH",
+    "decimals": 5
+  },
+  {
+    "symbol": "REQBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "TRXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "TRXETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "POWRBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "POWRETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "XRPBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "XRPETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "ENJBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "STORJBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BNBUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "KMDBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BATBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "NEOUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "LSKBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MANABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MANAETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "ADXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ADXETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "ADABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ADAETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "XLMBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "XLMETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "LTCETH",
+    "decimals": 5
+  },
+  {
+    "symbol": "LTCUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "LTCBNB",
+    "decimals": 4
+  },
+  {
+    "symbol": "ICXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "RLCBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "RLCETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "PIVXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "STEEMBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "STEEMETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "ZILBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ZILETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "ONTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "QTUMUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "WANBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SYSBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ADAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ADABNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "XRPUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BTCTUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "ETHTUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "ZENBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "EOSUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "THETABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "XRPBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "TUSDUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "IOTAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "XLMUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "IOTXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "IOTXETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "DATABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ONTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "TRXBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "TRXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ETCUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "ETCBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "ICXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SCETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "DENTETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "ARDRBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "HOTETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "VETBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "VETETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "VETUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "VETBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "RVNBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BNBTUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "XRPTUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "BNBUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "BTCUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "ETHUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "XRPUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "EOSUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "XLMUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "USDCUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "TRXXRP",
+    "decimals": 4
+  },
+  {
+    "symbol": "LINKUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "LINKUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "LTCUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "TRXUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "ONGBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ONGUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "HOTUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "ZILUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ZRXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "FETBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "FETBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "FETUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BATUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ZECUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "IOSTUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "CELRUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ADAUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "NEOUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "DASHUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "THETAUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ENJUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ATOMBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "ATOMUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ATOMUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "PHBBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "TFUELBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "TFUELUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ONEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ONEUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ALGOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ALGOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ALGOUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "DOGEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "DOGEUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "DUSKBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "DUSKUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ANKRBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ANKRUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ONTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "WINUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "COSUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "MTLUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "DENTUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "WANUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "FUNUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "CVCUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "WINTRX",
+    "decimals": 7
+  },
+  {
+    "symbol": "CHZBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "CHZBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CHZUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "BANDBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BANDUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "XTZBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "XTZUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "RVNUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "HBARBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "HBARBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "HBARUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "NKNBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "NKNUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "STXBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "STXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "STXUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "KAVABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "KAVAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ARPABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ARPAUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "IOTXUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "RLCUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BCHBNB",
+    "decimals": 3
+  },
+  {
+    "symbol": "BCHBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "BCHUSDT",
+    "decimals": 1
+  },
+  {
+    "symbol": "BCHUSDC",
+    "decimals": 1
+  },
+  {
+    "symbol": "FTTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BTCTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "BNBTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "ETHTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "XRPTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "USDTTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BTCEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "ETHEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "BNBEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "XRPEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "EURUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "OGNBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "OGNUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "LSKUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BNTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "LTOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "LTOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "MBLUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "COTIBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "COTIUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "STPTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "STPTUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "BTCZAR",
+    "decimals": 0
+  },
+  {
+    "symbol": "ETHZAR",
+    "decimals": 0
+  },
+  {
+    "symbol": "USDTZAR",
+    "decimals": 2
+  },
+  {
+    "symbol": "DATAUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "SOLBNB",
+    "decimals": 4
+  },
+  {
+    "symbol": "SOLBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "SOLUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "CTSIBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CTSIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "HIVEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "HIVEUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CHRBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CHRUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ARDRUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "MDTUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "KNCUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "LRCUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BTCUAH",
+    "decimals": 0
+  },
+  {
+    "symbol": "USDTUAH",
+    "decimals": 2
+  },
+  {
+    "symbol": "COMPBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "COMPUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "SCUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "ZENUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "SXPBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SNXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SNXUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "VTHOUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "DGBUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "SXPUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "MKRBTC",
+    "decimals": 5
+  },
+  {
+    "symbol": "MKRUSDT",
+    "decimals": 0
+  },
+  {
+    "symbol": "RUNEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "DCRUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "STORJUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "FIOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "AVABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MANAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "YFIBTC",
+    "decimals": 4
+  },
+  {
+    "symbol": "YFIUSDT",
+    "decimals": 0
+  },
+  {
+    "symbol": "KMDUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BTCDAI",
+    "decimals": 2
+  },
+  {
+    "symbol": "ETHDAI",
+    "decimals": 2
+  },
+  {
+    "symbol": "USDTDAI",
+    "decimals": 4
+  },
+  {
+    "symbol": "JSTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "JSTUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "CRVBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CRVUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SANDBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SANDUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "NMRBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "NMRUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "DOTBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "DOTBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "DOTUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "LUNAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "RSRUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "PAXGBTC",
+    "decimals": 5
+  },
+  {
+    "symbol": "PAXGUSDT",
+    "decimals": 0
+  },
+  {
+    "symbol": "TRBBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "TRBUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "WBTCBTC",
+    "decimals": 4
+  },
+  {
+    "symbol": "WBTCETH",
+    "decimals": 2
+  },
+  {
+    "symbol": "SUSHIBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SUSHIUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "KSMBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "KSMUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "EGLDBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "EGLDBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "EGLDUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "DIABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "DIAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "RUNEUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "FIOUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "UMABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "UMAUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "LINKTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "BELBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BELUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "UNIBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "UNIUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "OXTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "OXTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SUNUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "AVAXBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "AVAXBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "FLMBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "FLMUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SCRTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CAKEBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "SXPTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "UTKUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "XVSBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "XVSBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "XVSUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "ALPHAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BTCBRL",
+    "decimals": 0
+  },
+  {
+    "symbol": "USDTBRL",
+    "decimals": 3
+  },
+  {
+    "symbol": "AAVEBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "AAVEETH",
+    "decimals": 5
+  },
+  {
+    "symbol": "AAVEUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "NEARBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "NEARBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "NEARUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "FILBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "FILUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "INJBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "INJBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "INJUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "LINKEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "AUDIOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "AUDIOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CTKBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "CTKBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CTKUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ETHBRL",
+    "decimals": 2
+  },
+  {
+    "symbol": "DOTEUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "AXSBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "AXSBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "AXSUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BNBBRL",
+    "decimals": 0
+  },
+  {
+    "symbol": "LTCEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "SLPETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "ADAEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "STRAXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "STRAXUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ROSEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ROSEUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "AVAXTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "AVAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "XRPBRL",
+    "decimals": 3
+  },
+  {
+    "symbol": "SKLBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SKLUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "BCHEUR",
+    "decimals": 1
+  },
+  {
+    "symbol": "GLMBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "LINKBRL",
+    "decimals": 2
+  },
+  {
+    "symbol": "TRXTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "XLMEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "GRTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "GRTETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "GRTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "JUVUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "PSGUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "1INCHBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "1INCHUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "OGBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "OGUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ATMUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ASRUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "CELOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CELOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "RIFBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "RIFUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CHZTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "XLMTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "GRTEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "TRUBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "TRUUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "LTCBRL",
+    "decimals": 1
+  },
+  {
+    "symbol": "CKBUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "TWTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "DOGEEUR",
+    "decimals": 5
+  },
+  {
+    "symbol": "DOGETRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "DOGEBRL",
+    "decimals": 4
+  },
+  {
+    "symbol": "SFPBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SFPUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "DOTTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "DODOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "DODOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CAKEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CAKEUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ACMUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "AUCTIONBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "PHABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ADATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ADABRL",
+    "decimals": 3
+  },
+  {
+    "symbol": "FISBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "FISUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "DOTBRL",
+    "decimals": 2
+  },
+  {
+    "symbol": "HOTTRY",
+    "decimals": 5
+  },
+  {
+    "symbol": "EGLDEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "OMBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "OMUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PONDUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "DEGOUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "AVAXEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "ALICEUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "NEOTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "PERPUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SUPERBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SUPERUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CFXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CFXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "EOSTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "RVNTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "TKOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PUNDIXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "WINEUR",
+    "decimals": 8
+  },
+  {
+    "symbol": "TLMUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ONTTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "VETEUR",
+    "decimals": 5
+  },
+  {
+    "symbol": "BARUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "FORTHBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "FORTHUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BAKEUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SLPUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "TRXEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "VETTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "SHIBUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "ICPBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "ICPUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "SHIBEUR",
+    "decimals": 8
+  },
+  {
+    "symbol": "ARBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "ARUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "MASKBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "MASKUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "LPTBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "LPTBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "LPTUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "SOLEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "SHIBBRL",
+    "decimals": 8
+  },
+  {
+    "symbol": "ICPEUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "SHIBTRY",
+    "decimals": 7
+  },
+  {
+    "symbol": "XVGUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "ATABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ATAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "GTCUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BAKEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SOLTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "SOLBRL",
+    "decimals": 1
+  },
+  {
+    "symbol": "PHAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "MLNUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "GRTTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "DEXEUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "C98USDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "QNTBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "QNTUSDT",
+    "decimals": 1
+  },
+  {
+    "symbol": "FLOWBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "FLOWUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "MINABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MINAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "RAYUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "FARMUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "TLMTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "QUICKUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "MBOXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "REQUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "GHSTUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "WAXPUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "WAXPBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "GNOUSDT",
+    "decimals": 1
+  },
+  {
+    "symbol": "ARPATRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "XECUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "DYDXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "DYDXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "IDEXUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "USDPUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "GALAUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "GALABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ILVUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "ILVBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "YGGUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "YGGBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SYSUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "DFUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "SOLUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "FIDAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "FIDABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "AGLDBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "AGLDUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "RADUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "RAREBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "RAREUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AVAXBRL",
+    "decimals": 1
+  },
+  {
+    "symbol": "AXSETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "SOLETH",
+    "decimals": 5
+  },
+  {
+    "symbol": "SSVBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "SSVETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "LAZIOTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "LAZIOUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "CHESSUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ADXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AUCTIONUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "SHIBDOGE",
+    "decimals": 7
+  },
+  {
+    "symbol": "MANATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "MOVRBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "MOVRUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "CITYUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ENSBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "ENSUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "DOTETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "SANDTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "QIUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "PORTOUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "PORTOTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "POWRUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AVAXETH",
+    "decimals": 5
+  },
+  {
+    "symbol": "SLPTRY",
+    "decimals": 5
+  },
+  {
+    "symbol": "LRCTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "GALAETH",
+    "decimals": 8
+  },
+  {
+    "symbol": "JASMYUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "AMPUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "PYRBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "PYRUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ALCXUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "SANTOSBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SANTOSUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "SANTOSTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BELTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "DENTTRY",
+    "decimals": 5
+  },
+  {
+    "symbol": "ENJTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "BICOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BICOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "FLUXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "FLUXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ALICETRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "FXSUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "GALABRL",
+    "decimals": 4
+  },
+  {
+    "symbol": "GALATRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "LUNATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "VOXELUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "MINATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "HIGHUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "CVXUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "PEOPLEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "PEOPLEUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "LINKBNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "SPELLUSDT",
+    "decimals": 7
+  },
+  {
+    "symbol": "JOEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "JOEUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ATOMETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "EGLDETH",
+    "decimals": 5
+  },
+  {
+    "symbol": "ICPETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "NEARETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "ATOMTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "ACHBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ACHUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "IMXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "IMXUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "GLMRBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "GLMRUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ICPTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "UNIETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "LOKABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "LOKAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ROSETRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "SCRTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "API3BTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "API3USDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BTTCUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "BTTCTRY",
+    "decimals": 8
+  },
+  {
+    "symbol": "ACABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ACAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "XNOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "XNOUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "COSTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "ONETRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "WOOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SPELLTRY",
+    "decimals": 5
+  },
+  {
+    "symbol": "AXSTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "NEARTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "ALPINETRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ALPINEUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "TUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "INJTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "ASTRUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "API3TRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "MBOXTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "GMTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "GMTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ATOMEUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "GALAEUR",
+    "decimals": 5
+  },
+  {
+    "symbol": "UMATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "KDABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "KDAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "APEUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "APEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "NEAREUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "TWTTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "APETRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BSWUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "JASMYTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "BIFIUSDT",
+    "decimals": 1
+  },
+  {
+    "symbol": "GMTEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "RUNEETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "FILTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ZILTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "GMTTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "ASTRBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BSWTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "STEEMUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AUDIOTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "NEXOUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "NEXOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "REIUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "LDOUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "LDOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ENSTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "ALGOTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "OPBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "OPUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "OPEUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "LEVERUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "STORJTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "OPETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "ETCTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "FILETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "STGBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "STGUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ANKRTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "LUNCUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "GMXUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "POLYXBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "POLYXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "APTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "APTUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BTCPLN",
+    "decimals": 0
+  },
+  {
+    "symbol": "ETHPLN",
+    "decimals": 0
+  },
+  {
+    "symbol": "APTEUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "APTTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "OSMOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "HFTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "HFTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PHBUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "HOOKUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "MAGICBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MAGICUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "HIFIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "RPLUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "FETTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "APTETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "BTCRON",
+    "decimals": 0
+  },
+  {
+    "symbol": "GNSUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "SYNUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SSVUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "LQTYUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "CFXTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "STXTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "USTCUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "GASUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "GLMUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PROMUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "QKCUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "IDBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "IDUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ARBBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ARBUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ARBTUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "ARBTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ARBEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "IDTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SOLTUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "RDNTUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "MAGICTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "USDTPLN",
+    "decimals": 3
+  },
+  {
+    "symbol": "ACHTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "XVSTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "EGLDRON",
+    "decimals": 1
+  },
+  {
+    "symbol": "USDTARS",
+    "decimals": 1
+  },
+  {
+    "symbol": "DOGETUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "WBTCUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "EDUUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "EDUTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SUIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SUIBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SUIBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "SUIEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "SUITRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PEPEUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "FLOKIUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "OGTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "PEPETRY",
+    "decimals": 8
+  },
+  {
+    "symbol": "WBETHETH",
+    "decimals": 4
+  },
+  {
+    "symbol": "FLOKITRY",
+    "decimals": 6
+  },
+  {
+    "symbol": "CITYTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "LTCTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "RADTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BTCARS",
+    "decimals": 0
+  },
+  {
+    "symbol": "OPTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PAXGTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "MAVBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MAVUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "PENDLEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "PENDLEUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "MAVTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ARBETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "BCHTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "XVGTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "ARKMUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ARKMTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ARKMBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "ARKMBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "WBETHUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "ACATRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "COMPTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "XECTRY",
+    "decimals": 7
+  },
+  {
+    "symbol": "WLDUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "WLDBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BNBFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "FDUSDUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "WLDTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "AMPTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "OGNTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "BTCFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "ETHFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "ASRTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ATMTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BARTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "JUVTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PSGTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SEIBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "SEIBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SEIFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "SEITRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "SEIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CYBERBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "CYBERBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "CYBERFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "CYBERTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "CYBERUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "LPTTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "UNITRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "SOLFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "XRPFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "DOGEFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "CYBERETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "ARKUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "IQUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "ARBFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "FDUSDTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SUIFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "NTRNUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "NTRNBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "FILFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "LEVERTRY",
+    "decimals": 5
+  },
+  {
+    "symbol": "LTCFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "ADAFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "TRBTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "ATOMFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "AVAXFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "BCHFDUSD",
+    "decimals": 1
+  },
+  {
+    "symbol": "DOTFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "LINKFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "NEARFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "STRAXTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "TIABTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "TIAUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "TIATRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "MEMEUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "MEMEFDUSD",
+    "decimals": 6
+  },
+  {
+    "symbol": "MEMETRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "ORDIBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "ORDIUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "ORDITRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "EGLDFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "FETFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "INJETH",
+    "decimals": 6
+  },
+  {
+    "symbol": "OPFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "ORDIFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "BEAMXUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ARKTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BEAMXTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "CAKETRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "DYDXFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "PIVXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "RUNEFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "GALAFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "WLDFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "GASTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "NTRNTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "VICUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "VICTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BLURUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BLURTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "USTCTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "DYDXTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "VANRYUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AEURUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AUCTIONFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "LUNCTRY",
+    "decimals": 6
+  },
+  {
+    "symbol": "SUPERTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "JTOUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "JTOFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "JTOTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "1000SATSUSDT",
+    "decimals": 7
+  },
+  {
+    "symbol": "1000SATSFDUSD",
+    "decimals": 7
+  },
+  {
+    "symbol": "1000SATSTRY",
+    "decimals": 6
+  },
+  {
+    "symbol": "SHIBFDUSD",
+    "decimals": 8
+  },
+  {
+    "symbol": "SANDFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "IOTATRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "INJFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "FIDATRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "BONKUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "BONKFDUSD",
+    "decimals": 8
+  },
+  {
+    "symbol": "BONKTRY",
+    "decimals": 7
+  },
+  {
+    "symbol": "ACEUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ACETRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "RARETRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "VANRYTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "NFPBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "NFPUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "NFPFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "NFPTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ARBUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "AVAXUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "DOTUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "INJUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "OPUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "ORDIUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "AIBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "AIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AIBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "AIFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "AITRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ICPFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "LDOFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "MOVRTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "XAIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "XAIFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "XAITRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SKLTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "STXFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "TIAFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "MANTABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MANTAUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "MANTAFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "MANTATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ENSFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "ETCFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "SUIUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "TIAUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "MANTAUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "ALTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ALTUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ALTBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "ALTFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "ALTTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "APTFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "BLURUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "JUPUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "JUPFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "JUPTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ALTUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "SEIUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "PYTHBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "PYTHUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PYTHFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "PYTHTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "RONINBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "RONINUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "RONINFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "RONINTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "DYMUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "DYMTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "JUPUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "PENDLEFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "PIXELUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "PIXELTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "STRKBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "STRKUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "STRKFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "STRKTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "FILUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "HBARTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "PENDLETRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "WLDUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "CKBTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "COTITRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "LDOTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "UNIUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "PORTALBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "PORTALUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PORTALBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "PORTALFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "PORTALTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "AXLBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "AXLUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AXLTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PEPEFDUSD",
+    "decimals": 8
+  },
+  {
+    "symbol": "PIXELUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "STRKUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "UNIFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "OMTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "THETATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "WIFBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "WIFUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "WIFFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "WIFTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PEPEUSDC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SHIBUSDC",
+    "decimals": 8
+  },
+  {
+    "symbol": "THETAFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "ARTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "METISUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "METISTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "BNBJPY",
+    "decimals": 0
+  },
+  {
+    "symbol": "BTCJPY",
+    "decimals": 0
+  },
+  {
+    "symbol": "ETHJPY",
+    "decimals": 0
+  },
+  {
+    "symbol": "FLOKIFDUSD",
+    "decimals": 8
+  },
+  {
+    "symbol": "GRTFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "NEARUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "SNXTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "AEVOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "AEVOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AEVOFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "AEVOTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "FETUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "EURUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "BOMETRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "BOMEUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "BOMEFDUSD",
+    "decimals": 6
+  },
+  {
+    "symbol": "ETHFIUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ETHFIFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "ETHFITRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "AAVETRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "ARKMFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "CRVTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "RAYFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "BONKUSDC",
+    "decimals": 8
+  },
+  {
+    "symbol": "FLOKIUSDC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MKRTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "RAYTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ENABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ENAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ENABNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "ENAFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "ENATRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "MASKTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PENDLEUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "RDNTTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "WBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "WUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "WFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "WTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "BOMEUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "JTOUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "WIFUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "TNSRUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "TNSRFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "TNSRTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SAGABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SAGAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SAGABNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "SAGAFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "SAGATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "USDTMXN",
+    "decimals": 2
+  },
+  {
+    "symbol": "CKBUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "ENAUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "ETHFIUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "YGGUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "TAOBTC",
+    "decimals": 6
+  },
+  {
+    "symbol": "TAOUSDT",
+    "decimals": 1
+  },
+  {
+    "symbol": "TAOFDUSD",
+    "decimals": 1
+  },
+  {
+    "symbol": "TAOTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "CFXUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "RUNEUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "SAGAUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "POLYXTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "OMNIBTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "OMNIUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "OMNIFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "OMNITRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "APTUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "GALAUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "STXUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "ICPUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "OMNIUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "PEPEBRL",
+    "decimals": 8
+  },
+  {
+    "symbol": "YGGTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ADAJPY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SHIBJPY",
+    "decimals": 6
+  },
+  {
+    "symbol": "SOLJPY",
+    "decimals": 0
+  },
+  {
+    "symbol": "XRPJPY",
+    "decimals": 2
+  },
+  {
+    "symbol": "REZUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "REZTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "EGLDTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "PHBTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "RSRTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "BBBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BBUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BBBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "BBFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "BBTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "PEOPLETRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "TRBUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "NOTUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "NOTFDUSD",
+    "decimals": 6
+  },
+  {
+    "symbol": "NOTTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "ARKMUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "ARUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "BBUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "CRVUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "PEOPLEUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "ARFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "PEPEEUR",
+    "decimals": 8
+  },
+  {
+    "symbol": "REZUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "USDCTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BTCMXN",
+    "decimals": 0
+  },
+  {
+    "symbol": "XRPMXN",
+    "decimals": 3
+  },
+  {
+    "symbol": "ENSUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "LDOUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "NOTUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "NEARBRL",
+    "decimals": 2
+  },
+  {
+    "symbol": "HIGHTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PEOPLEFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "TNSRUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "USDTCOP",
+    "decimals": 0
+  },
+  {
+    "symbol": "IOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "IOUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "IOBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "IOFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "IOTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "TRUTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "WIFEUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "ZKBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ZKUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ZKFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "ZKTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "LISTAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "LISTABNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "LISTAFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "LISTATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ZROBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "ZROUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "ZROFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "ZROTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "BAKETRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "WIFBRL",
+    "decimals": 2
+  },
+  {
+    "symbol": "ZKUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "ZROUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "IOUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "1000SATSUSDC",
+    "decimals": 7
+  },
+  {
+    "symbol": "ETHARS",
+    "decimals": 0
+  },
+  {
+    "symbol": "GUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "GTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "BANANABTC",
+    "decimals": 7
+  },
+  {
+    "symbol": "BANANAUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "BANANABNB",
+    "decimals": 5
+  },
+  {
+    "symbol": "BANANAFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "BANANATRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "RENDERBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "RENDERUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "RENDERFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "RENDERUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "RENDERTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "RENDEREUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "RENDERBRL",
+    "decimals": 2
+  },
+  {
+    "symbol": "TONBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "TONUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "TONFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "TONTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "BONKBRL",
+    "decimals": 8
+  },
+  {
+    "symbol": "DOGEJPY",
+    "decimals": 2
+  },
+  {
+    "symbol": "NEARJPY",
+    "decimals": 1
+  },
+  {
+    "symbol": "TONUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "AAVEFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "DOGSUSDT",
+    "decimals": 7
+  },
+  {
+    "symbol": "DOGSFDUSD",
+    "decimals": 7
+  },
+  {
+    "symbol": "DOGSTRY",
+    "decimals": 5
+  },
+  {
+    "symbol": "EUREURI",
+    "decimals": 4
+  },
+  {
+    "symbol": "EURIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "DOGSUSDC",
+    "decimals": 7
+  },
+  {
+    "symbol": "RAREUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "SLFBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SLFTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SLFUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "SLFUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AAVEUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "SUNTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "POLBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "POLBRL",
+    "decimals": 3
+  },
+  {
+    "symbol": "POLBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "POLETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "POLEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "POLFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "POLJPY",
+    "decimals": 2
+  },
+  {
+    "symbol": "POLTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "POLUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "POLUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "NEIROUSDT",
+    "decimals": 8
+  },
+  {
+    "symbol": "TURBOUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "1MBABYDOGEUSDT",
+    "decimals": 7
+  },
+  {
+    "symbol": "CATIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CATIFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "CATITRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "1MBABYDOGEFDUSD",
+    "decimals": 7
+  },
+  {
+    "symbol": "1MBABYDOGETRY",
+    "decimals": 5
+  },
+  {
+    "symbol": "BTCEURI",
+    "decimals": 2
+  },
+  {
+    "symbol": "NEIROFDUSD",
+    "decimals": 8
+  },
+  {
+    "symbol": "NEIROTRY",
+    "decimals": 5
+  },
+  {
+    "symbol": "HMSTRUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "HMSTRFDUSD",
+    "decimals": 6
+  },
+  {
+    "symbol": "HMSTRTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "EIGENBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "EIGENUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "EIGENFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "EIGENTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BNSOLSOL",
+    "decimals": 4
+  },
+  {
+    "symbol": "SCRUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "SUIBRL",
+    "decimals": 2
+  },
+  {
+    "symbol": "TURBOTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "BNSOLUSDT",
+    "decimals": 1
+  },
+  {
+    "symbol": "LUMIAUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "SCRBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SCRFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "SCRTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "KAIAUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "COWUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CETUSUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PNUTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ACTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ACTTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "COWTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "CETUSTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PNUTTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ACTFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "ACTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "NEIROUSDC",
+    "decimals": 8
+  },
+  {
+    "symbol": "PNUTBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "PNUTFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "PNUTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "USUALUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ACTEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "CATIUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "ETHEURI",
+    "decimals": 2
+  },
+  {
+    "symbol": "LUMIATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PNUTBRL",
+    "decimals": 3
+  },
+  {
+    "symbol": "PNUTEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "APEFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "FDUSDUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "HBARUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "OMUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "RAYUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "TAOUSDC",
+    "decimals": 1
+  },
+  {
+    "symbol": "THEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "THEFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "THETRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "THEUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "APEUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "BOMEEUR",
+    "decimals": 6
+  },
+  {
+    "symbol": "EIGENUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "HBARFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "MEMEUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "WLDEUR",
+    "decimals": 3
+  },
+  {
+    "symbol": "1MBABYDOGEUSDC",
+    "decimals": 7
+  },
+  {
+    "symbol": "CETUSUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "COWUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "DYDXUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "HMSTRUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "TURBOUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "ENABRL",
+    "decimals": 3
+  },
+  {
+    "symbol": "EOSFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "KAIAUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "SANDUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "XLMFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "CHZUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "PYTHUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "RSRUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "WUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "XTZUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "ACXUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ORCAUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "MOVEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MOVEUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "MOVEBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "MOVEFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "MOVETRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "MEBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "MEUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "MEFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "METRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ACXUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "ORCAUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "ACXFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "ORCAFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "ACXTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "ORCATRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "KSMTRY",
+    "decimals": 0
+  },
+  {
+    "symbol": "CELOTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "HIVEFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "HIVEUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "IDEXFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "IDEXUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "TLMFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "TLMUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "VELODROMEUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "VANAUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "VANAFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "VANATRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "1000CATUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "1000CATBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "1000CATFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "1000CATTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "PENGUUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "PENGUFDUSD",
+    "decimals": 6
+  },
+  {
+    "symbol": "PENGUTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "USUALBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "USUALFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "USUALTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "1000CATUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "PENGUUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "BIOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BIOBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "BIOFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "BIOTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "BIOUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "HIVETRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "MOVEUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "PHATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SUSHITRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "DUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "DTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "APTJPY",
+    "decimals": 1
+  },
+  {
+    "symbol": "SUIJPY",
+    "decimals": 2
+  },
+  {
+    "symbol": "XLMJPY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PEPEJPY",
+    "decimals": 6
+  },
+  {
+    "symbol": "PHAUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "USDCPLN",
+    "decimals": 3
+  },
+  {
+    "symbol": "STEEMUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "USUALUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "AIXBTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "AIXBTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "CGPTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CGPTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "COOKIEUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "COOKIEUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "SBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "SETH",
+    "decimals": 7
+  },
+  {
+    "symbol": "SEUR",
+    "decimals": 4
+  },
+  {
+    "symbol": "SFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "STRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "SUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "IOTXJPY",
+    "decimals": 3
+  },
+  {
+    "symbol": "SEIJPY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SOLVUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "SOLVBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "SOLVFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "SOLVTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "TRUMPUSDT",
+    "decimals": 2
+  },
+  {
+    "symbol": "TRUMPUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "AIXBTTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "TRUMPTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "ANIMEUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "ANIMEUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "ANIMEBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "ANIMEFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "ANIMETRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "BERABTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "BERAUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "BERAUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "BERAFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "BERABNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "BERATRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "1000CHEEMSUSDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "1000CHEEMSUSDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "TSTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "TSTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "LAYERBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "LAYERUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "LAYERUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "LAYERBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "LAYERFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "LAYERTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "QTUMTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "TRUMPEUR",
+    "decimals": 2
+  },
+  {
+    "symbol": "VTHOTRY",
+    "decimals": 4
+  },
+  {
+    "symbol": "HEIBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "HEIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "CAKEUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "HEIUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "TRUMPFDUSD",
+    "decimals": 2
+  },
+  {
+    "symbol": "TSTFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "LTCJPY",
+    "decimals": 0
+  },
+  {
+    "symbol": "BCHJPY",
+    "decimals": 0
+  },
+  {
+    "symbol": "LINKJPY",
+    "decimals": 0
+  },
+  {
+    "symbol": "KAITOBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "KAITOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "KAITOUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "KAITOBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "KAITOFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "KAITOTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "ETHMXN",
+    "decimals": 0
+  },
+  {
+    "symbol": "KAITOBRL",
+    "decimals": 3
+  },
+  {
+    "symbol": "SOLMXN",
+    "decimals": 0
+  },
+  {
+    "symbol": "BNBARS",
+    "decimals": 0
+  },
+  {
+    "symbol": "SOLARS",
+    "decimals": 0
+  },
+  {
+    "symbol": "TRUMPBRL",
+    "decimals": 2
+  },
+  {
+    "symbol": "TRXFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "TSTTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "SHELLBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "SHELLUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "SHELLUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "SHELLBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "SHELLFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "SHELLTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "REDUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "GPSUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "GPSUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "GPSFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "GPSTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "GPSBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "REDBTC",
+    "decimals": 8
+  },
+  {
+    "symbol": "REDUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "REDFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "REDTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "CHESSUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "EGLDUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "OSMOUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "UTKUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "TUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "CVCUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "EURIUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "SYNUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "USDCRON",
+    "decimals": 3
+  },
+  {
+    "symbol": "VELODROMEUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "EPICUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "DFUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "EPICUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "GMXUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "MKRUSDC",
+    "decimals": 0
+  },
+  {
+    "symbol": "RPLUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "BMTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "BMTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "BMTBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "BMTFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "BMTTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "FORMUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "FORMUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "FORMTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "XUSDUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "IOTAUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "JUVUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "THEUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "VANRYUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "USDCCZK",
+    "decimals": 2
+  },
+  {
+    "symbol": "NILUSDT",
+    "decimals": 3
+  },
+  {
+    "symbol": "NILBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "NILFDUSD",
+    "decimals": 3
+  },
+  {
+    "symbol": "NILUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "NILTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BEAMXUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "VANAUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "PARTIFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "PARTITRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "PARTIUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PARTIUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "PARTIBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "MUBARAKUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "MUBARAKUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "TUTUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "BROCCOLI714USDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "TUTUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "BANANAS31USDT",
+    "decimals": 6
+  },
+  {
+    "symbol": "BANANAS31USDC",
+    "decimals": 6
+  },
+  {
+    "symbol": "BROCCOLI714USDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "GUNUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "GUNBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "GUNFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "GUNTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "THETAUSDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "API3USDC",
+    "decimals": 3
+  },
+  {
+    "symbol": "AUCTIONTRY",
+    "decimals": 1
+  },
+  {
+    "symbol": "AUCTIONUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "BANANAUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "GUNUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "QNTUSDC",
+    "decimals": 1
+  },
+  {
+    "symbol": "VETUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "ZENUSDC",
+    "decimals": 2
+  },
+  {
+    "symbol": "BABYUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "BABYUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "BABYBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "BABYFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "BABYTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "ONDOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "ONDOUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "BIGTIMEUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "BIGTIMEUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "VIRTUALUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "VIRTUALUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "KERNELBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "KERNELFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "KERNELTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "KERNELUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "KERNELUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "WCTTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "WCTFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "WCTBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "WCTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "WCTUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "PAXGUSDC",
+    "decimals": 0
+  },
+  {
+    "symbol": "ONDOTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "BABYEUR",
+    "decimals": 5
+  },
+  {
+    "symbol": "ACHUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "GMTUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "HYPERUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "HYPERUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "HYPERBNB",
+    "decimals": 7
+  },
+  {
+    "symbol": "HYPERFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "HYPERTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "INITUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "INITUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "INITBNB",
+    "decimals": 6
+  },
+  {
+    "symbol": "INITFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "INITTRY",
+    "decimals": 2
+  },
+  {
+    "symbol": "SIGNUSDT",
+    "decimals": 5
+  },
+  {
+    "symbol": "SIGNUSDC",
+    "decimals": 5
+  },
+  {
+    "symbol": "SIGNBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "SIGNFDUSD",
+    "decimals": 5
+  },
+  {
+    "symbol": "SIGNTRY",
+    "decimals": 3
+  },
+  {
+    "symbol": "STOUSDT",
+    "decimals": 4
+  },
+  {
+    "symbol": "STOUSDC",
+    "decimals": 4
+  },
+  {
+    "symbol": "STOBNB",
+    "decimals": 8
+  },
+  {
+    "symbol": "STOFDUSD",
+    "decimals": 4
+  },
+  {
+    "symbol": "STOTRY",
+    "decimals": 3
+  }
+]
