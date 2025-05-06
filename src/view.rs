@@ -1,4 +1,5 @@
 use crate::ui::instrument_select::render_select;
+use crate::ui::button::render_button;
 use crate::{Message, State};
 use iced::widget::{Column, Row, Rule, text};
 use iced::{Element, Length, widget};
@@ -48,8 +49,7 @@ pub fn view(state: &State) -> Element<Message> {
                 .padding(14),
             vertical_rule(),
             widget::container(
-                iced::widget::button(text("Remove"))
-                    .on_press(Message::SymbolRemove(item.symbol.clone()))
+                render_button("Remove".to_string(), Message::SymbolRemove(item.symbol.clone()))
             )
             .width(Length::Shrink)
             .padding(10),

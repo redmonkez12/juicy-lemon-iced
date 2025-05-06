@@ -1,7 +1,7 @@
 use crate::{Message, State};
 use iced::overlay::menu;
 use iced::widget::{ComboBox, combo_box, text_input};
-use iced::{Border, Color, Font};
+use iced::{Border, Color};
 
 pub fn render_select(state: &State) -> ComboBox<String, Message> {
     let border = Border {
@@ -25,7 +25,7 @@ pub fn render_select(state: &State) -> ComboBox<String, Message> {
         border,
         icon: Default::default(),
         placeholder: [0.976, 0.980, 0.984].into(),
-        value: Default::default(),
+        value: [0.976, 0.980, 0.984].into(),
         selection: Default::default(),
     })
     .menu_style(move |_| menu::Style {

@@ -4,13 +4,15 @@ mod update;
 mod utils;
 mod view;
 
-use iced::{Subscription, Task, time};
+use std::sync::Arc;
+use iced::{Subscription, Task, time, Color};
 use std::time::Duration;
 
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
+use iced::theme::{palette, Custom, Palette};
 use iced::widget::combo_box;
 
 #[derive(Debug, Clone)]
@@ -55,7 +57,15 @@ struct State {
 }
 
 fn theme(_: &State) -> Theme {
-    Theme::Dark
+    let custom_theme = Arc::new(Custom::new("My Dark Theme".into(), Palette {
+        background: [0.012, 0.027, 0.071].into(),
+        text: Color::WHITE,
+        primary: Color::from_rgb(0.3, 0.6, 0.9),
+        success: Color::from_rgb(0.2, 0.8, 0.4),
+        danger: Color::from_rgb(0.9, 0.2, 0.2),
+    }));
+
+    Theme::Custom(custom_theme)
 }
 
 fn init() -> (State, Task<Message>) {
