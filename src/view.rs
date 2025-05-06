@@ -19,7 +19,7 @@ pub fn view(state: &State) -> Element<Message> {
         return text("Nothing found").size(20).into();
     }
 
-    let input_row = Row::new().spacing(10).push(render_select(&state));
+    let input_row = Row::new().spacing(10).push(render_select(&state).size(14.0));
 
     let mut watch_list = Column::new();
 
