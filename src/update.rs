@@ -11,7 +11,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
         Message::UpdateSelectOptions => {
             let mut options: Vec<String> = if state.input_text.is_empty() {
-                get_default_select_state(state.instruments.clone(), &state.watchlist)
+                get_default_select_state(&state.instruments, &state.watchlist)
             } else {
                 get_current_select_state(&state.instruments, &state.input_text, &state.watchlist)
             };

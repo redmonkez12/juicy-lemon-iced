@@ -54,23 +54,21 @@ pub fn get_current_select_state(
     sorted_instruments
 }
 
-pub fn get_default_select_state(instruments: Vec<Symbol>, watchlist: &Vec<WatchListItem>) -> Vec<String> {
-    let mut sorted_instruments = instruments;
+pub fn get_default_select_state(
+    instruments: &[Symbol],
+    watchlist: &[WatchListItem],
+) -> Vec<String> {
+    let mut sorted_instruments: Vec<&Symbol> = instruments.iter().collect();
     sorted_instruments.sort_by_key(|i| i.symbol.clone());
 
-    let watchlist_symbols: HashSet<String> = watchlist.iter()
-        .map(|item| item.symbol.clone())
+    let watchlist_symbols: HashSet<&str> = watchlist.iter()
+        .map(|item| item.symbol.as_str())
         .collect();
 
     sorted_instruments
-        .iter()
+        .into_iter()
+        .filter(|i| !watchlist_symbols.contains(i.symbol.as_str()))
         .take(10)
-        .filter_map(|i| {
-            if !watchlist_symbols.contains(&i.symbol) {
-                Some(i.symbol.clone())
-            } else {
-                None
-            }
-        })
+        .map(|i| i.symbol.clone())
         .collect()
 }
