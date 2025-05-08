@@ -19,24 +19,25 @@ use iced::time::{self};
 use iced::widget::canvas::{Cache, Geometry, Path};
 use iced::widget::{canvas, combo_box};
 
+pub const BULL_COLOR: Color = Color::from_rgb(66.0 / 255.0, 149.0 / 255.0, 137.0 / 255.0);
+pub const BEAR_COLOR: Color = Color::from_rgb(252.0 / 255.0, 79.0 / 255.0, 111.0 / 255.0);
+
 struct Candle {
     open: f32,
     close: f32,
 }
 
 impl Candle {
-    pub const BULL_COLOR: Color = Color::from_rgb(66.0 / 255.0, 149.0 / 255.0, 137.0 / 255.0);
-    pub const BEAR_COLOR: Color = Color::from_rgb(252.0 / 255.0, 79.0 / 255.0, 111.0 / 255.0);
 
     fn new(open: f32, close: f32) -> Self {
         Self { open, close }
     }
 
     fn get_color(&self) -> Color {
-        if self.close > self.open {
-            Self::BULL_COLOR
+        if self.close > self.open { 
+            BULL_COLOR
         } else {
-            Self::BEAR_COLOR
+            BEAR_COLOR
         }
     }
 }
