@@ -5,16 +5,49 @@ mod update;
 mod utils;
 mod view;
 
-use iced::{Size, Subscription, Task, window, Degrees, Renderer, Rectangle, mouse, Point, Vector, Radians, Font, alignment, Settings};
+use iced::{
+    Color, Degrees, Font, Point, Radians, Rectangle, Renderer, Settings, Size, Subscription, Task,
+    Vector, alignment, mouse, window,
+};
 use std::time::Duration;
 
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
-use iced::widget::{canvas, combo_box};
 use iced::time::{self};
-use iced::widget::canvas::{stroke, Cache, Geometry, LineCap, Path, Stroke};
+use iced::widget::canvas::{Cache, Geometry, Path};
+use iced::widget::{canvas, combo_box};
+
+struct Candle {
+    open: f32,
+    close: f32,
+}
+
+impl Candle {
+    pub const BULL_COLOR: Color = Color::from_rgb(66.0 / 255.0, 149.0 / 255.0, 137.0 / 255.0);
+    pub const BEAR_COLOR: Color = Color::from_rgb(252.0 / 255.0, 79.0 / 255.0, 111.0 / 255.0);
+
+    fn new(open: f32, close: f32) -> Self {
+        Self { open, close }
+    }
+
+    fn get_color(&self) -> Color {
+        if self.open > self.close {
+            Self::BULL_COLOR
+        } else {
+            Self::BEAR_COLOR
+        }
+    }
+}
+
+fn load_candles() -> Vec<Candle> {
+    vec![
+        Candle::new(100.0, 60.0),
+        Candle::new(60.0, 30.0),
+        Candle::new(30.0, 60.0),
+    ]
+}
 
 #[derive(Debug, Clone)]
 enum Message {
@@ -48,20 +81,6 @@ impl WatchListItem {
     }
 }
 
-struct Candle {
-    open: f32,
-    close: f32,
-}
-
-impl Candle {
-    fn new(open: f32, close: f32) -> Self {
-        Self {
-            open,
-            close,
-        }
-    }
-}
-
 impl<Message> canvas::Program<Message> for State {
     type State = ();
 
@@ -80,11 +99,7 @@ impl<Message> canvas::Program<Message> for State {
 
             // let center = frame.center();
 
-            let candles = vec![
-                Candle::new(100.0, 60.0),
-                Candle::new(60.0, 30.0),
-                Candle::new(30.0, 60.0),
-            ];
+            let candles = load_candles();
 
             let max_price = candles.iter().fold(0.0f32, |acc: f32, c| acc.max(c.open));
             let min_price = candles.iter().fold(0.0f32, |acc: f32, c| acc.min(c.open));
@@ -121,7 +136,7 @@ impl<Message> canvas::Program<Message> for State {
                     },
                 );
 
-                frame.fill(&rectangle, palette.secondary.strong.color);
+                frame.fill(&rectangle, candle.get_color());
             }
 
             // for i in 0..3 {
@@ -197,8 +212,7 @@ fn theme(state: &State) -> Theme {
     //
     // Theme::Custom(custom_theme)
 
-    Theme::ALL[(state.now.timestamp() as usize / 10) % Theme::ALL.len()]
-        .clone()
+    Theme::ALL[(state.now.timestamp() as usize / 10) % Theme::ALL.len()].clone()
 }
 
 fn init() -> (State, Task<Message>) {
@@ -221,8 +235,7 @@ fn init() -> (State, Task<Message>) {
 }
 
 fn subscription(_: &State) -> Subscription<Message> {
-    time::every(Duration::from_millis(500))
-        .map(|_| Message::Tick(chrono::offset::Local::now()))
+    time::every(Duration::from_millis(500)).map(|_| Message::Tick(chrono::offset::Local::now()))
     // if !state.instruments.is_empty() {
     //     return time::every(Duration::from_secs(2)).map(|_| Message::RefetchPrice);
     // }
