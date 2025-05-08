@@ -10,7 +10,6 @@ pub struct CandleSet {
     pub variation: f64,
     pub average: f64,
     pub last_price: f64,
-    pub cumulative_volume: f64,
 }
 
 impl CandleSet {
@@ -22,7 +21,6 @@ impl CandleSet {
             variation: 0.0,
             average: 0.0,
             last_price: 0.0,
-            cumulative_volume: 0.0,
         };
 
         cs.set_candles(candles);

@@ -1,34 +1,36 @@
+mod graph;
 mod symbols;
 mod ui;
 mod update;
 mod utils;
 mod view;
-mod graph;
 
+use iced::{Color, Element, Size, Subscription, Task, time, window};
 use std::sync::Arc;
-use iced::{Subscription, Task, time, Color, Element};
 use std::time::Duration;
 
+use crate::graph::candle::Candle;
+use crate::graph::chart::Chart;
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
 use iced::theme::{Custom, Palette};
 use iced::widget::combo_box;
-use crate::graph::candle::Candle;
-use crate::graph::chart::Chart;
 
 #[derive(Debug, Clone)]
 enum Message {
-    FetchSymbols,
     SymbolsFetched(Vec<Symbol>),
     RefetchPrice,
     AddSymbol(String),
     SymbolRemove(String),
     FetchError(String),
     PricesUpdated(Vec<SymbolWithPrice>),
+    CandlesFetched(Vec<Candle>),
     FilterInput(String),
     UpdateSelectOptions,
+    InitApp,
+    WindowResized(Size),
 }
 
 #[derive(Default)]
@@ -58,6 +60,8 @@ struct State {
     selected_symbol: Option<String>,
     candles: Vec<Candle>,
     chart: Chart,
+    width: f32,
+    height: f32,
 }
 
 impl Default for State {
@@ -72,18 +76,23 @@ impl Default for State {
             selected_symbol: None,
             candles: Vec::new(),
             chart: Chart::new(&Vec::new()),
+            width: 0.0,
+            height: 0.0,
         }
     }
 }
 
 fn theme(_: &State) -> Theme {
-    let custom_theme = Arc::new(Custom::new("My Dark Theme".into(), Palette {
-        background: [0.012, 0.027, 0.071].into(),
-        text: Color::WHITE,
-        primary: Color::from_rgb(0.3, 0.6, 0.9),
-        success: Color::from_rgb(0.2, 0.8, 0.4),
-        danger: Color::from_rgb(0.9, 0.2, 0.2),
-    }));
+    let custom_theme = Arc::new(Custom::new(
+        "My Dark Theme".into(),
+        Palette {
+            background: [0.012, 0.027, 0.071].into(),
+            text: Color::WHITE,
+            primary: Color::from_rgb(0.3, 0.6, 0.9),
+            success: Color::from_rgb(0.2, 0.8, 0.4),
+            danger: Color::from_rgb(0.9, 0.2, 0.2),
+        },
+    ));
 
     Theme::Custom(custom_theme)
 }
@@ -99,8 +108,10 @@ fn init() -> (State, Task<Message>) {
         symbol_select_state: combo_box::State::default(),
         candles: Vec::new(),
         chart: Chart::new(&Vec::new()),
+        width: 0.0,
+        height: 0.0,
     };
-    (state, Task::perform(async {}, |_| Message::FetchSymbols))
+    (state, Task::perform(async {}, |_| Message::InitApp))
 }
 
 fn subscription(state: &State) -> Subscription<Message> {
@@ -111,9 +122,14 @@ fn subscription(state: &State) -> Subscription<Message> {
     Subscription::none()
 }
 
+fn window_resized_subscription(_: &State) -> Subscription<Message> {
+    window::resize_events().map(|(_id, size)| Message::WindowResized(size))
+}
+
 fn main() -> iced::Result {
     iced::application("Juicy Lemon", update, view)
         .theme(theme)
         .subscription(subscription)
+        // .subscription(window_resized_subscription)
         .run_with(init)
 }

@@ -1,6 +1,6 @@
 use crate::graph::candle::Candle;
 use crate::graph::chart::Chart;
-use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols};
+use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols, get_candles};
 use crate::utils::{get_current_select_state, get_default_select_state};
 use crate::{Message, State, WatchListItem};
 use iced::Task;
@@ -9,27 +9,46 @@ use std::fs;
 use std::fs::File;
 use std::io::Write;
 
-fn parse_csv_data(csv_content: &str) -> Vec<Candle> {
-    let mut candles = Vec::new();
-
-    for line in csv_content.lines().skip(1) {
-        let fields: Vec<&str> = line.split(',').collect();
-        if fields.len() >= 6 {
-            let epoch = fields[0].parse::<i64>().ok();
-            let low = fields[2].parse::<f64>().unwrap_or(0.0);
-            let open = fields[3].parse::<f64>().unwrap_or(0.0);
-            let close = fields[4].parse::<f64>().unwrap_or(0.0);
-            let high = fields[5].parse::<f64>().unwrap_or(0.0);
-
-            candles.push(Candle::new(open, high, low, close, epoch));
-        }
-    }
-
-    candles
-}
+// fn parse_csv_data(csv_content: &str) -> Vec<Candle> {
+//     let mut candles = Vec::new();
+// 
+//     for line in csv_content.lines().skip(1) {
+//         let fields: Vec<&str> = line.split(',').collect();
+//         if fields.len() >= 6 {
+//             let epoch = fields[0].parse::<i64>().ok();
+//             let low = fields[2].parse::<f64>().unwrap_or(0.0);
+//             let open = fields[3].parse::<f64>().unwrap_or(0.0);
+//             let close = fields[4].parse::<f64>().unwrap_or(0.0);
+//             let high = fields[5].parse::<f64>().unwrap_or(0.0);
+// 
+//             candles.push(Candle::new(open, high, low, close, epoch));
+//         }
+//     }
+// 
+//     candles
+// }
 
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
+        Message::CandlesFetched(candles) => {
+            let chart = Chart::new(&candles);
+            state.candles = candles.clone();
+            state.chart = chart;
+            println!("Candles fetched: {} candles", candles.len());
+
+            Task::perform(async {}, |_| Message::UpdateSelectOptions)
+        }
+        Message::WindowResized(size) => {
+            state.width = size.width;
+            state.height = size.height;
+            // let candles = fetch_candles("BTCUSDT");
+            // // let csv_content = fs::read_to_string("data/btcusd.csv").unwrap();
+            // // let candles = parse_csv_data(&csv_content);
+            // let chart = Chart::new(&candles);
+            // state.chart = chart;
+
+            Task::none()
+        }
         Message::UpdateSelectOptions => {
             let mut options: Vec<String> = if state.input_text.is_empty() {
                 get_default_select_state(&state.instruments, &state.watchlist)
@@ -44,6 +63,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
 
             state.symbol_select_state =
                 combo_box::State::with_selection(options, Some(&state.input_text));
+
             Task::none()
         }
         Message::FilterInput(input) => {
@@ -95,6 +115,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             if symbol.contains("There are no results for") {
                 state.input_text = "".to_string();
                 state.error_message = "".to_string();
+
                 return Task::perform(async {}, |_| Message::UpdateSelectOptions);
             }
 
@@ -115,21 +136,27 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             state.input_text = "".to_string();
             state.error_message = "".to_string();
 
-            Task::perform(async {}, |_| Message::UpdateSelectOptions)
+            let symbol = match state.watchlist.last() {
+                Some(watchitem) => watchitem.symbol.clone(),
+                None => return Task::none(),
+            };
+
+            Task::perform(
+                async move {
+                    match get_candles(&symbol).await {
+                        Ok(candles) => Message::CandlesFetched(candles),
+                        Err(err) => Message::FetchError(err),
+                    }
+                },
+                |msg| msg,
+            )
         }
-        Message::FetchSymbols => {
-            println!("Fetching symbols");
+        Message::InitApp => {
             state.loading = true;
-
-            let csv_content = fs::read_to_string("data/btcusd.csv").unwrap();
-            let candles = parse_csv_data(&csv_content);
-
-            let mut chart = Chart::new(&candles);
-            chart.set_name("BTC/USDT".into());
-            chart.set_bear_color(237, 0, 0);
-            chart.set_bull_color(69, 178, 123);
-
-            state.chart = chart;
+            // let csv_content = fs::read_to_string("data/btcusd.csv").unwrap();
+            // let candles = parse_csv_data(&csv_content);
+            // let chart = Chart::new(&candles);
+            // state.chart = chart;
 
             Task::perform(
                 async move {
