@@ -5,7 +5,7 @@ mod update;
 mod utils;
 mod view;
 
-use iced::{Size, Subscription, Task, window, Degrees, Renderer, Rectangle, mouse, Point, Vector, Radians, Font, alignment};
+use iced::{Size, Subscription, Task, window, Degrees, Renderer, Rectangle, mouse, Point, Vector, Radians, Font, alignment, Settings};
 use std::time::Duration;
 
 use crate::symbols::{Symbol, SymbolWithPrice};
@@ -48,6 +48,20 @@ impl WatchListItem {
     }
 }
 
+struct Candle {
+    open: f32,
+    close: f32,
+}
+
+impl Candle {
+    fn new(open: f32, close: f32) -> Self {
+        Self {
+            open,
+            close,
+        }
+    }
+}
+
 impl<Message> canvas::Program<Message> for State {
     type State = ();
 
@@ -61,124 +75,69 @@ impl<Message> canvas::Program<Message> for State {
     ) -> Vec<Geometry> {
         use chrono::Timelike;
 
-        let clock = self.clock.draw(renderer, bounds.size(), |frame| {
+        let rectangle = self.clock.draw(renderer, bounds.size(), |frame| {
             let palette = theme.extended_palette();
 
-            let center = frame.center();
-            let radius = frame.width().min(frame.height()) / 2.0;
+            // let center = frame.center();
 
-            let background = Path::circle(center, radius);
-            frame.fill(&background, palette.secondary.strong.color);
+            let candles = vec![
+                Candle::new(100.0, 60.0),
+                Candle::new(60.0, 30.0),
+                Candle::new(30.0, 60.0),
+            ];
 
-            let short_hand =
-                Path::line(Point::ORIGIN, Point::new(0.0, -0.5 * radius));
+            let max_price = candles.iter().fold(0.0f32, |acc: f32, c| acc.max(c.open));
+            let min_price = candles.iter().fold(0.0f32, |acc: f32, c| acc.min(c.open));
+            let price_range = max_price - min_price;
 
-            let long_hand =
-                Path::line(Point::ORIGIN, Point::new(0.0, -0.8 * radius));
+            let settings = window::Settings::default();
+            let screen_height = settings.size.height;
 
-            let width = radius / 100.0;
+            // mapped_x = a + ((x - min) / (max - min)) * (b - a)
+            // let normalized = (x - min) / (max - min);
+            // let mapped = a + normalized * (b - a);
+            // x = candle.open
+            // min = min_price
+            // max = max_price
+            // a = screen_height
+            // b = 0.0
+            // let open_y = screen_height + ((candle.open - min_price) / price_range) * (0.0 - screen_height);
+            // let open_y = screen_height * (1.0 - (candle.open - min_price) / price_range);
+            for (i, candle) in candles.iter().enumerate() {
+                let open_y = screen_height * (1.0 - (candle.open - min_price) / price_range);
+                let close_y = screen_height * (1.0 - (candle.close - min_price) / price_range);
 
-            let thin_stroke = || -> Stroke {
-                Stroke {
-                    width,
-                    style: stroke::Style::Solid(palette.secondary.strong.text),
-                    line_cap: LineCap::Round,
-                    ..Stroke::default()
-                }
-            };
+                let top_y = open_y.min(close_y);
+                let height = (open_y - close_y).abs();
 
-            let wide_stroke = || -> Stroke {
-                Stroke {
-                    width: width * 3.0,
-                    style: stroke::Style::Solid(palette.secondary.strong.text),
-                    line_cap: LineCap::Round,
-                    ..Stroke::default()
-                }
-            };
-
-            frame.translate(Vector::new(center.x, center.y));
-            let minutes_portion =
-                Radians::from(hand_rotation(self.now.minute(), 60)) / 12.0;
-            let hour_hand_angle =
-                Radians::from(hand_rotation(self.now.hour(), 12))
-                    + minutes_portion;
-
-            frame.with_save(|frame| {
-                frame.rotate(hour_hand_angle);
-                frame.stroke(&short_hand, wide_stroke());
-            });
-
-            frame.with_save(|frame| {
-                frame.rotate(hand_rotation(self.now.minute(), 60));
-                frame.stroke(&long_hand, wide_stroke());
-            });
-
-            frame.with_save(|frame| {
-                let rotation = hand_rotation(self.now.second(), 60);
-
-                frame.rotate(rotation);
-                frame.stroke(&long_hand, thin_stroke());
-
-                let rotate_factor = if rotation < 180.0 { 1.0 } else { -1.0 };
-
-                frame.rotate(Degrees(-90.0 * rotate_factor));
-                frame.fill_text(canvas::Text {
-                    content: theme.to_string(),
-                    size: (radius / 15.0).into(),
-                    position: Point::new(
-                        (0.78 * radius) * rotate_factor,
-                        -width * 2.0,
-                    ),
-                    color: palette.secondary.strong.text,
-                    horizontal_alignment: if rotate_factor > 0.0 {
-                        alignment::Horizontal::Right
-                    } else {
-                        alignment::Horizontal::Left
+                let rectangle = Path::rectangle(
+                    Point {
+                        x: 80.0 + 40.0 * i as f32,
+                        y: top_y,
                     },
-                    vertical_alignment: alignment::Vertical::Bottom,
-                    font: Font::MONOSPACE,
-                    ..canvas::Text::default()
-                });
-            });
+                    Size {
+                        width: 30.0,
+                        height,
+                    },
+                );
 
-            // Draw clock numbers
-            for hour in 1..=12 {
-                let angle = Radians::from(hand_rotation(hour, 12))
-                    - Radians::from(Degrees(90.0));
-                let x = radius * angle.0.cos();
-                let y = radius * angle.0.sin();
-
-                frame.fill_text(canvas::Text {
-                    content: format!("{}", hour),
-                    size: (radius / 5.0).into(),
-                    position: Point::new(x * 0.82, y * 0.82),
-                    color: palette.secondary.strong.text,
-                    vertical_alignment: alignment::Vertical::Center,
-                    horizontal_alignment: alignment::Horizontal::Center,
-                    font: Font::MONOSPACE,
-                    ..canvas::Text::default()
-                });
+                frame.fill(&rectangle, palette.secondary.strong.color);
             }
 
-            // Draw ticks
-            for tick in 0..60 {
-                let angle = hand_rotation(tick, 60);
-                let width = if tick % 5 == 0 { 3.0 } else { 1.0 };
-
-                frame.with_save(|frame| {
-                    frame.rotate(angle);
-                    frame.fill(
-                        &Path::rectangle(
-                            Point::new(0.0, radius - 15.0),
-                            Size::new(width, 7.0),
-                        ),
-                        palette.secondary.strong.text,
-                    );
-                });
-            }
+            // for i in 0..3 {
+            //     let rectangle = Path::rectangle(Point {
+            //         x: center.x + 40.0 * i as f32,
+            //         y: center.y,
+            //     }, Size {
+            //         width: 30.0,
+            //         height: 80.0,
+            //     });
+            //
+            //     frame.fill(&rectangle, palette.secondary.strong.color);
+            // }
         });
 
-        vec![clock]
+        vec![rectangle]
     }
 }
 
@@ -277,7 +236,7 @@ fn window_resized_subscription(_: &State) -> Subscription<Message> {
 
 fn main() -> iced::Result {
     tracing_subscriber::fmt::init();
-    
+
     iced::application("Juicy Lemon", update, view)
         .theme(theme)
         .subscription(subscription)
