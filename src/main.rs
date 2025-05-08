@@ -3,17 +3,20 @@ mod ui;
 mod update;
 mod utils;
 mod view;
+mod graph;
 
 use std::sync::Arc;
-use iced::{Subscription, Task, time, Color};
+use iced::{Subscription, Task, time, Color, Element};
 use std::time::Duration;
 
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
-use iced::theme::{palette, Custom, Palette};
+use iced::theme::{Custom, Palette};
 use iced::widget::combo_box;
+use crate::graph::candle::Candle;
+use crate::graph::chart::Chart;
 
 #[derive(Debug, Clone)]
 enum Message {
@@ -45,7 +48,6 @@ impl WatchListItem {
     }
 }
 
-#[derive(Default)]
 struct State {
     instruments: Vec<Symbol>,
     watchlist: Vec<WatchListItem>,
@@ -54,6 +56,24 @@ struct State {
     error_message: String,
     symbol_select_state: combo_box::State<String>,
     selected_symbol: Option<String>,
+    candles: Vec<Candle>,
+    chart: Chart,
+}
+
+impl Default for State {
+    fn default() -> Self {
+        Self {
+            instruments: Vec::new(),
+            watchlist: Vec::new(),
+            loading: false,
+            input_text: String::new(),
+            error_message: String::new(),
+            symbol_select_state: combo_box::State::default(),
+            selected_symbol: None,
+            candles: Vec::new(),
+            chart: Chart::new(&Vec::new()),
+        }
+    }
 }
 
 fn theme(_: &State) -> Theme {
@@ -77,6 +97,8 @@ fn init() -> (State, Task<Message>) {
         loading: true,
         selected_symbol: None,
         symbol_select_state: combo_box::State::default(),
+        candles: Vec::new(),
+        chart: Chart::new(&Vec::new()),
     };
     (state, Task::perform(async {}, |_| Message::FetchSymbols))
 }

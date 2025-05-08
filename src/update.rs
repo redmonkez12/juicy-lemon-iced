@@ -1,11 +1,32 @@
-use std::fs;
-use std::fs::File;
-use std::io::Write;
-use crate::symbols::{fetch_symbol_prices, get_symbols, Symbol};
+use crate::graph::candle::Candle;
+use crate::graph::chart::Chart;
+use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols};
 use crate::utils::{get_current_select_state, get_default_select_state};
 use crate::{Message, State, WatchListItem};
 use iced::Task;
 use iced::widget::combo_box;
+use std::fs;
+use std::fs::File;
+use std::io::Write;
+
+fn parse_csv_data(csv_content: &str) -> Vec<Candle> {
+    let mut candles = Vec::new();
+
+    for line in csv_content.lines().skip(1) {
+        let fields: Vec<&str> = line.split(',').collect();
+        if fields.len() >= 6 {
+            let epoch = fields[0].parse::<i64>().ok();
+            let low = fields[2].parse::<f64>().unwrap_or(0.0);
+            let open = fields[3].parse::<f64>().unwrap_or(0.0);
+            let close = fields[4].parse::<f64>().unwrap_or(0.0);
+            let high = fields[5].parse::<f64>().unwrap_or(0.0);
+
+            candles.push(Candle::new(open, high, low, close, epoch));
+        }
+    }
+
+    candles
+}
 
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
@@ -17,10 +38,12 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             };
 
             if options.is_empty() {
-                options.push(format!("There are no results for - {}", state.input_text).to_string());
+                options
+                    .push(format!("There are no results for - {}", state.input_text).to_string());
             }
 
-            state.symbol_select_state = combo_box::State::with_selection(options, Some(&state.input_text));
+            state.symbol_select_state =
+                combo_box::State::with_selection(options, Some(&state.input_text));
             Task::none()
         }
         Message::FilterInput(input) => {
@@ -75,7 +98,11 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 return Task::perform(async {}, |_| Message::UpdateSelectOptions);
             }
 
-            let instrument = state.instruments.iter().find(|s| s.symbol == symbol).unwrap();
+            let instrument = state
+                .instruments
+                .iter()
+                .find(|s| s.symbol == symbol)
+                .unwrap();
 
             state.watchlist.push(WatchListItem::new(
                 symbol,
@@ -93,6 +120,17 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         Message::FetchSymbols => {
             println!("Fetching symbols");
             state.loading = true;
+
+            let csv_content = fs::read_to_string("data/btcusd.csv").unwrap();
+            let candles = parse_csv_data(&csv_content);
+
+            let mut chart = Chart::new(&candles);
+            chart.set_name("BTC/USDT".into());
+            chart.set_bear_color(237, 0, 0);
+            chart.set_bull_color(69, 178, 123);
+
+            state.chart = chart;
+
             Task::perform(
                 async move {
                     let cached: Option<Vec<Symbol>> = fs::read_to_string("symbols.json")

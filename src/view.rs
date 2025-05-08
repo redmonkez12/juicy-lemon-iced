@@ -3,6 +3,7 @@ use crate::{Message, State};
 use iced::widget::image::{self, Image};
 use iced::widget::{Column, Row, Rule, button, text};
 use iced::{Background, Element, Length, Padding, widget};
+use crate::graph::chart::Chart;
 
 fn vertical_rule() -> Column<'static, Message> {
     Column::new()
@@ -111,9 +112,9 @@ pub fn view(state: &State) -> Element<Message> {
 
         // watch_list = watch_list.push(table_row).push(Rule::horizontal(1));
     }
-
+    
     let layout = widget::row![
-        widget::container(widget::text("Graph"))
+        widget::container(state.chart.draw())
             .width(Length::FillPortion(1))
             .padding(Padding {
                 top: 10.0,
