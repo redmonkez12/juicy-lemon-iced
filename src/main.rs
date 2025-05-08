@@ -33,7 +33,7 @@ impl Candle {
     }
 
     fn get_color(&self) -> Color {
-        if self.open > self.close {
+        if self.close > self.open {
             Self::BULL_COLOR
         } else {
             Self::BEAR_COLOR
