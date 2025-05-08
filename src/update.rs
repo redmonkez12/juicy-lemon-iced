@@ -1,6 +1,4 @@
-use crate::graph::candle::Candle;
-use crate::graph::chart::Chart;
-use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols, get_candles};
+use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols};
 use crate::utils::{get_current_select_state, get_default_select_state};
 use crate::{Message, State, WatchListItem};
 use iced::Task;
@@ -11,7 +9,7 @@ use std::io::Write;
 
 // fn parse_csv_data(csv_content: &str) -> Vec<Candle> {
 //     let mut candles = Vec::new();
-// 
+//
 //     for line in csv_content.lines().skip(1) {
 //         let fields: Vec<&str> = line.split(',').collect();
 //         if fields.len() >= 6 {
@@ -20,24 +18,19 @@ use std::io::Write;
 //             let open = fields[3].parse::<f64>().unwrap_or(0.0);
 //             let close = fields[4].parse::<f64>().unwrap_or(0.0);
 //             let high = fields[5].parse::<f64>().unwrap_or(0.0);
-// 
+//
 //             candles.push(Candle::new(open, high, low, close, epoch));
 //         }
 //     }
-// 
+//
 //     candles
 // }
 
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
-        Message::CandlesFetched(candles) => {
-            let chart = Chart::new(&candles);
-            state.candles = candles.clone();
-            state.chart = chart;
-            println!("Candles fetched: {} candles", candles.len());
-
-            Task::perform(async {}, |_| Message::UpdateSelectOptions)
-        }
+        // Message::CandlesFetched(candles) => {
+        //     Task::perform(async {}, |_| Message::UpdateSelectOptions)
+        // }
         Message::WindowResized(size) => {
             state.width = size.width;
             state.height = size.height;
@@ -136,20 +129,22 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             state.input_text = "".to_string();
             state.error_message = "".to_string();
 
-            let symbol = match state.watchlist.last() {
-                Some(watchitem) => watchitem.symbol.clone(),
-                None => return Task::none(),
-            };
+            Task::none()
+            
+            // let symbol = match state.watchlist.last() {
+            //     Some(watchitem) => watchitem.symbol.clone(),
+            //     None => return Task::none(),
+            // };
 
-            Task::perform(
-                async move {
-                    match get_candles(&symbol).await {
-                        Ok(candles) => Message::CandlesFetched(candles),
-                        Err(err) => Message::FetchError(err),
-                    }
-                },
-                |msg| msg,
-            )
+            // Task::perform(
+            //     async move {
+            //         match get_candles(&symbol).await {
+            //             Ok(candles) => Message::CandlesFetched(candles),
+            //             Err(err) => Message::FetchError(err),
+            //         }
+            //     },
+            //     |msg| msg,
+            // )
         }
         Message::InitApp => {
             state.loading = true;

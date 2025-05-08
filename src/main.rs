@@ -5,18 +5,17 @@ mod update;
 mod utils;
 mod view;
 
-use iced::{Color, Element, Size, Subscription, Task, time, window};
 use std::sync::Arc;
+use iced::{Size, Subscription, Task, window, Color};
 use std::time::Duration;
 
-use crate::graph::candle::Candle;
-use crate::graph::chart::Chart;
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
 use iced::theme::{Custom, Palette};
-use iced::widget::combo_box;
+use iced::widget::{canvas, combo_box};
+use iced::time::{self};
 
 #[derive(Debug, Clone)]
 enum Message {
@@ -26,7 +25,6 @@ enum Message {
     SymbolRemove(String),
     FetchError(String),
     PricesUpdated(Vec<SymbolWithPrice>),
-    CandlesFetched(Vec<Candle>),
     FilterInput(String),
     UpdateSelectOptions,
     InitApp,
@@ -58,8 +56,6 @@ struct State {
     error_message: String,
     symbol_select_state: combo_box::State<String>,
     selected_symbol: Option<String>,
-    candles: Vec<Candle>,
-    chart: Chart,
     width: f32,
     height: f32,
 }
@@ -74,8 +70,6 @@ impl Default for State {
             error_message: String::new(),
             symbol_select_state: combo_box::State::default(),
             selected_symbol: None,
-            candles: Vec::new(),
-            chart: Chart::new(&Vec::new()),
             width: 0.0,
             height: 0.0,
         }
@@ -106,8 +100,6 @@ fn init() -> (State, Task<Message>) {
         loading: true,
         selected_symbol: None,
         symbol_select_state: combo_box::State::default(),
-        candles: Vec::new(),
-        chart: Chart::new(&Vec::new()),
         width: 0.0,
         height: 0.0,
     };
@@ -127,6 +119,8 @@ fn window_resized_subscription(_: &State) -> Subscription<Message> {
 }
 
 fn main() -> iced::Result {
+    tracing_subscriber::fmt::init();
+
     iced::application("Juicy Lemon", update, view)
         .theme(theme)
         .subscription(subscription)
