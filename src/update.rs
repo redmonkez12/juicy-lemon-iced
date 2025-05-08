@@ -1,4 +1,4 @@
-use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols};
+use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols, get_candles};
 use crate::utils::{get_current_select_state, get_default_select_state};
 use crate::{Message, State, WatchListItem};
 use iced::Task;
@@ -28,9 +28,10 @@ use std::io::Write;
 
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
-        // Message::CandlesFetched(candles) => {
-        //     Task::perform(async {}, |_| Message::UpdateSelectOptions)
-        // }
+        Message::CandlesFetched(candles) => {
+            state.candles = candles;
+            Task::perform(async {}, |_| Message::UpdateSelectOptions)
+        }
         Message::WindowResized(size) => {
             state.width = size.width;
             state.height = size.height;
@@ -139,22 +140,20 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             state.input_text = "".to_string();
             state.error_message = "".to_string();
 
-            Task::none()
+            let symbol = match state.watchlist.last() {
+                Some(watchitem) => watchitem.symbol.clone(),
+                None => return Task::none(),
+            };
             
-            // let symbol = match state.watchlist.last() {
-            //     Some(watchitem) => watchitem.symbol.clone(),
-            //     None => return Task::none(),
-            // };
-            // 
-            // Task::perform(
-            //     async move {
-            //         match get_candles(&symbol).await {
-            //             Ok(candles) => Message::CandlesFetched(candles),
-            //             Err(err) => Message::FetchError(err),
-            //         }
-            //     },
-            //     |msg| msg,
-            // )
+            Task::perform(
+                async move {
+                    match get_candles(&symbol).await {
+                            Ok(candles) => Message::CandlesFetched(candles),
+                        Err(err) => Message::FetchError(err),
+                    }
+                },
+                |msg| msg,
+            )
         }
         Message::InitApp => {
             state.loading = true;

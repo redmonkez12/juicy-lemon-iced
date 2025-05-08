@@ -22,19 +22,19 @@ use iced::widget::{canvas, combo_box};
 pub const BULL_COLOR: Color = Color::from_rgb(66.0 / 255.0, 149.0 / 255.0, 137.0 / 255.0);
 pub const BEAR_COLOR: Color = Color::from_rgb(252.0 / 255.0, 79.0 / 255.0, 111.0 / 255.0);
 
+#[derive(Debug, Clone)]
 struct Candle {
     open: f32,
     close: f32,
 }
 
 impl Candle {
-
     fn new(open: f32, close: f32) -> Self {
         Self { open, close }
     }
 
     fn get_color(&self) -> Color {
-        if self.close > self.open { 
+        if self.close > self.open {
             BULL_COLOR
         } else {
             BEAR_COLOR
@@ -44,9 +44,16 @@ impl Candle {
 
 fn load_candles() -> Vec<Candle> {
     vec![
-        Candle::new(100.0, 60.0),
-        Candle::new(60.0, 30.0),
-        Candle::new(30.0, 60.0),
+        Candle::new(100000.0, 99200.0),
+        Candle::new(99200.0, 94600.0),
+        Candle::new(94600.0, 97987.0),
+        Candle::new(97987.0, 103000.0),
+        Candle::new(103000.0, 108500.0),
+        Candle::new(108500.0, 110000.0),
+        Candle::new(110000.0, 107500.0),
+        Candle::new(107500.0, 109500.0),
+        Candle::new(109500.0, 112000.0),
+        Candle::new(112000.0, 115000.0),
     ]
 }
 
@@ -58,6 +65,7 @@ enum Message {
     SymbolRemove(String),
     FetchError(String),
     PricesUpdated(Vec<SymbolWithPrice>),
+    CandlesFetched(Vec<Candle>),
     FilterInput(String),
     UpdateSelectOptions,
     InitApp,
@@ -82,6 +90,11 @@ impl WatchListItem {
     }
 }
 
+fn price_to_y(price: f32, min_price: f32, max_price: f32, height: f32) -> f32 {
+    let normalized = (price - min_price) / (max_price - min_price);
+    height - normalized * height
+}
+
 impl<Message> canvas::Program<Message> for State {
     type State = ();
 
@@ -100,14 +113,29 @@ impl<Message> canvas::Program<Message> for State {
 
             // let center = frame.center();
 
-            let candles = load_candles();
-
-            let max_price = candles.iter().fold(0.0f32, |acc: f32, c| acc.max(c.open));
-            let min_price = candles.iter().fold(0.0f32, |acc: f32, c| acc.min(c.open));
+            // let candles = load_candles();
+            let candles = &self.candles;
+            
+            let max_price = candles
+                .iter()
+                .fold(0.0f32, |acc, c| acc.max(c.open.max(c.close)));
+            let min_price = candles
+                .iter()
+                .fold(f32::MAX, |acc, c| acc.min(c.open.min(c.close)));
             let price_range = max_price - min_price;
 
             let settings = window::Settings::default();
-            let screen_height = settings.size.height;
+            let screen_height = settings.size.height - 40.0; // padding
+            let screen_width = settings.size.width - 251.0 - 40.0; // sidebar, padding
+
+            // 0
+            // 1000
+
+            // 100000
+            // 90000
+
+            // 10000
+            // height / range - one point
 
             // mapped_x = a + ((x - min) / (max - min)) * (b - a)
             // let normalized = (x - min) / (max - min);
@@ -119,20 +147,28 @@ impl<Message> canvas::Program<Message> for State {
             // b = 0.0
             // let open_y = screen_height + ((candle.open - min_price) / price_range) * (0.0 - screen_height);
             // let open_y = screen_height * (1.0 - (candle.open - min_price) / price_range);
-            for (i, candle) in candles.iter().enumerate() {
-                let open_y = screen_height * (1.0 - (candle.open - min_price) / price_range);
-                let close_y = screen_height * (1.0 - (candle.close - min_price) / price_range);
+            let unit_width = screen_width / candles.len() as f32;
+            let candle_width = unit_width * 0.9;
+            let candle_spacing = unit_width * 0.1;
 
-                let top_y = open_y.min(close_y);
-                let height = (open_y - close_y).abs();
+            println!("Price range - {}", price_range);
+
+            for (i, candle) in candles.iter().enumerate() {
+                let open_y = price_to_y(candle.open, min_price, max_price, screen_height);
+                let close_y = price_to_y(candle.close, min_price, max_price, screen_height);
+                let height = (open_y - close_y).abs().max(1.0);
+
+                println!("{}: {} - {}", i, open_y, close_y);
+
+                let x_position = i as f32 * unit_width;
 
                 let rectangle = Path::rectangle(
                     Point {
-                        x: 80.0 + 40.0 * i as f32,
-                        y: top_y,
+                        x: x_position + (candle_spacing / 2.0),
+                        y: open_y.min(close_y),
                     },
                     Size {
-                        width: 30.0,
+                        width: candle_width,
                         height,
                     },
                 );
@@ -171,7 +207,7 @@ struct State {
     error_message: String,
     symbol_select_state: combo_box::State<String>,
     selected_symbol: Option<String>,
-    // candles: Vec<Candle>,
+    candles: Vec<Candle>,
     // chart: Chart,
     width: f32,
     height: f32,
@@ -189,7 +225,7 @@ impl Default for State {
             error_message: String::new(),
             symbol_select_state: combo_box::State::default(),
             selected_symbol: None,
-            // candles: Vec::new(),
+            candles: Vec::new(),
             // chart: Chart::new(&Vec::new()),
             width: 0.0,
             height: 0.0,
@@ -213,7 +249,7 @@ fn theme(state: &State) -> Theme {
     //
     // Theme::Custom(custom_theme)
 
-    Theme::ALL[(state.now.timestamp() as usize / 10) % Theme::ALL.len()].clone()
+    Theme::CatppuccinFrappe
 }
 
 fn init() -> (State, Task<Message>) {
@@ -225,7 +261,7 @@ fn init() -> (State, Task<Message>) {
         loading: true,
         selected_symbol: None,
         symbol_select_state: combo_box::State::default(),
-        // candles: Vec::new(),
+        candles: Vec::new(),
         // chart: Chart::new(&Vec::new()),
         width: 0.0,
         height: 0.0,
