@@ -42,6 +42,16 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
 
             Task::none()
         }
+        Message::Tick(local_time) => {
+            let now = local_time;
+
+            if now != state.now {
+                state.now = now;
+                state.clock.clear();
+            }
+            
+            Task::none()
+        }
         Message::UpdateSelectOptions => {
             let mut options: Vec<String> = if state.input_text.is_empty() {
                 get_default_select_state(&state.instruments, &state.watchlist)
@@ -135,7 +145,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             //     Some(watchitem) => watchitem.symbol.clone(),
             //     None => return Task::none(),
             // };
-
+            // 
             // Task::perform(
             //     async move {
             //         match get_candles(&symbol).await {

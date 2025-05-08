@@ -1,8 +1,8 @@
 use crate::ui::instrument_select::render_select;
 use crate::{Message, State};
 use iced::widget::image::{self, Image};
-use iced::widget::{Column, Row, Rule, button, text};
-use iced::{Background, Element, Length, Padding, widget};
+use iced::widget::{Column, Row, Rule, button, text, canvas, container};
+use iced::{Background, Element, Length, Padding, widget, Fill};
 
 fn vertical_rule() -> Column<'static, Message> {
     Column::new()
@@ -112,15 +112,18 @@ pub fn view(state: &State) -> Element<Message> {
         // watch_list = watch_list.push(table_row).push(Rule::horizontal(1));
     }
 
+    let canvas = canvas(state).width(Fill).height(Fill);
+
     let layout = widget::row![
-        widget::container(text("Graph").size(20).width(Length::Fill))
-            .width(Length::FillPortion(1))
-            .padding(Padding {
-                top: 0.0,
-                right: 0.0,
-                bottom: 0.0,
-                left: 0.0,
-            }),
+        container(canvas).padding(20),
+        // widget::container(state.chart.draw())
+        //     .width(Length::FillPortion(1))
+        //     .padding(Padding {
+        //         top: 0.0,
+        //         right: 0.0,
+        //         bottom: 0.0,
+        //         left: 0.0,
+        //     }),
         vertical_rule(),
         symbols_column,
     ];
