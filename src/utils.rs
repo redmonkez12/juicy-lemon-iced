@@ -1,5 +1,4 @@
 use std::collections::HashSet;
-use iced::widget::combo_box;
 use crate::symbols::{Instrument, Symbol};
 use crate::WatchListItem;
 
