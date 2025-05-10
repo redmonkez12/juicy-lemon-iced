@@ -1,51 +1,44 @@
-# Epic Trading Terminal
+# Juicy Lemon
 
-> A personal project to showcase my skills in systems programming, UI design, and real-time data handling — aiming to work at a company like Kraken.
+> A personal project to showcase my skills in Rust
 
-A high-performance trading terminal built in Rust.  
-It features a responsive GUI with `iced`, real-time integration with the Binance API, and a focus on clean architecture and speed.
+Juicy Lemon is a crypto watchlist application featuring a responsive, native GUI built with `iced`. It integrates in real time with the Binance API and emphasizes clean architecture and high performance.
 
 ---
 
-## 🔧 Why I Built This
+## Why I Built This
 
-I’m passionate about crypto, systems programming, and building powerful tools for traders.  
-This project helped me deepen my skills in:
+This project is part one of a series where I explore modern Rust UI libraries as alternatives to browser-based, React-dominated interfaces.
+
+- Part one uses `iced`
+- Part two will explore `egui`
+- Part three will use `dioxus`
+
+Through this project, I improved my skills in:
 
 - Writing safe, concurrent Rust code
-- Designing reactive UIs with `iced`
-- Handling WebSocket streams and REST APIs (Binance)
-- Building real-world, user-facing applications
+- Building reactive UIs with `iced`
+- Working with WebSocket streams and REST APIs
+- Creating real-world, user-facing applications in Rust
 
 ---
 
-## ⚙️ Features
+## Features
 
-- 🧊 Native UI with [`iced`](https://github.com/iced-rs/iced)
-- 🌐 Real-time Binance price updates
-- 📊 Order book visualization (in progress)
-- 🚀 Built with Rust for performance and safety
-- 📦 Modular codebase for future exchange support
+- Native, responsive UI built with [`iced`](https://github.com/iced-rs/iced)
+- Real-time Binance price tracking
+- Written entirely in Rust for performance and reliability
 
 ---
 
-## 🖼️ Preview
+## Preview
 
 ![Screenshot](./assets/terminal.png)
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Rust** – main language
-- **Iced** – cross-platform GUI
-- **Binance API** – real-time data source
-
----
-
-## 🚀 Running the Project
-
-```bash
-git clone https://github.com/yourname/epic-trading-terminal
-cd epic-trading-terminal
-cargo run
+- **Rust** – Core programming language
+- **Iced** – Cross-platform GUI framework
+- **Binance API** – Source for real-time market data  

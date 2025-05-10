@@ -4,7 +4,7 @@ use crate::utils::{get_current_select_state, get_default_select_state};
 use crate::{Message, State, WatchListItem};
 use iced::Task;
 use iced::widget::combo_box;
-use std::collections::VecDeque;
+use std::collections::{HashMap, VecDeque};
 use std::fs;
 use std::fs::File;
 use std::io::Write;
@@ -51,24 +51,24 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         }
         Message::CandlesFetched(candles, symbol) => {
             state.graph.clear();
+            
+            if let Some(timeframe) = state.selected_timeframe.clone() {
+                let symbol_entry = state.candles.entry(symbol.clone()).or_insert_with(HashMap::new);
+                let old_candles = symbol_entry.entry(timeframe.clone()).or_insert_with(VecDeque::new);
 
-            let old_candles = match state
-                .candles
-                .get(&symbol)
-                .and_then(|tf_map| tf_map.get(state.selected_timeframe.to_owned().as_ref().unwrap()))
-            {
-                Some(candles) => candles.clone(),
-                None => VecDeque::new(),
-            };
+                if let (Some(last_old), Some(last_new)) = (old_candles.back(), candles.last()) {
+                    if last_old.open_time == last_new.open_time {
+                        old_candles.pop_back();
+                        old_candles.push_back(last_new.clone());
+                    } else {
+                        old_candles.push_back(last_new.clone());
+                        old_candles.pop_front();
+                    }
+                } else {
+                    *old_candles = VecDeque::from(candles.clone());
+                }
+            }
 
-            let last_old_candle = old_candles.iter().last().unwrap();;
-            let last_new_candle = candles.last().unwrap();
-
-            state
-                .candles
-                .insert(symbol.clone(), VecDeque::from(candles.clone()));
-
-            println!("Candles fetched: {} candles", candles.len());
             Task::perform(async {}, |_| Message::UpdateSelectOptions)
         }
         Message::UpdateSelectOptions => {

@@ -80,7 +80,7 @@ impl<Message> canvas::Program<Message> for State {
                     }
                 }
             }
-
+            
             let max_price = current_candles
                 .iter()
                 .fold(0.0f32, |acc, c| acc.max(c.high.max(c.low)));
@@ -195,7 +195,7 @@ fn init() -> (State, Task<Message>) {
 
 fn subscription(state: &State) -> Subscription<Message> {
     if !state.instruments.is_empty() {
-        return time::every(Duration::from_secs(5)).map(|_| Message::RefetchData);
+        return time::every(Duration::from_secs(1)).map(|_| Message::RefetchData);
     }
 
     Subscription::none()
