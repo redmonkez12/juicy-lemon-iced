@@ -1,17 +1,17 @@
+mod candle;
 mod graph;
 mod symbols;
 mod ui;
 mod update;
 mod utils;
 mod view;
-mod candle;
 
+use iced::{Color, Point, Rectangle, Renderer, Size, Subscription, Task, mouse};
+use std::collections::{HashMap, VecDeque};
 use std::sync::Arc;
-use iced::{
-    Color, Point, Rectangle, Renderer, Size, Subscription, Task, mouse, window,
-};
 use std::time::Duration;
 
+use crate::candle::Candle;
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
@@ -20,18 +20,18 @@ use iced::theme::{Custom, Palette};
 use iced::time::{self};
 use iced::widget::canvas::{Cache, Geometry, Path, Stroke};
 use iced::widget::{canvas, combo_box};
-use crate::candle::Candle;
 
 #[derive(Debug, Clone)]
 enum Message {
     SymbolsFetched(Vec<Symbol>),
-    RefetchPrice,
+    RefetchData,
     AddSymbol(String),
+    ChangeTimeframe(String),
     SymbolRemove(String),
     SelectSymbol(String),
     FetchError(String),
     PricesUpdated(Vec<SymbolWithPrice>),
-    CandlesFetched(Vec<Candle>),
+    CandlesFetched(Vec<Candle>, String),
     FilterInput(String),
     UpdateSelectOptions,
     InitApp,
@@ -71,24 +71,31 @@ impl<Message> canvas::Program<Message> for State {
         _cursor: mouse::Cursor,
     ) -> Vec<Geometry> {
         let rectangle = self.graph.draw(renderer, bounds.size(), |frame| {
-            let candles = &self.candles;
-            
-            let max_price = candles
-                .iter()
-                .fold(0.0f32, |acc, c| acc.max(c.open.max(c.close)));
-            let min_price = candles
-                .iter()
-                .fold(f32::MAX, |acc, c| acc.min(c.open.min(c.close)));
+            let mut current_candles = VecDeque::new();
 
-            let settings = window::Settings::default();
-            let screen_height = settings.size.height - 40.0 - 50.0; // padding, text
-            let screen_width = settings.size.width - 251.0 - 40.0; // sidebar, padding
+            if let (Some(symbol), Some(timeframe)) = (&self.displayed_symbol, &self.selected_timeframe) {
+                if let Some(symbol_map) = self.candles.get(symbol) {
+                    if let Some(candles) = symbol_map.get(timeframe) {
+                        current_candles = candles.clone();
+                    }
+                }
+            }
 
-            let unit_width = screen_width / candles.len() as f32;
+            let max_price = current_candles
+                .iter()
+                .fold(0.0f32, |acc, c| acc.max(c.high.max(c.low)));
+            let min_price = current_candles
+                .iter()
+                .fold(f32::MAX, |acc, c| acc.min(c.high.min(c.low)));
+
+            let screen_height = bounds.height;
+            let screen_width = bounds.width;
+
+            let unit_width = screen_width / current_candles.len() as f32;
             let candle_width = unit_width * 0.9;
             let candle_spacing = unit_width * 0.1;
 
-            for (i, candle) in candles.iter().enumerate() {
+            for (i, candle) in current_candles.iter().enumerate() {
                 let open_y = price_to_y(candle.open, min_price, max_price, screen_height);
                 let close_y = price_to_y(candle.close, min_price, max_price, screen_height);
                 let low_y = price_to_y(candle.low, min_price, max_price, screen_height);
@@ -97,7 +104,7 @@ impl<Message> canvas::Program<Message> for State {
 
                 let x_position = i as f32 * unit_width;
                 let candle_center_x = x_position + (candle_spacing / 2.0) + (candle_width / 2.0);
-                
+
                 let wick = Path::line(
                     Point {
                         x: candle_center_x,
@@ -108,7 +115,7 @@ impl<Message> canvas::Program<Message> for State {
                         y: low_y,
                     },
                 );
-                
+
                 let rectangle = Path::rectangle(
                     Point {
                         x: x_position + (candle_spacing / 2.0),
@@ -129,6 +136,9 @@ impl<Message> canvas::Program<Message> for State {
     }
 }
 
+type Timeframe = String;
+type CandleCache = HashMap<String, HashMap<Timeframe, VecDeque<Candle>>>;
+
 struct State {
     instruments: Vec<Symbol>,
     watchlist: Vec<WatchListItem>,
@@ -136,27 +146,12 @@ struct State {
     input_text: String,
     error_message: String,
     symbol_select_state: combo_box::State<String>,
+    timeframe_select_state: combo_box::State<String>,
+    selected_timeframe: Option<String>,
     selected_symbol: Option<String>,
     displayed_symbol: Option<String>,
-    candles: Vec<Candle>,
+    candles: CandleCache,
     graph: Cache,
-}
-
-impl Default for State {
-    fn default() -> Self {
-        Self {
-            instruments: Vec::new(),
-            watchlist: Vec::new(),
-            loading: false,
-            input_text: String::new(),
-            error_message: String::new(),
-            symbol_select_state: combo_box::State::default(),
-            selected_symbol: None,
-            displayed_symbol: None,
-            candles: Vec::new(),
-            graph: Cache::new(),
-        }
-    }
 }
 
 fn theme(_: &State) -> Theme {
@@ -172,7 +167,6 @@ fn theme(_: &State) -> Theme {
     ));
 
     Theme::Custom(custom_theme)
-
 }
 
 fn init() -> (State, Task<Message>) {
@@ -182,10 +176,18 @@ fn init() -> (State, Task<Message>) {
         error_message: "".to_string(),
         input_text: "".to_string(),
         loading: true,
+        selected_timeframe: Some("1m".to_string()),
+        timeframe_select_state: combo_box::State::new(vec![
+            "1m".to_string(),
+            "5m".to_string(),
+            "1h".to_string(),
+            "4h".to_string(),
+            "1d".to_string(),
+        ]),
         selected_symbol: None,
         displayed_symbol: None,
         symbol_select_state: combo_box::State::default(),
-        candles: Vec::new(),
+        candles: HashMap::new(),
         graph: Cache::new(),
     };
     (state, Task::perform(async {}, |_| Message::InitApp))
@@ -193,7 +195,7 @@ fn init() -> (State, Task<Message>) {
 
 fn subscription(state: &State) -> Subscription<Message> {
     if !state.instruments.is_empty() {
-        return time::every(Duration::from_secs(5)).map(|_| Message::RefetchPrice);
+        return time::every(Duration::from_secs(5)).map(|_| Message::RefetchData);
     }
 
     Subscription::none()

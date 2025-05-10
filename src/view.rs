@@ -1,8 +1,9 @@
 use crate::ui::instrument_select::render_select;
+use crate::ui::timeframe_select::render_timeframe_select;
 use crate::{Message, State};
 use iced::widget::image::{self, Image};
 use iced::widget::{Column, Row, Rule, button, canvas, container, text};
-use iced::{Background, Element, Fill, Length, Padding, Theme, widget};
+use iced::{Background, Element, Fill, Length, Padding, Shrink, Theme, widget};
 
 fn vertical_rule() -> Column<'static, Message> {
     Column::new()
@@ -112,16 +113,23 @@ pub fn view(state: &State) -> Element<Message> {
     let canvas = canvas(state).width(Fill).height(Fill);
     let display_symbol = state.displayed_symbol.as_deref().unwrap_or_default();
 
+    let mut top_row = widget::row![
+        text(display_symbol)
+            .style(|theme: &Theme| text::Style {
+                color: Some(theme.palette().text),
+            })
+            .width(Fill)
+            .height(20)
+    ];
+
+    if !display_symbol.is_empty() {
+        top_row = top_row.push(render_timeframe_select(&state).size(14.0).width(150.0));
+    }
+
     let layout = widget::row![
         widget::column![
-            widget::row![
-                text(display_symbol)
-                    .style(|theme: &Theme| text::Style {
-                        color: Some(theme.palette().text),
-                    })
-                    .height(20)
-            ].padding(Padding {
-                top: 20.0,
+            top_row.spacing(10).padding(Padding {
+                top: 10.0,
                 left: 20.0,
                 bottom: 0.0,
                 right: 20.0,

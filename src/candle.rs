@@ -11,6 +11,7 @@ pub struct Candle {
     pub high: f32,
     pub low: f32,
     pub close: f32,
+    pub open_time: u64,
 }
 
 impl Candle {
@@ -23,10 +24,9 @@ impl Candle {
     }
 }
 
-pub async fn get_candles(symbol: &str) -> Result<Vec<Candle>, String> {
+pub async fn get_candles(symbol: &str, timeframe: &str) -> Result<Vec<Candle>, String> {
     let url = format!(
-        "https://api.binance.com/api/v3/klines?symbol={}&limit=100&interval=1d",
-        symbol
+        "https://api.binance.com/api/v3/klines?symbol={symbol}&limit=100&interval={timeframe}"
     );
 
     match reqwest::get(&url).await {
@@ -41,7 +41,7 @@ pub async fn get_candles(symbol: &str) -> Result<Vec<Candle>, String> {
                             }
 
                             Some(Candle {
-                                // open_time: entry[0].as_u64()?,
+                                open_time: entry[0].as_u64()?,
                                 open: entry[1].as_str()?.parse::<f32>().ok()?,
                                 high: entry[2].as_str()?.parse::<f32>().ok()?,
                                 low: entry[3].as_str()?.parse::<f32>().ok()?,
@@ -66,7 +66,7 @@ pub async fn get_candles(symbol: &str) -> Result<Vec<Candle>, String> {
                     Err(String::from("Failed to parse candle JSON"))
                 }
             }
-        },
+        }
         Err(err) => {
             println!("Error fetching candles: {}", err);
             Err(String::from("Failed to fetch candles"))
