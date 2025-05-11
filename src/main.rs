@@ -19,6 +19,7 @@ use iced::theme::{Custom, Palette};
 use iced::time::{self};
 use iced::widget::canvas::{Cache, Geometry, Path, Stroke, Text};
 use iced::widget::{canvas, combo_box};
+use crate::utils::{calculate_tick_count};
 
 #[derive(Debug, Clone)]
 enum Message {
@@ -58,6 +59,7 @@ fn price_to_y(price: f32, min_price: f32, max_price: f32, height: f32) -> f32 {
     height - normalized * height
 }
 
+
 impl<Message> canvas::Program<Message> for State {
     type State = ();
 
@@ -73,12 +75,18 @@ impl<Message> canvas::Program<Message> for State {
             let mut current_candles = VecDeque::new();
 
             if let (Some(symbol), Some(timeframe)) = (&self.displayed_symbol, &self.selected_timeframe) {
-                if let Some(symbol_map) = self.candles.get(symbol) {
+                if let Some(symbol_map) = self.candles.get(symbol.symbol.as_str()) {
                     if let Some(candles) = symbol_map.get(timeframe) {
                         current_candles = candles.clone();
                     }
                 }
             }
+
+            if current_candles.is_empty() {
+                return;
+            }
+            
+            let offset = 0.0;
 
             let max_price = current_candles
                 .iter()
@@ -87,34 +95,79 @@ impl<Message> canvas::Program<Message> for State {
                 .iter()
                 .fold(f32::MAX, |acc, c| acc.min(c.high.min(c.low)));
 
-            let screen_height = bounds.height;
+            let price_range = max_price - min_price;
+            let padding = price_range * 0.0;
+            let mut display_max = max_price + padding;
+            let mut display_min = min_price - padding;
+            
+            let screen_height = bounds.height - offset;
             let mut screen_width = bounds.width;
             let original_screen_width = screen_width;
 
-            let y_axis = Path::line(
-                Point {
-                    x: screen_width - 75.0,
-                    y: price_to_y(max_price, min_price, max_price, screen_height),
-                },
-                Point {
-                    x: screen_width - 75.0,
-                    y: price_to_y(min_price, min_price, max_price, screen_height),
-                },
-            );
-
             screen_width = screen_width - 85.0;
 
-            let unit_width = screen_width / current_candles.len() as f32;
+            let unit_width = screen_width / current_candles.len().max(1) as f32;
             let candle_width = unit_width * 0.9;
             let candle_spacing = unit_width * 0.1;
 
+            let (tick_count, tick_interval) = calculate_tick_count(display_min, display_max);
+            let tick_start = (display_min / tick_interval).floor() * tick_interval;
+
+            let y_axis = Path::line(
+                Point {
+                    x: original_screen_width - 75.0,
+                    y: 0.0,
+                },
+                Point {
+                    x: original_screen_width - 75.0,
+                    y: screen_height,
+                },
+            );
             frame.stroke(&y_axis, Stroke::default().with_color([0.976, 0.980, 0.984].into()));
 
+            display_min = tick_start;
+            display_max = tick_start + tick_count as f32 * tick_interval;
+            
+            for i in 0..tick_count {
+                let tick_value = tick_start + i as f32 * tick_interval;
+
+                let y_pos = price_to_y(tick_value, display_min, display_max, screen_height);
+
+                let tick_line = Path::line(
+                    Point {
+                        x: 0.0,
+                        y: y_pos - offset,
+                    },
+                    Point {
+                        x: original_screen_width - 75.0,
+                        y: y_pos - offset,
+                    },
+                );
+                frame.stroke(&tick_line, Stroke::default().with_color([0.2, 0.2, 0.2].into()));
+
+                println!("tick_value: {}", tick_value.to_string());
+                
+                frame.fill_text(Text {
+                    content: tick_value.to_string(),
+                    position: Point {
+                        x: original_screen_width - 70.0,
+                        y: y_pos - offset,
+                    },
+                    color: theme.palette().text,
+                    size: Pixels(12.0),
+                    line_height: Default::default(),
+                    font: Default::default(),
+                    horizontal_alignment: Horizontal::Left,
+                    vertical_alignment: Vertical::Center,
+                    shaping: Default::default(),
+                });
+            }
+
             for (i, candle) in current_candles.iter().enumerate() {
-                let open_y = price_to_y(candle.open, min_price, max_price, screen_height);
-                let close_y = price_to_y(candle.close, min_price, max_price, screen_height);
-                let low_y = price_to_y(candle.low, min_price, max_price, screen_height);
-                let high_y = price_to_y(candle.high, min_price, max_price, screen_height);
+                let open_y = price_to_y(candle.open, display_min, display_max, screen_height);
+                let close_y = price_to_y(candle.close, display_min, display_max, screen_height);
+                let low_y = price_to_y(candle.low, display_min, display_max, screen_height);
+                let high_y = price_to_y(candle.high, display_min, display_max, screen_height);
                 let height = (open_y - close_y).abs().max(1.0);
 
                 let x_position = i as f32 * unit_width;
@@ -123,18 +176,18 @@ impl<Message> canvas::Program<Message> for State {
                 let wick = Path::line(
                     Point {
                         x: candle_center_x,
-                        y: high_y,
+                        y: high_y - offset,
                     },
                     Point {
                         x: candle_center_x,
-                        y: low_y,
+                        y: low_y - offset,
                     },
                 );
 
                 let rectangle = Path::rectangle(
                     Point {
                         x: x_position + (candle_spacing / 2.0),
-                        y: open_y.min(close_y),
+                        y: open_y.min(close_y) - offset,
                     },
                     Size {
                         width: candle_width,
@@ -144,36 +197,6 @@ impl<Message> canvas::Program<Message> for State {
 
                 frame.fill(&rectangle, candle.get_color());
                 frame.stroke(&wick, Stroke::default().with_color(candle.get_color()));
-
-                frame.fill_text(Text {
-                    content: max_price.to_string(),
-                    position: Point {
-                        x: original_screen_width - 70.0,
-                        y: price_to_y(max_price, min_price, max_price, screen_height),
-                    },
-                    color: theme.palette().text,
-                    size: Pixels(14.0),
-                    line_height: Default::default(),
-                    font: Default::default(),
-                    horizontal_alignment: Horizontal::Left,
-                    vertical_alignment: Vertical::Top,
-                    shaping: Default::default(),
-                });
-
-                frame.fill_text(Text {
-                    content: min_price.to_string(),
-                    position: Point {
-                        x: original_screen_width - 70.0,
-                        y: price_to_y(min_price, min_price, max_price, screen_height) - 20.0,
-                    },
-                    color: theme.palette().text,
-                    size: Pixels(14.0),
-                    line_height: Default::default(),
-                    font: Default::default(),
-                    horizontal_alignment: Horizontal::Left,
-                    vertical_alignment: Vertical::Top,
-                    shaping: Default::default(),
-                });
             }
         });
 
@@ -183,6 +206,13 @@ impl<Message> canvas::Program<Message> for State {
 
 type Timeframe = String;
 type CandleCache = HashMap<String, HashMap<Timeframe, VecDeque<Candle>>>;
+
+#[derive(Debug, Clone)]
+struct DisplayedSymbol {
+    symbol: String,
+    timeframe: String,
+    decimals: usize,
+}
 
 struct State {
     instruments: Vec<Symbol>,
@@ -194,7 +224,7 @@ struct State {
     timeframe_select_state: combo_box::State<String>,
     selected_timeframe: Option<String>,
     selected_symbol: Option<String>,
-    displayed_symbol: Option<String>,
+    displayed_symbol: Option<DisplayedSymbol>,
     candles: CandleCache,
     graph: Cache,
 }

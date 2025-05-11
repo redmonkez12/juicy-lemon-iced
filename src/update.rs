@@ -1,7 +1,7 @@
 use crate::graph::candle::get_candles;
 use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols};
 use crate::utils::{get_current_select_state, get_default_select_state};
-use crate::{Message, State, WatchListItem};
+use crate::{DisplayedSymbol, Message, State, WatchListItem};
 use iced::Task;
 use iced::widget::combo_box;
 use std::collections::{HashMap, VecDeque};
@@ -12,32 +12,40 @@ use std::io::Write;
 pub fn update(state: &mut State, message: Message) -> Task<Message> {
     match message {
         Message::ChangeTimeframe(timeframe) => {
-            state.selected_timeframe = Some(timeframe);
+            state.selected_timeframe = Some(timeframe.clone());
 
-            let symbol = state.displayed_symbol.as_ref().cloned().unwrap();
-            let timeframe = state.selected_timeframe.as_ref().cloned().unwrap();
+            if let Some(displayed_symbol) = state.displayed_symbol.as_mut() {
+                displayed_symbol.timeframe = timeframe.clone();
+                let symbol = displayed_symbol.symbol.clone();
 
-            Task::perform(
-                async move {
-                    match get_candles(&symbol, &timeframe).await {
-                        Ok(candles) => Message::CandlesFetched(candles, symbol),
-                        Err(err) => Message::FetchError(err),
-                    }
-                },
-                |msg| msg,
-            )
+                Task::perform(
+                    async move {
+                        match get_candles(&symbol, &timeframe).await {
+                            Ok(candles) => Message::CandlesFetched(candles, symbol),
+                            Err(err) => Message::FetchError(err),
+                        }
+                    },
+                    |msg| msg,
+                )
+            } else {
+                Task::none()
+            }
         }
         Message::SelectSymbol(symbol) => {
-            if state.displayed_symbol == Some(symbol.clone()) {
-                return Task::none();
+            if let Some(displayed_symbol) = &state.displayed_symbol {
+                if displayed_symbol.symbol == symbol {
+                    return Task::none();
+                }
             }
 
             state.graph.clear();
-            state.displayed_symbol = Some(symbol.clone());
 
             println!("Symbol selected: {}", symbol);
 
-            let timeframe = state.selected_timeframe.as_ref().cloned().unwrap();
+            let timeframe = match state.selected_timeframe.as_ref() {
+                Some(timeframe) => timeframe.clone(),
+                None => return Task::none(),
+            };
 
             Task::perform(
                 async move {
@@ -51,10 +59,15 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         }
         Message::CandlesFetched(candles, symbol) => {
             state.graph.clear();
-            
+
             if let Some(timeframe) = state.selected_timeframe.clone() {
-                let symbol_entry = state.candles.entry(symbol.clone()).or_insert_with(HashMap::new);
-                let old_candles = symbol_entry.entry(timeframe.clone()).or_insert_with(VecDeque::new);
+                let symbol_entry = state
+                    .candles
+                    .entry(symbol.clone())
+                    .or_insert_with(HashMap::new);
+                let old_candles = symbol_entry
+                    .entry(timeframe.clone())
+                    .or_insert_with(VecDeque::new);
 
                 if let (Some(last_old), Some(last_new)) = (old_candles.back(), candles.last()) {
                     if last_old.open_time == last_new.open_time {
@@ -101,9 +114,15 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 return Task::perform(async {}, |_| Message::UpdateSelectOptions);
             }
 
-            if Some(symbol) == state.displayed_symbol {
-                let new_symbol = state.watchlist.first().unwrap().symbol.clone();
-                return Task::perform(async {}, move |_| Message::SelectSymbol(new_symbol.clone()));
+            if let Some(displayed_symbol) = &state.displayed_symbol {
+                if Some(symbol) == Some(displayed_symbol.symbol.clone()) {
+                    let new_symbol = state.watchlist.first().unwrap().symbol.clone();
+                    return Task::perform(async {}, move |_| {
+                        Message::SelectSymbol(new_symbol.clone())
+                    });
+                }
+            } else {
+                return Task::none();
             }
 
             Task::perform(async {}, |_| Message::UpdateSelectOptions)
@@ -132,15 +151,25 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
 
             let symbols: Vec<String> = state.watchlist.iter().map(|s| s.symbol.clone()).collect();
 
+            let symbol = match state.displayed_symbol.as_ref() {
+                Some(s) => s.clone(),
+                None => return Task::none(),
+            };
+
+            let timeframe = match state.selected_timeframe.as_ref() {
+                Some(tf) => tf.clone(),
+                None => return Task::none(),
+            };
+
             Task::batch(vec![
                 Task::perform(
                     {
-                        let symbol = state.displayed_symbol.as_ref().cloned().unwrap();
-                        let timeframe = state.selected_timeframe.as_ref().cloned().unwrap();
+                        let symbol_str = symbol.symbol.clone();
+                        let timeframe_str = timeframe.clone();
 
                         async move {
-                            match get_candles(&symbol, &timeframe).await {
-                                Ok(candles) => Message::CandlesFetched(candles, symbol),
+                            match get_candles(&symbol_str, &timeframe_str).await {
+                                Ok(candles) => Message::CandlesFetched(candles, symbol_str),
                                 Err(err) => Message::FetchError(err),
                             }
                         }
@@ -170,8 +199,6 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 return Task::perform(async {}, |_| Message::UpdateSelectOptions);
             }
 
-            state.displayed_symbol = Some(symbol.clone());
-
             let instrument = state
                 .instruments
                 .iter()
@@ -194,13 +221,27 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 None => return Task::none(),
             };
 
-            let timeframe = state.selected_timeframe.as_ref().cloned().unwrap();
+            let timeframe = match state.selected_timeframe.as_ref() {
+                Some(timeframe) => timeframe.clone(),
+                None => return Task::none(),
+            };
+
+            state.displayed_symbol = Some(DisplayedSymbol {
+                timeframe: timeframe.clone(),
+                symbol: symbol.clone(),
+                decimals: instrument.decimals,
+            });
 
             Task::perform(
-                async move {
-                    match get_candles(&symbol, &timeframe).await {
-                        Ok(candles) => Message::CandlesFetched(candles, symbol),
-                        Err(err) => Message::FetchError(err),
+                {
+                    let symbol = symbol.clone();
+                    let timeframe = timeframe.clone();
+                    
+                    async move {
+                        match get_candles(&symbol, &timeframe).await {
+                            Ok(candles) => Message::CandlesFetched(candles, symbol),
+                            Err(err) => Message::FetchError(err),
+                        }
                     }
                 },
                 |msg| msg,

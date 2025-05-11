@@ -71,3 +71,38 @@ pub fn get_default_select_state(
         .map(|i| i.symbol.clone())
         .collect()
 }
+
+pub fn calculate_tick_count(min: f32, max: f32) -> (usize, f32) {
+    let range = max - min;
+    let nice_step = nice_step_from_range(range);
+    let tick_min = (min / nice_step).floor() * nice_step;
+    let tick_max = (max / nice_step).ceil() * nice_step;
+    let tick_count = ((tick_max - tick_min) / nice_step).round() as usize + 1;
+
+    (tick_count, nice_step)
+}
+
+pub fn nice_step_from_range(range: f32) -> f32 {
+    let exponent = range.log10().floor();
+    let base = 10f32.powf(exponent);
+
+    let fraction = range / base;
+
+    let nice_fraction = if fraction <= 1.0 {
+        0.1
+    } else if fraction <= 2.0 {
+        0.2
+    } else if fraction <= 5.0 {
+        0.5
+    } else if fraction <= 10.0 {
+        1.0
+    } else if fraction <= 20.0 {
+        2.0
+    } else if fraction <= 50.0 {
+        5.0
+    } else {
+        10.0
+    };
+
+    nice_fraction * base
+}
