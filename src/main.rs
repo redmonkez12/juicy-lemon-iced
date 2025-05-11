@@ -1,4 +1,3 @@
-mod candle;
 mod graph;
 mod symbols;
 mod ui;
@@ -6,19 +5,19 @@ mod update;
 mod utils;
 mod view;
 
-use iced::{Color, Point, Rectangle, Renderer, Size, Subscription, Task, mouse};
+use iced::{mouse, Color, Pixels, Point, Rectangle, Renderer, Size, Subscription, Task};
 use std::collections::{HashMap, VecDeque};
 use std::sync::Arc;
 use std::time::Duration;
-
-use crate::candle::Candle;
+use iced::alignment::{Horizontal, Vertical};
+use graph::candle::Candle;
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
 use iced::Theme;
 use iced::theme::{Custom, Palette};
 use iced::time::{self};
-use iced::widget::canvas::{Cache, Geometry, Path, Stroke};
+use iced::widget::canvas::{Cache, Geometry, Path, Stroke, Text};
 use iced::widget::{canvas, combo_box};
 
 #[derive(Debug, Clone)]
@@ -66,7 +65,7 @@ impl<Message> canvas::Program<Message> for State {
         &self,
         _state: &Self::State,
         renderer: &Renderer,
-        _: &Theme,
+        theme: &Theme,
         bounds: Rectangle,
         _cursor: mouse::Cursor,
     ) -> Vec<Geometry> {
@@ -80,7 +79,7 @@ impl<Message> canvas::Program<Message> for State {
                     }
                 }
             }
-            
+
             let max_price = current_candles
                 .iter()
                 .fold(0.0f32, |acc, c| acc.max(c.high.max(c.low)));
@@ -89,11 +88,27 @@ impl<Message> canvas::Program<Message> for State {
                 .fold(f32::MAX, |acc, c| acc.min(c.high.min(c.low)));
 
             let screen_height = bounds.height;
-            let screen_width = bounds.width;
+            let mut screen_width = bounds.width;
+            let original_screen_width = screen_width;
+
+            let y_axis = Path::line(
+                Point {
+                    x: screen_width - 75.0,
+                    y: price_to_y(max_price, min_price, max_price, screen_height),
+                },
+                Point {
+                    x: screen_width - 75.0,
+                    y: price_to_y(min_price, min_price, max_price, screen_height),
+                },
+            );
+
+            screen_width = screen_width - 85.0;
 
             let unit_width = screen_width / current_candles.len() as f32;
             let candle_width = unit_width * 0.9;
             let candle_spacing = unit_width * 0.1;
+
+            frame.stroke(&y_axis, Stroke::default().with_color([0.976, 0.980, 0.984].into()));
 
             for (i, candle) in current_candles.iter().enumerate() {
                 let open_y = price_to_y(candle.open, min_price, max_price, screen_height);
@@ -129,6 +144,36 @@ impl<Message> canvas::Program<Message> for State {
 
                 frame.fill(&rectangle, candle.get_color());
                 frame.stroke(&wick, Stroke::default().with_color(candle.get_color()));
+
+                frame.fill_text(Text {
+                    content: max_price.to_string(),
+                    position: Point {
+                        x: original_screen_width - 70.0,
+                        y: price_to_y(max_price, min_price, max_price, screen_height),
+                    },
+                    color: theme.palette().text,
+                    size: Pixels(14.0),
+                    line_height: Default::default(),
+                    font: Default::default(),
+                    horizontal_alignment: Horizontal::Left,
+                    vertical_alignment: Vertical::Top,
+                    shaping: Default::default(),
+                });
+
+                frame.fill_text(Text {
+                    content: min_price.to_string(),
+                    position: Point {
+                        x: original_screen_width - 70.0,
+                        y: price_to_y(min_price, min_price, max_price, screen_height) - 20.0,
+                    },
+                    color: theme.palette().text,
+                    size: Pixels(14.0),
+                    line_height: Default::default(),
+                    font: Default::default(),
+                    horizontal_alignment: Horizontal::Left,
+                    vertical_alignment: Vertical::Top,
+                    shaping: Default::default(),
+                });
             }
         });
 

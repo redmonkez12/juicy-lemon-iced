@@ -1,4 +1,4 @@
-use crate::candle::get_candles;
+use crate::graph::candle::get_candles;
 use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols};
 use crate::utils::{get_current_select_state, get_default_select_state};
 use crate::{Message, State, WatchListItem};
