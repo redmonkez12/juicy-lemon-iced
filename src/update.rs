@@ -236,7 +236,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 {
                     let symbol = symbol.clone();
                     let timeframe = timeframe.clone();
-                    
+
                     async move {
                         match get_candles(&symbol, &timeframe).await {
                             Ok(candles) => Message::CandlesFetched(candles, symbol),

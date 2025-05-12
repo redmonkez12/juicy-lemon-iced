@@ -8,4 +8,3 @@ iced = { version = "0.13.1", features = ["wgpu", "image", "tokio", "canvas", "de
 serde = { version = "1.0.219", features = ["derive"] }
 reqwest = { version = "0.12.15", features = ["blocking", "json"] }
 serde_json = "1.0"
-tracing-subscriber = "0.3"

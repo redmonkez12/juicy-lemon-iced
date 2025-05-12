@@ -1,5 +1,5 @@
-use serde::{Deserialize, Serialize};
 use crate::utils::get_decimals;
+use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Debug)]
 pub struct Filter {
@@ -61,9 +61,7 @@ pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
     }
 }
 
-pub async fn fetch_symbol_prices(
-    symbols: Vec<String>,
-) -> Result<Vec<SymbolWithPrice>, String> {
+pub async fn fetch_symbol_prices(symbols: Vec<String>) -> Result<Vec<SymbolWithPrice>, String> {
     let url = format!(
         "https://www.binance.com/api/v3/ticker/price?symbols=[{}]",
         symbols
@@ -72,29 +70,27 @@ pub async fn fetch_symbol_prices(
             .collect::<Vec<_>>()
             .join(",")
     );
-    
+
     println!("Fetching prices: {}", url);
 
     match reqwest::get(&url).await {
-        Ok(response) => {
-            match response.text().await {
-                Ok(body) => {
-                    println!("Response body: {}", body);
+        Ok(response) => match response.text().await {
+            Ok(body) => {
+                println!("Response body: {}", body);
 
-                    match serde_json::from_str::<Vec<SymbolWithPrice>>(&body) {
-                        Ok(json) => Ok(json),
-                        Err(err) => {
-                            println!("Error parsing JSON: {}", err);
-                            Err(String::from("Failed to parse JSON"))
-                        }
+                match serde_json::from_str::<Vec<SymbolWithPrice>>(&body) {
+                    Ok(json) => Ok(json),
+                    Err(err) => {
+                        println!("Error parsing JSON: {}", err);
+                        Err(String::from("Failed to parse JSON"))
                     }
                 }
-                Err(err) => {
-                    println!("Error reading response body: {}", err);
-                    Err(String::from("Failed to read response body"))
-                }
             }
-        }
+            Err(err) => {
+                println!("Error reading response body: {}", err);
+                Err(String::from("Failed to read response body"))
+            }
+        },
         Err(err) => {
             println!("Error: {}", err);
             Err(String::from("Cannot fetch price"))

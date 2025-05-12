@@ -1,17 +1,16 @@
-use std::collections::HashSet;
-use crate::symbols::{Instrument, Symbol};
 use crate::WatchListItem;
+use crate::symbols::{Instrument, Symbol};
+use std::collections::HashSet;
 
 pub fn get_decimals(instrument: &Instrument) -> usize {
     let mut decimals: usize = 8;
     if let Some(found_decimals) = instrument.filters.iter().find_map(|f| {
         if f.filter_type == "PRICE_FILTER" {
-            let decimal_size = f.tick_size
+            let decimal_size = f
+                .tick_size
                 .as_deref()
                 .and_then(|s| s.parse::<f64>().ok())
-                .map(|n| {
-                    n.to_string().split('.').nth(1).map_or(0, |frac| frac.len())
-                })
+                .map(|n| n.to_string().split('.').nth(1).map_or(0, |frac| frac.len()))
                 .unwrap_or(0);
 
             Some(decimal_size)
@@ -21,7 +20,7 @@ pub fn get_decimals(instrument: &Instrument) -> usize {
     }) {
         decimals = found_decimals;
     }
-    
+
     decimals
 }
 
@@ -32,15 +31,15 @@ pub fn get_current_select_state(
 ) -> Vec<String> {
     let lowercase_input = input.to_lowercase();
 
-    let watchlist_symbols: HashSet<String> = watchlist.iter()
-        .map(|item| item.symbol.clone())
-        .collect();
+    let watchlist_symbols: HashSet<String> =
+        watchlist.iter().map(|item| item.symbol.clone()).collect();
 
     let mut sorted_instruments = instruments
         .iter()
         .filter_map(|i| {
             if i.symbol.to_lowercase().contains(&lowercase_input)
-                && !watchlist_symbols.contains(&i.symbol) {
+                && !watchlist_symbols.contains(&i.symbol)
+            {
                 Some(i.symbol.clone())
             } else {
                 None
@@ -60,9 +59,8 @@ pub fn get_default_select_state(
     let mut sorted_instruments: Vec<&Symbol> = instruments.iter().collect();
     sorted_instruments.sort_by_key(|i| i.symbol.clone());
 
-    let watchlist_symbols: HashSet<&str> = watchlist.iter()
-        .map(|item| item.symbol.as_str())
-        .collect();
+    let watchlist_symbols: HashSet<&str> =
+        watchlist.iter().map(|item| item.symbol.as_str()).collect();
 
     sorted_instruments
         .into_iter()

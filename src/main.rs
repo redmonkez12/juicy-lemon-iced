@@ -5,21 +5,20 @@ mod update;
 mod utils;
 mod view;
 
-use iced::{mouse, Color, Pixels, Point, Rectangle, Renderer, Size, Subscription, Task};
-use std::collections::{HashMap, VecDeque};
-use std::sync::Arc;
-use std::time::Duration;
-use iced::alignment::{Horizontal, Vertical};
-use graph::candle::Candle;
+use crate::graph::axis::YAxisRenderer;
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
+use graph::candle::Candle;
 use iced::Theme;
 use iced::theme::{Custom, Palette};
 use iced::time::{self};
 use iced::widget::canvas::{Cache, Geometry, Path, Stroke, Text};
 use iced::widget::{canvas, combo_box};
-use crate::utils::{calculate_tick_count};
+use iced::{Color, Pixels, Point, Rectangle, Renderer, Size, Subscription, Task, mouse};
+use std::collections::{HashMap, VecDeque};
+use std::sync::Arc;
+use std::time::Duration;
 
 #[derive(Debug, Clone)]
 enum Message {
@@ -59,7 +58,6 @@ fn price_to_y(price: f32, min_price: f32, max_price: f32, height: f32) -> f32 {
     height - normalized * height
 }
 
-
 impl<Message> canvas::Program<Message> for State {
     type State = ();
 
@@ -74,7 +72,9 @@ impl<Message> canvas::Program<Message> for State {
         let rectangle = self.graph.draw(renderer, bounds.size(), |frame| {
             let mut current_candles = VecDeque::new();
 
-            if let (Some(symbol), Some(timeframe)) = (&self.displayed_symbol, &self.selected_timeframe) {
+            if let (Some(symbol), Some(timeframe)) =
+                (&self.displayed_symbol, &self.selected_timeframe)
+            {
                 if let Some(symbol_map) = self.candles.get(symbol.symbol.as_str()) {
                     if let Some(candles) = symbol_map.get(timeframe) {
                         current_candles = candles.clone();
@@ -85,83 +85,39 @@ impl<Message> canvas::Program<Message> for State {
             if current_candles.is_empty() {
                 return;
             }
-            
-            let offset = 0.0;
 
             let max_price = current_candles
                 .iter()
-                .fold(0.0f32, |acc, c| acc.max(c.high.max(c.low)));
+                .fold(f32::MIN, |acc, c| acc.max(c.high.max(c.low)));
             let min_price = current_candles
                 .iter()
                 .fold(f32::MAX, |acc, c| acc.min(c.high.min(c.low)));
 
+            let offset = 20.0;
             let price_range = max_price - min_price;
-            let padding = price_range * 0.0;
-            let mut display_max = max_price + padding;
-            let mut display_min = min_price - padding;
-            
+            let padding = price_range * 0.1;
+            let display_max = max_price + padding;
+            let display_min = min_price - padding;
+
             let screen_height = bounds.height - offset;
-            let mut screen_width = bounds.width;
-            let original_screen_width = screen_width;
+            let screen_width = bounds.width;
 
-            screen_width = screen_width - 85.0;
+            let y_axis = YAxisRenderer {
+                screen_width,
+                screen_height,
+                display_min,
+                display_max,
+                offset,
+            };
 
-            let unit_width = screen_width / current_candles.len().max(1) as f32;
+            let (tick_start, tick_count, tick_interval) = y_axis.render_axis(frame);
+            let (display_min, display_max) = y_axis.render_values(frame, tick_start, tick_count, tick_interval, theme);
+
+            println!("Display min: {}, max: {}", display_min, display_max);
+
+            let unit_width = (screen_width - 85.0) / current_candles.len().max(1) as f32;
             let candle_width = unit_width * 0.9;
             let candle_spacing = unit_width * 0.1;
-
-            let (tick_count, tick_interval) = calculate_tick_count(display_min, display_max);
-            let tick_start = (display_min / tick_interval).floor() * tick_interval;
-
-            let y_axis = Path::line(
-                Point {
-                    x: original_screen_width - 75.0,
-                    y: 0.0,
-                },
-                Point {
-                    x: original_screen_width - 75.0,
-                    y: screen_height,
-                },
-            );
-            frame.stroke(&y_axis, Stroke::default().with_color([0.976, 0.980, 0.984].into()));
-
-            display_min = tick_start;
-            display_max = tick_start + tick_count as f32 * tick_interval;
-            
-            for i in 0..tick_count {
-                let tick_value = tick_start + i as f32 * tick_interval;
-
-                let y_pos = price_to_y(tick_value, display_min, display_max, screen_height);
-
-                let tick_line = Path::line(
-                    Point {
-                        x: 0.0,
-                        y: y_pos - offset,
-                    },
-                    Point {
-                        x: original_screen_width - 75.0,
-                        y: y_pos - offset,
-                    },
-                );
-                frame.stroke(&tick_line, Stroke::default().with_color([0.2, 0.2, 0.2].into()));
-
-                println!("tick_value: {}", tick_value.to_string());
-                
-                frame.fill_text(Text {
-                    content: tick_value.to_string(),
-                    position: Point {
-                        x: original_screen_width - 70.0,
-                        y: y_pos - offset,
-                    },
-                    color: theme.palette().text,
-                    size: Pixels(12.0),
-                    line_height: Default::default(),
-                    font: Default::default(),
-                    horizontal_alignment: Horizontal::Left,
-                    vertical_alignment: Vertical::Center,
-                    shaping: Default::default(),
-                });
-            }
 
             for (i, candle) in current_candles.iter().enumerate() {
                 let open_y = price_to_y(candle.open, display_min, display_max, screen_height);
@@ -277,8 +233,6 @@ fn subscription(state: &State) -> Subscription<Message> {
 }
 
 fn main() -> iced::Result {
-    tracing_subscriber::fmt::init();
-
     iced::application("Juicy Lemon", update, view)
         .theme(theme)
         .subscription(subscription)
