@@ -1,8 +1,11 @@
-use crate::utils::calculate_tick_count;
+use crate::utils::{calculate_tick_count, count_decimal_places, truncate_to_decimals};
 use iced::widget::canvas::{Frame, Path, Stroke, Text};
 use iced::{Pixels, Point, Renderer, Theme};
 use iced::alignment::{Horizontal, Vertical};
+use rust_decimal::prelude::ToPrimitive;
 use crate::price_to_y;
+use rust_decimal::prelude::*;
+use rust_decimal::Decimal;
 
 pub struct YAxisRenderer {
     pub screen_width: f32,
@@ -41,13 +44,17 @@ impl YAxisRenderer {
     ) -> (f32, f32) {
         let axis_x = self.screen_width - 75.0;
         let label_x = self.screen_width - 70.0;
-        let display_min = tick_start;
-        let display_max = tick_start + (tick_count - 1) as f32 * tick_interval;
+        let decimals = count_decimal_places(self.display_min);
+        let tick_start_decimal = Decimal::from_f32(tick_start).unwrap();
+        let tick_end_decimal = Decimal::from_f32(tick_start + (tick_count - 1) as f32 * tick_interval).unwrap();
 
+        let display_min = truncate_to_decimals(tick_start_decimal, decimals);
+        let display_max = truncate_to_decimals(tick_end_decimal, decimals);
+        
         for i in 0..tick_count {
-            let tick_value = tick_start + i as f32 * tick_interval;
+            let tick_value = truncate_to_decimals(Decimal::from_f32(tick_start + i as f32 * tick_interval).unwrap(), decimals);
             let y_pos =
-                price_to_y(tick_value, display_min, display_max, self.screen_height)
+                price_to_y(tick_value.to_f32().unwrap(), display_min.to_f32().unwrap(), display_max.to_f32().unwrap(), self.screen_height)
                     - self.offset;
 
             let tick_line = Path::line(
@@ -59,11 +66,9 @@ impl YAxisRenderer {
                 &tick_line,
                 Stroke::default().with_color([0.2, 0.2, 0.2].into()),
             );
-            
-            println!("{:?}", tick_value);
 
             frame.fill_text(Text {
-                content: tick_value.to_string(),
+                content: format!("{0:.1$}", tick_value, decimals as usize),
                 position: Point { x: label_x, y: y_pos },
                 color: theme.palette().text,
                 size: Pixels(12.0),
@@ -75,6 +80,6 @@ impl YAxisRenderer {
             });
         }
 
-        (display_min, display_max)
+        (display_min.to_f32().unwrap(), display_max.to_f32().unwrap())
     }
 }

@@ -71,7 +71,6 @@ impl<Message> canvas::Program<Message> for State {
     ) -> Vec<Geometry> {
         let rectangle = self.graph.draw(renderer, bounds.size(), |frame| {
             let mut current_candles = VecDeque::new();
-
             if let (Some(symbol), Some(timeframe)) =
                 (&self.displayed_symbol, &self.selected_timeframe)
             {

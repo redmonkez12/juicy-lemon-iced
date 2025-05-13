@@ -277,6 +277,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         }
         Message::SymbolsFetched(instruments) => {
             println!("Symbols fetched: {} instruments", instruments.len());
+            println!("Symbols fetched: {:?} instruments", instruments);
             state.instruments = instruments.clone();
             state.loading = false;
 

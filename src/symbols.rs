@@ -1,4 +1,3 @@
-use crate::utils::get_decimals;
 use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Debug)]
@@ -13,6 +12,8 @@ pub struct Filter {
 #[derive(Deserialize, Debug)]
 pub struct Instrument {
     status: String,
+    #[serde(rename = "baseAssetPrecision")]
+    base_asset_precision: i32,
     pub symbol: String,
     pub filters: Vec<Filter>,
 }
@@ -45,7 +46,7 @@ pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
                     if i.status == "TRADING" {
                         Some(Symbol {
                             symbol: i.symbol.clone(),
-                            decimals: get_decimals(&i),
+                            decimals: i.base_asset_precision as usize,
                         })
                     } else {
                         None

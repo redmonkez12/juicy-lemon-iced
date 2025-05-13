@@ -1,28 +1,7 @@
 use crate::WatchListItem;
-use crate::symbols::{Instrument, Symbol};
+use crate::symbols::{Symbol};
 use std::collections::HashSet;
-
-pub fn get_decimals(instrument: &Instrument) -> usize {
-    let mut decimals: usize = 8;
-    if let Some(found_decimals) = instrument.filters.iter().find_map(|f| {
-        if f.filter_type == "PRICE_FILTER" {
-            let decimal_size = f
-                .tick_size
-                .as_deref()
-                .and_then(|s| s.parse::<f64>().ok())
-                .map(|n| n.to_string().split('.').nth(1).map_or(0, |frac| frac.len()))
-                .unwrap_or(0);
-
-            Some(decimal_size)
-        } else {
-            None
-        }
-    }) {
-        decimals = found_decimals;
-    }
-
-    decimals
-}
+use rust_decimal::Decimal;
 
 pub fn get_current_select_state(
     instruments: &Vec<Symbol>,
@@ -103,4 +82,21 @@ pub fn nice_step_from_range(range: f32) -> f32 {
     };
 
     nice_fraction * base
+}
+
+pub fn truncate_to_decimals(value: Decimal, decimals: u32) -> Decimal {
+    let scale = Decimal::new(10i64.pow(decimals), 0);
+    (value * scale).floor() / scale
+}
+
+pub fn count_decimal_places(value: f32) -> u32 {
+    let value_str = value.to_string();
+    if let Some(pos) = value_str.find('.') {
+        let decimals = value_str[pos + 1..]
+            .trim_end_matches('0')
+            .len();
+        decimals as u32
+    } else {
+        0
+    }
 }
