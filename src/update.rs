@@ -47,7 +47,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             };
 
             let instrument = state
-                .instruments
+                .watchlist
                 .iter()
                 .find(|s| s.symbol == symbol)
                 .unwrap();
@@ -82,10 +82,6 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                     .entry(timeframe.clone())
                     .or_insert_with(VecDeque::new);
                 
-                // if old_candles.is_empty() {
-                //     *old_candles = VecDeque::from(candles.clone());
-                // }
-
                 if let (Some(last_old), Some(last_new)) = (old_candles.back(), candles.last()) {
                     if last_old.open_time == last_new.open_time {
                         old_candles.pop_back();
