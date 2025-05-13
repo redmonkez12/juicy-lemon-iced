@@ -41,14 +41,22 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 }
             }
 
-            state.graph.clear();
-
-            println!("Symbol selected: {}", symbol);
-
             let timeframe = match state.selected_timeframe.as_ref() {
                 Some(timeframe) => timeframe.clone(),
                 None => return Task::none(),
             };
+
+            let instrument = state
+                .instruments
+                .iter()
+                .find(|s| s.symbol == symbol)
+                .unwrap();
+
+            state.displayed_symbol = Some(DisplayedSymbol {
+                timeframe: timeframe.clone(),
+                symbol: symbol.clone(),
+                decimals: instrument.decimals,
+            });
 
             let decimals = state.displayed_symbol.as_ref().map(|s| s.decimals).unwrap_or(8);
 
@@ -73,6 +81,10 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 let old_candles = symbol_entry
                     .entry(timeframe.clone())
                     .or_insert_with(VecDeque::new);
+                
+                // if old_candles.is_empty() {
+                //     *old_candles = VecDeque::from(candles.clone());
+                // }
 
                 if let (Some(last_old), Some(last_new)) = (old_candles.back(), candles.last()) {
                     if last_old.open_time == last_new.open_time {
@@ -116,6 +128,17 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             state.watchlist.retain(|w| w.symbol != symbol);
 
             if state.watchlist.is_empty() {
+                if let (Some(symbol), Some(timeframe)) =
+                    (&state.displayed_symbol, &state.selected_timeframe)
+                {
+                    if let Some(symbol_map) = state.candles.get_mut(symbol.symbol.as_str()) {
+                        for timeframe in state.timeframe_select_state.options().iter() {
+                            symbol_map.remove(timeframe);       
+                        }
+                    }
+                }
+                
+                state.graph.clear();
                 return Task::perform(async {}, |_| Message::UpdateSelectOptions);
             }
 
@@ -211,7 +234,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 .unwrap();
 
             state.watchlist.push(WatchListItem::new(
-                symbol,
+                symbol.clone(),
                 "-9999".to_string(),
                 instrument.decimals,
             ));
@@ -220,11 +243,6 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
 
             state.input_text = "".to_string();
             state.error_message = "".to_string();
-
-            let symbol = match state.watchlist.last() {
-                Some(watchitem) => watchitem.symbol.clone(),
-                None => return Task::none(),
-            };
 
             let timeframe = match state.selected_timeframe.as_ref() {
                 Some(timeframe) => timeframe.clone(),
@@ -255,10 +273,6 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
         }
         Message::InitApp => {
             state.loading = true;
-            // let csv_content = fs::read_to_string("data/btcusd.csv").unwrap();
-            // let candles = parse_csv_data(&csv_content);
-            // let chart = Chart::new(&candles);
-            // state.chart = chart;
 
             Task::perform(
                 async move {

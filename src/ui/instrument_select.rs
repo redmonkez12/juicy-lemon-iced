@@ -12,7 +12,7 @@ pub fn render_select(state: &State) -> ComboBox<String, Message> {
 
     let combo_box = combo_box(
         &state.symbol_select_state,
-        "Select a crypto a pair...",
+        "Select a crypto pair...",
         state.selected_symbol.as_ref(),
         Message::AddSymbol,
     )
