@@ -2,6 +2,7 @@ use crate::WatchListItem;
 use crate::symbols::{Symbol};
 use std::collections::HashSet;
 use rust_decimal::Decimal;
+use rust_decimal::prelude::*;
 
 pub fn get_current_select_state(
     instruments: &Vec<Symbol>,
@@ -49,36 +50,41 @@ pub fn get_default_select_state(
         .collect()
 }
 
-pub fn calculate_tick_count(min: f32, max: f32) -> (usize, f32) {
+pub fn calculate_tick_count(min: Decimal, max: Decimal) -> (usize, Decimal) {
     let range = max - min;
     let nice_step = nice_step_from_range(range);
     let tick_min = (min / nice_step).floor() * nice_step;
     let tick_max = (max / nice_step).ceil() * nice_step;
-    let tick_count = ((tick_max - tick_min) / nice_step).round() as usize + 1;
+    let tick_count = ((tick_max - tick_min) / nice_step).round().to_usize().unwrap() + 1;
 
     (tick_count, nice_step)
 }
 
-pub fn nice_step_from_range(range: f32) -> f32 {
-    let exponent = range.log10().floor();
-    let base = 10f32.powf(exponent);
+pub fn nice_step_from_range(range: Decimal) -> Decimal {
+    if range <= Decimal::ZERO {
+        return Decimal::ZERO;
+    }
+
+    let range_f64 = range.to_f64().unwrap_or(0.0);
+    let exponent_f64 = range_f64.log10().floor();
+    let base = Decimal::from_f64(10f64.powf(exponent_f64)).unwrap_or(dec!(1.0));
 
     let fraction = range / base;
 
-    let nice_fraction = if fraction <= 1.0 {
-        0.1
-    } else if fraction <= 2.0 {
-        0.2
-    } else if fraction <= 5.0 {
-        0.5
-    } else if fraction <= 10.0 {
-        1.0
-    } else if fraction <= 20.0 {
-        2.0
-    } else if fraction <= 50.0 {
-        5.0
+    let nice_fraction = if fraction <= dec!(1.0) {
+        dec!(0.1)
+    } else if fraction <= dec!(2.0) {
+        dec!(0.2)
+    } else if fraction <= dec!(5.0) {
+        dec!(0.5)
+    } else if fraction <= dec!(10.0) {
+        dec!(1.0)
+    } else if fraction <= dec!(20.0) {
+        dec!(2.0)
+    } else if fraction <= dec!(50.0) {
+        dec!(5.0)
     } else {
-        10.0
+        dec!(10.0)
     };
 
     nice_fraction * base
@@ -89,7 +95,7 @@ pub fn truncate_to_decimals(value: Decimal, decimals: u32) -> Decimal {
     (value * scale).floor() / scale
 }
 
-pub fn count_decimal_places(value: f32) -> u32 {
+pub fn count_decimal_places(value: Decimal) -> u32 {
     let value_str = value.to_string();
     if let Some(pos) = value_str.find('.') {
         let decimals = value_str[pos + 1..]
@@ -99,4 +105,23 @@ pub fn count_decimal_places(value: f32) -> u32 {
     } else {
         0
     }
+}
+pub fn estimate_y_axis_width(
+    tick_start: Decimal,
+    tick_count: usize,
+    tick_interval: Decimal,
+    font_size: f32,
+) -> f32 {
+    let mut max_label_len = 0;
+
+    for i in 0..tick_count {
+        let tick_value = tick_start + Decimal::from(i) * tick_interval;
+        let label = format!("{}", tick_value);
+        max_label_len = max_label_len.max(label.len());
+    }
+
+    let avg_char_width = font_size * 0.6;
+    let padding = 10.0;
+
+    max_label_len as f32 * avg_char_width + padding
 }

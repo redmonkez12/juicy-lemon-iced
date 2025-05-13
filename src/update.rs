@@ -16,11 +16,14 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
 
             if let Some(displayed_symbol) = state.displayed_symbol.as_mut() {
                 displayed_symbol.timeframe = timeframe.clone();
+
                 let symbol = displayed_symbol.symbol.clone();
+                let tf = displayed_symbol.timeframe.clone();
+                let decimals = displayed_symbol.decimals;
 
                 Task::perform(
                     async move {
-                        match get_candles(&symbol, &timeframe).await {
+                        match get_candles(&symbol, &tf, decimals).await {
                             Ok(candles) => Message::CandlesFetched(candles, symbol),
                             Err(err) => Message::FetchError(err),
                         }
@@ -47,9 +50,11 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 None => return Task::none(),
             };
 
+            let decimals = state.displayed_symbol.as_ref().map(|s| s.decimals).unwrap_or(8);
+
             Task::perform(
                 async move {
-                    match get_candles(&symbol, &timeframe).await {
+                    match get_candles(&symbol, &timeframe, decimals).await {
                         Ok(candles) => Message::CandlesFetched(candles, symbol),
                         Err(err) => Message::FetchError(err),
                     }
@@ -168,7 +173,7 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                         let timeframe_str = timeframe.clone();
 
                         async move {
-                            match get_candles(&symbol_str, &timeframe_str).await {
+                            match get_candles(&symbol_str, &timeframe_str, symbol.decimals).await {
                                 Ok(candles) => Message::CandlesFetched(candles, symbol_str),
                                 Err(err) => Message::FetchError(err),
                             }
@@ -236,9 +241,10 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
                 {
                     let symbol = symbol.clone();
                     let timeframe = timeframe.clone();
+                    let decimals = instrument.decimals.clone();
 
                     async move {
-                        match get_candles(&symbol, &timeframe).await {
+                        match get_candles(&symbol, &timeframe, decimals).await {
                             Ok(candles) => Message::CandlesFetched(candles, symbol),
                             Err(err) => Message::FetchError(err),
                         }
@@ -276,8 +282,6 @@ pub fn update(state: &mut State, message: Message) -> Task<Message> {
             )
         }
         Message::SymbolsFetched(instruments) => {
-            println!("Symbols fetched: {} instruments", instruments.len());
-            println!("Symbols fetched: {:?} instruments", instruments);
             state.instruments = instruments.clone();
             state.loading = false;
 

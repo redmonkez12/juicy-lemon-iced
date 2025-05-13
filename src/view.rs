@@ -55,7 +55,7 @@ pub fn view(state: &State) -> Element<Message> {
         } else {
             item.price
                 .parse::<f64>()
-                .map(|p| format!("{:.1$}", p, item.decimals))
+                .map(|p| format!("{:.1$}", p, item.decimals as usize))
                 .unwrap_or_else(|_| "N/A".to_string())
         };
 

@@ -32,7 +32,7 @@ pub struct Response {
 #[derive(Deserialize, Debug, Clone, Serialize)]
 pub struct Symbol {
     pub symbol: String,
-    pub decimals: usize,
+    pub decimals: u32,
 }
 
 pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
@@ -46,7 +46,7 @@ pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
                     if i.status == "TRADING" {
                         Some(Symbol {
                             symbol: i.symbol.clone(),
-                            decimals: i.base_asset_precision as usize,
+                            decimals: i.base_asset_precision as u32,
                         })
                     } else {
                         None

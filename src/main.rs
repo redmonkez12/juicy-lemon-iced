@@ -13,12 +13,14 @@ use graph::candle::Candle;
 use iced::Theme;
 use iced::theme::{Custom, Palette};
 use iced::time::{self};
-use iced::widget::canvas::{Cache, Geometry, Path, Stroke, Text};
+use iced::widget::canvas::{Cache, Geometry, Path, Stroke};
 use iced::widget::{canvas, combo_box};
-use iced::{Color, Pixels, Point, Rectangle, Renderer, Size, Subscription, Task, mouse};
+use iced::{Color, Point, Rectangle, Renderer, Size, Subscription, Task, mouse};
 use std::collections::{HashMap, VecDeque};
 use std::sync::Arc;
 use std::time::Duration;
+use rust_decimal::Decimal;
+use rust_decimal::prelude::*;
 
 #[derive(Debug, Clone)]
 enum Message {
@@ -40,11 +42,11 @@ enum Message {
 struct WatchListItem {
     price: String,
     symbol: String,
-    decimals: usize,
+    decimals: u32,
 }
 
 impl WatchListItem {
-    fn new(symbol: String, price: String, decimals: usize) -> Self {
+    fn new(symbol: String, price: String, decimals: u32) -> Self {
         Self {
             symbol,
             price,
@@ -53,9 +55,10 @@ impl WatchListItem {
     }
 }
 
-fn price_to_y(price: f32, min_price: f32, max_price: f32, height: f32) -> f32 {
+fn price_to_y(price: Decimal, min_price: Decimal, max_price: Decimal, height: f32) -> Decimal {
     let normalized = (price - min_price) / (max_price - min_price);
-    height - normalized * height
+    let height_decimal = Decimal::from_f32(height).unwrap();
+    height_decimal - normalized * height_decimal
 }
 
 impl<Message> canvas::Program<Message> for State {
@@ -85,20 +88,16 @@ impl<Message> canvas::Program<Message> for State {
                 return;
             }
 
-            let max_price = current_candles
+            let display_max = current_candles
                 .iter()
-                .fold(f32::MIN, |acc, c| acc.max(c.high.max(c.low)));
-            let min_price = current_candles
+                .fold(Decimal::MIN, |acc, c| acc.max(c.high.max(c.low)));
+            let display_min = current_candles
                 .iter()
-                .fold(f32::MAX, |acc, c| acc.min(c.high.min(c.low)));
+                .fold(Decimal::MAX, |acc, c| acc.min(c.high.min(c.low)));
 
-            let offset = 20.0;
-            let price_range = max_price - min_price;
-            let padding = price_range * 0.1;
-            let display_max = max_price + padding;
-            let display_min = min_price - padding;
+            let offset = 30.0;
 
-            let screen_height = bounds.height - offset;
+            let screen_height = bounds.height - 100.0;
             let screen_width = bounds.width;
 
             let y_axis = YAxisRenderer {
@@ -107,22 +106,21 @@ impl<Message> canvas::Program<Message> for State {
                 display_min,
                 display_max,
                 offset,
+                decimal_places: self.displayed_symbol.as_ref().unwrap().decimals,
+                theme,
             };
 
-            let (tick_start, tick_count, tick_interval) = y_axis.render_axis(frame);
-            let (display_min, display_max) = y_axis.render_values(frame, tick_start, tick_count, tick_interval, theme);
+            let (display_min, display_max, axis_y_width) = y_axis.render_axis(frame);
 
-            println!("Display min: {}, max: {}", display_min, display_max);
-
-            let unit_width = (screen_width - 85.0) / current_candles.len().max(1) as f32;
+            let unit_width = (screen_width - axis_y_width - 10.0) / current_candles.len().max(1) as f32;
             let candle_width = unit_width * 0.9;
             let candle_spacing = unit_width * 0.1;
 
             for (i, candle) in current_candles.iter().enumerate() {
-                let open_y = price_to_y(candle.open, display_min, display_max, screen_height);
-                let close_y = price_to_y(candle.close, display_min, display_max, screen_height);
-                let low_y = price_to_y(candle.low, display_min, display_max, screen_height);
-                let high_y = price_to_y(candle.high, display_min, display_max, screen_height);
+                let open_y = price_to_y(candle.open, display_min, display_max, screen_height).to_f32().unwrap();
+                let close_y = price_to_y(candle.close, display_min, display_max, screen_height).to_f32().unwrap();
+                let low_y = price_to_y(candle.low, display_min, display_max, screen_height).to_f32().unwrap();
+                let high_y = price_to_y(candle.high, display_min, display_max, screen_height).to_f32().unwrap();
                 let height = (open_y - close_y).abs().max(1.0);
 
                 let x_position = i as f32 * unit_width;
@@ -131,18 +129,18 @@ impl<Message> canvas::Program<Message> for State {
                 let wick = Path::line(
                     Point {
                         x: candle_center_x,
-                        y: high_y - offset,
+                        y: high_y + offset,
                     },
                     Point {
                         x: candle_center_x,
-                        y: low_y - offset,
+                        y: low_y + offset,
                     },
                 );
 
                 let rectangle = Path::rectangle(
                     Point {
                         x: x_position + (candle_spacing / 2.0),
-                        y: open_y.min(close_y) - offset,
+                        y: open_y.min(close_y) + offset,
                     },
                     Size {
                         width: candle_width,
@@ -166,7 +164,7 @@ type CandleCache = HashMap<String, HashMap<Timeframe, VecDeque<Candle>>>;
 struct DisplayedSymbol {
     symbol: String,
     timeframe: String,
-    decimals: usize,
+    decimals: u32,
 }
 
 struct State {
