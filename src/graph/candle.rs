@@ -14,6 +14,7 @@ pub struct Candle {
     pub low: Decimal,
     pub close: Decimal,
     pub open_time: u64,
+    pub close_time: u64,
 }
 
 impl Candle {
@@ -42,9 +43,6 @@ pub async fn get_candles(symbol: &str, timeframe: &str, decimals: u32) -> Result
                                 return None;
                             }
                             
-                            println!("decimals {}", decimals);
-                            println!("entry {}", entry[1]);
-
                             let open_str = entry[1].as_str()?;
                             let high_str = entry[2].as_str()?;
                             let low_str = entry[3].as_str()?;
@@ -62,6 +60,7 @@ pub async fn get_candles(symbol: &str, timeframe: &str, decimals: u32) -> Result
 
                             Some(Candle {
                                 open_time: entry[0].as_u64()?,
+                                close_time: entry[6].as_u64()?,
                                 open,
                                 high,
                                 low,

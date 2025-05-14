@@ -1,7 +1,7 @@
 use crate::graph::candle::get_candles;
 use crate::symbols::{Symbol, fetch_symbol_prices, get_symbols};
 use crate::utils::{get_current_select_state, get_default_select_state};
-use crate::{DisplayedSymbol, Message, State, WatchListItem};
+use crate::{DisplayedSymbol, Message, State};
 use iced::Task;
 use iced::widget::combo_box;
 use std::collections::{HashMap, VecDeque};

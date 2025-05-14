@@ -3,7 +3,7 @@ use crate::ui::timeframe_select::render_timeframe_select;
 use crate::{Message, State};
 use iced::widget::image::{self, Image};
 use iced::widget::{Column, Row, Rule, button, canvas, container, text};
-use iced::{Background, Element, Fill, Length, Padding, Shrink, Theme, widget};
+use iced::{Background, Element, Fill, Length, Padding, Theme, widget};
 
 fn vertical_rule() -> Column<'static, Message> {
     Column::new()

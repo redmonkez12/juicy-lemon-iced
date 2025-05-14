@@ -1,4 +1,3 @@
-use crate::WatchListItem;
 use crate::symbols::{Symbol};
 use std::collections::HashSet;
 use rust_decimal::Decimal;
@@ -7,7 +6,7 @@ use rust_decimal::prelude::*;
 pub fn get_current_select_state(
     instruments: &Vec<Symbol>,
     input: &str,
-    watchlist: &Vec<WatchListItem>,
+    watchlist: &Vec<Symbol>,
 ) -> Vec<String> {
     let lowercase_input = input.to_lowercase();
 
@@ -90,22 +89,6 @@ pub fn nice_step_from_range(range: Decimal) -> Decimal {
     nice_fraction * base
 }
 
-pub fn truncate_to_decimals(value: Decimal, decimals: u32) -> Decimal {
-    let scale = Decimal::new(10i64.pow(decimals), 0);
-    (value * scale).floor() / scale
-}
-
-pub fn count_decimal_places(value: Decimal) -> u32 {
-    let value_str = value.to_string();
-    if let Some(pos) = value_str.find('.') {
-        let decimals = value_str[pos + 1..]
-            .trim_end_matches('0')
-            .len();
-        decimals as u32
-    } else {
-        0
-    }
-}
 pub fn estimate_y_axis_width(
     tick_start: Decimal,
     tick_count: usize,
@@ -121,7 +104,7 @@ pub fn estimate_y_axis_width(
     }
 
     let avg_char_width = font_size * 0.6;
-    let padding = 10.0;
+        let padding = 10.0;
 
     max_label_len as f32 * avg_char_width + padding
 }

@@ -4,8 +4,9 @@ mod ui;
 mod update;
 mod utils;
 mod view;
+mod colors;
 
-use crate::graph::axis::YAxisRenderer;
+use crate::graph::axis::{XAxisRenderer, YAxisRenderer};
 use crate::symbols::{Symbol, SymbolWithPrice};
 use crate::update::update;
 use crate::view::view;
@@ -36,23 +37,6 @@ enum Message {
     FilterInput(String),
     UpdateSelectOptions,
     InitApp,
-}
-
-#[derive(Default)]
-struct WatchListItem {
-    price: String,
-    symbol: String,
-    decimals: u32,
-}
-
-impl WatchListItem {
-    fn new(symbol: String, price: String, decimals: u32) -> Self {
-        Self {
-            symbol,
-            price,
-            decimals,
-        }
-    }
 }
 
 fn price_to_y(price: Decimal, min_price: Decimal, max_price: Decimal, height: f32) -> Decimal {
@@ -97,9 +81,9 @@ impl<Message> canvas::Program<Message> for State {
 
             let offset = 30.0;
 
-            let screen_height = bounds.height - 100.0;
+            let screen_height = bounds.height - 140.0;
             let screen_width = bounds.width;
-
+            
             let y_axis = YAxisRenderer {
                 screen_width,
                 screen_height,
@@ -107,10 +91,21 @@ impl<Message> canvas::Program<Message> for State {
                 display_max,
                 offset,
                 decimal_places: self.displayed_symbol.as_ref().unwrap().decimals,
-                theme,
+                text_color: theme.palette().text,
             };
 
             let (display_min, display_max, axis_y_width) = y_axis.render_axis(frame);
+            let timeframe = self.selected_timeframe.as_ref().unwrap();
+            
+            let x_axis = XAxisRenderer {
+                screen_width: screen_width - axis_y_width,
+                screen_height,
+                start_time: current_candles.get(0).unwrap().open_time,
+                end_time: current_candles.get(current_candles.len() - 1).unwrap().close_time,
+                timeframe: timeframe.to_string(),
+            };
+
+            x_axis.render_axis(frame);
 
             let unit_width = (screen_width - axis_y_width - 10.0) / current_candles.len().max(1) as f32;
             let candle_width = unit_width * 0.9;
@@ -169,7 +164,7 @@ struct DisplayedSymbol {
 
 struct State {
     instruments: Vec<Symbol>,
-    watchlist: Vec<WatchListItem>,
+    watchlist: Vec<Symbol>,
     loading: bool,
     input_text: String,
     error_message: String,

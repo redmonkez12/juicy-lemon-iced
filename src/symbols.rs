@@ -1,3 +1,4 @@
+use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Debug)]
@@ -32,7 +33,18 @@ pub struct Response {
 #[derive(Deserialize, Debug, Clone, Serialize)]
 pub struct Symbol {
     pub symbol: String,
+    pub price: Option<Decimal>,
     pub decimals: u32,
+}
+
+impl Symbol {
+    fn new(symbol: String, price: Decimal, decimals: u32) -> Self {
+        Self {
+            symbol,
+            price: Some(price),
+            decimals,
+        }
+    }
 }
 
 pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
@@ -47,6 +59,7 @@ pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
                         Some(Symbol {
                             symbol: i.symbol.clone(),
                             decimals: i.base_asset_precision as u32,
+                            price: None,
                         })
                     } else {
                         None
