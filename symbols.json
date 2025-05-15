@@ -1,5666 +1,8558 @@
 [
   {
     "symbol": "ETHBTC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEOBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "QTUMETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "EOSETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "GASBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBETH",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LRCBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "LRCETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "QTUMBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZRXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "KNCBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTAETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "XVGETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MTLBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "EOSBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETCETH",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETCBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZECBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZECETH",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "DASHBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "DASHETH",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "REQBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "POWRBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "POWRETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENJBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "STORJBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "KMDBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BATBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEOUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LSKBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANAETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADXETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADAETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "XLMBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "XLMETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCETH",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCBNB",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "RLCBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "RLCETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "PIVXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "STEEMBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "STEEMETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZILBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZILETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "QTUMUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "WANBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SYSBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADABNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCTUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHTUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZENBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "EOSUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "THETABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "TUSDUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XLMUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTXETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DATABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETCUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETCBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SCETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DENTETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARDRBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "HOTETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "VETBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "VETETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "VETUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "VETBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "RVNBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBTUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPTUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EOSUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XLMUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDCUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXXRP",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONGBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONGUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HOTUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZILUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZRXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FETBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "FETBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "FETUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BATUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZECUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOSTUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "CELRUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADAUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEOUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DASHUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "THETAUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENJUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATOMBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATOMUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATOMUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PHBBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "TFUELBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "TFUELUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONEUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALGOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALGOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALGOUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGEUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGEUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "DUSKBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DUSKUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ANKRBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ANKRUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WINUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "COSUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "MTLUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "DENTUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "WANUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FUNUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "CVCUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WINTRX",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHZBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHZBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHZUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANDBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANDUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "XTZBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "XTZUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RVNUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "HBARBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "HBARBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "HBARUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "NKNBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "NKNUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "STXBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "STXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "STXUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAVABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAVAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARPABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARPAUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTXUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "RLCUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BCHBNB",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BCHBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "BCHUSDT",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BCHUSDC",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "FTTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EURUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "OGNBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "OGNUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LSKUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "MBLUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "COTIBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "COTIUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "STPTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "STPTUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCZAR",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHZAR",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTZAR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DATAUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLBNB",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "CTSIBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CTSIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HIVEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "HIVEUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHRBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHRUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARDRUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "MDTUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "KNCUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LRCUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCUAH",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTUAH",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "COMPBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "COMPUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SCUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZENUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SXPBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SNXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SNXUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "VTHOUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "DGBUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SXPUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "MKRBTC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "MKRUSDT",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "RUNEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DCRUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "STORJUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FIOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "YFIBTC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "YFIUSDT",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "KMDUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCDAI",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHDAI",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTDAI",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "JSTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "JSTUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "CRVBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CRVUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SANDBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SANDUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NMRBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "NMRUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LUNAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RSRUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "PAXGBTC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "PAXGUSDT",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRBBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRBUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "WBTCBTC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WBTCETH",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUSHIBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUSHIUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "KSMBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "KSMUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DIABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DIAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RUNEUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "FIOUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "UMABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "UMAUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BELBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BELUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "UNIBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "UNIUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "OXTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "OXTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUNUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLMBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLMUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SCRTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CAKEBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SXPTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "UTKUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "XVSBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "XVSBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "XVSUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALPHAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCBRL",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTBRL",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "AAVEBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "AAVEETH",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "AAVEUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "FILBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "FILUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "INJBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "INJBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "INJUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "AUDIOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "AUDIOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CTKBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "CTKBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CTKUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHBRL",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTEUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "AXSBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "AXSBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "AXSUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBBRL",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SLPETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADAEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "STRAXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "STRAXUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ROSEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ROSEUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPBRL",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SKLBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SKLUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BCHEUR",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "GLMBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKBRL",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "XLMEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GRTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "GRTETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "GRTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "JUVUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PSGUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "1INCHBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "1INCHUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "OGBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "OGUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATMUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ASRUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "CELOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CELOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RIFBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "RIFUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHZTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "XLMTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GRTEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCBRL",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "CKBUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "TWTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGEEUR",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGETRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGEBRL",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SFPBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SFPUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "DODOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DODOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CAKEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CAKEUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACMUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "AUCTIONBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "PHABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADABRL",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "FISBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "FISUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTBRL",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "HOTTRY",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PONDUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "DEGOUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALICEUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEOTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "PERPUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUPERBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUPERUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CFXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CFXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EOSTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "RVNTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TKOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PUNDIXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WINEUR",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "TLMUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONTTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "VETEUR",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BARUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "FORTHBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "FORTHUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BAKEUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SLPUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "VETTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHIBUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICPBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICPUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHIBEUR",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "MASKBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "MASKUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LPTBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "LPTBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "LPTUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHIBBRL",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICPEUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHIBTRY",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "XVGUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GTCUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BAKEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLBRL",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "PHAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "MLNUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "GRTTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "DEXEUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "C98USDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "QNTBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "QNTUSDT",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLOWBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLOWUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MINABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MINAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RAYUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "FARMUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TLMTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "QUICKUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "MBOXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "REQUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GHSTUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "WAXPUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "WAXPBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "GNOUSDT",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARPATRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XECUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DYDXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DYDXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "IDEXUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDPUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GALAUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "GALABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ILVUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ILVBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "YGGUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "YGGBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SYSUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DFUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FIDAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FIDABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "AGLDBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "AGLDUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RADUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RAREBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "RAREUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXBRL",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "AXSETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLETH",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SSVBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "SSVETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "LAZIOTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LAZIOUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHESSUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AUCTIONUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHIBDOGE",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVRBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVRUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "CITYUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENSBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENSUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SANDTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "QIUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "PORTOUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PORTOTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "POWRUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXETH",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SLPTRY",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "LRCTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GALAETH",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "JASMYUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "AMPUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "PYRBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "PYRUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALCXUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SANTOSBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SANTOSUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SANTOSTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BELTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DENTTRY",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENJTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BICOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BICOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLUXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLUXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALICETRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FXSUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GALABRL",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GALATRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LUNATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "VOXELUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "MINATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "HIGHUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "CVXUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEOPLEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEOPLEUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKBNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SPELLUSDT",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "JOEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "JOEUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATOMETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDETH",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICPETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATOMTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACHBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACHUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "IMXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "IMXUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GLMRBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "GLMRUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICPTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "UNIETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "LOKABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "LOKAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ROSETRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SCRTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "API3BTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "API3USDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTTCUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTTCTRY",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XNOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "XNOUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "COSTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONETRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WOOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SPELLTRY",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "AXSTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALPINETRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALPINEUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "INJTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ASTRUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "API3TRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "MBOXTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GMTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "GMTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATOMEUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GALAEUR",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "UMATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "KDABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "KDAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "APEUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "APEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEAREUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TWTTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "APETRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BSWUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "JASMYTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BIFIUSDT",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "GMTEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RUNEETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "FILTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZILTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GMTTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ASTRBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BSWTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "STEEMUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AUDIOTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEXOUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEXOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "REIUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "LDOUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LDOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENSTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALGOTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "OPBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "OPUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "OPEUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LEVERUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "STORJTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "OPETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETCTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "FILETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "STGBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "STGUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ANKRTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LUNCUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "GMXUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLYXBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLYXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "APTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "APTUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCPLN",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHPLN",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "APTEUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "APTTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "OSMOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HFTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "HFTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PHBUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "HOOKUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "MAGICBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MAGICUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HIFIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RPLUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FETTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "APTETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCRON",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "GNSUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SYNUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SSVUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LQTYUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "CFXTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "STXTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "USTCUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "GASUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GLMUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PROMUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "QKCUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "IDBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "IDUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBTUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "IDTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLTUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "RDNTUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "MAGICTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTPLN",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACHTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XVSTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDRON",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTARS",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGETUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "WBTCUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "EDUUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EDUTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUIBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUIBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUIEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUITRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEPEUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLOKIUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "OGTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEPETRY",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "WBETHETH",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLOKITRY",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "CITYTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "RADTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCARS",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "OPTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PAXGTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "MAVBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MAVUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENDLEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENDLEUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MAVTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "BCHTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "XVGTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARKMUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARKMTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARKMBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARKMBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "WBETHUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACATRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "COMPTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "XECTRY",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "WLDUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "WLDBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FDUSDUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WLDTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "AMPTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "OGNTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ASRTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATMTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BARTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "JUVTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PSGTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SEIBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "SEIBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SEIFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SEITRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SEIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CYBERBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "CYBERBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "CYBERFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "CYBERTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "CYBERUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LPTTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "UNITRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGEFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "CYBERETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARKUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "IQUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FDUSDTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUIFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NTRNUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NTRNBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "FILFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LEVERTRY",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADAFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRBTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ATOMFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BCHFDUSD",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "STRAXTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TIABTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "TIAUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TIATRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "MEMEUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "MEMEFDUSD",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "MEMETRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORDIBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORDIUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORDITRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FETFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "INJETH",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "OPFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORDIFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BEAMXUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARKTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BEAMXTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CAKETRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DYDXFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PIVXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RUNEFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GALAFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "WLDFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GASTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "NTRNTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "VICUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "VICTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BLURUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BLURTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "USTCTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DYDXTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "VANRYUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AEURUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AUCTIONFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LUNCTRY",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUPERTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "JTOUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "JTOFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "JTOTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000SATSUSDT",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000SATSFDUSD",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000SATSTRY",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHIBFDUSD",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SANDFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTATRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "INJFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FIDATRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BONKUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BONKFDUSD",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BONKTRY",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACEUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACETRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "RARETRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "VANRYTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "NFPBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "NFPUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NFPFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NFPTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARBUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AVAXUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOTUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "INJUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "OPUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORDIUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "AIBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "AIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AIBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "AIFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AITRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICPFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LDOFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVRTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "XAIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XAIFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XAITRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SKLTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "STXFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TIAFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANTABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANTAUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANTAFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANTATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENSFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETCFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUIUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TIAUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MANTAUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALTUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALTBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALTFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALTTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "APTFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BLURUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "JUPUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "JUPFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "JUPTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ALTUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SEIUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PYTHBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "PYTHUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PYTHFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PYTHTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "RONINBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "RONINUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RONINFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RONINTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DYMUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "DYMTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "JUPUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENDLEFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PIXELUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "PIXELTRY",
-    "decimals": 3
-  },
-  {
-    "symbol": "STRKBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "STRKUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "STRKFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "STRKTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FILUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "HBARTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENDLETRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "WLDUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "CKBTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "COTITRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LDOTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "UNIUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PORTALBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "PORTALUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PORTALBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "PORTALFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PORTALTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "AXLBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "AXLUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AXLTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEPEFDUSD",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "PIXELUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "STRKUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "UNIFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "THETATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "WIFBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "WIFUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "WIFFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "WIFTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEPEUSDC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHIBUSDC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "THETAFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "METISUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "METISTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBJPY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCJPY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHJPY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLOKIFDUSD",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "GRTFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SNXTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "AEVOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "AEVOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AEVOFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AEVOTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "FETUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "EURUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BOMETRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BOMEUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "BOMEFDUSD",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHFIUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHFIFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHFITRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "AAVETRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARKMFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "CRVTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "RAYFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BONKUSDC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "FLOKIUSDC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MKRTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "RAYTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENABNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENAFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENATRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MASKTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENDLEUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RDNTTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "WBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "WUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BOMEUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "JTOUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "WIFUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TNSRUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TNSRFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TNSRTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SAGABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SAGAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SAGABNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SAGAFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SAGATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTMXN",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "CKBUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENAUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHFIUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "YGGUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TAOBTC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "TAOUSDT",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "TAOFDUSD",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "TAOTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "CFXUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RUNEUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SAGAUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLYXTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMNIBTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMNIUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMNIFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMNITRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "APTUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GALAUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "STXUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ICPUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMNIUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEPEBRL",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "YGGTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ADAJPY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHIBJPY",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLJPY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPJPY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "REZUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "REZTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "PHBTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "RSRTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BBBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BBUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BBBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "BBFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BBTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEOPLETRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRBUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "NOTUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "NOTFDUSD",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "NOTTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARKMUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BBUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CRVUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEOPLEUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ARFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEPEEUR",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "REZUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDCTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCMXN",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "XRPMXN",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENSUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LDOUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "NOTUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARBRL",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "HIGHTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEOPLEFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "TNSRUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDTCOP",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "WIFEUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZKBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZKUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZKFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZKTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "LISTAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LISTABNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "LISTAFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LISTATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZROBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZROUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZROFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZROTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BAKETRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "WIFBRL",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZKUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZROUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000SATSUSDC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHARS",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "GUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "GTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANANABTC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANANAUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANANABNB",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANANAFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANANATRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "RENDERBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "RENDERUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RENDERFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RENDERUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RENDERTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "RENDEREUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "RENDERBRL",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TONBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "TONUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TONFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TONTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BONKBRL",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGEJPY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEARJPY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "TONUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "AAVEFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGSUSDT",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGSFDUSD",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGSTRY",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "EUREURI",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EURIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DOGSUSDC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "RAREUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SLFBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SLFTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SLFUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SLFUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AAVEUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUNTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLBRL",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLJPY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "POLUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEIROUSDT",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "TURBOUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "1MBABYDOGEUSDT",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "CATIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CATIFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CATITRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "1MBABYDOGEFDUSD",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "1MBABYDOGETRY",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BTCEURI",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEIROFDUSD",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEIROTRY",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "HMSTRUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "HMSTRFDUSD",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "HMSTRTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EIGENBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "EIGENUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "EIGENFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "EIGENTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNSOLSOL",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SCRUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUIBRL",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TURBOTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNSOLUSDT",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "LUMIAUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SCRBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SCRFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SCRTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAIAUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "COWUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CETUSUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PNUTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACTTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "COWTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "CETUSTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PNUTTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACTFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "NEIROUSDC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "PNUTBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "PNUTFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PNUTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USUALUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACTEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CATIUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHEURI",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "LUMIATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PNUTBRL",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PNUTEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "APEFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FDUSDUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HBARUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "OMUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RAYUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TAOUSDC",
-    "decimals": 1
-  },
-  {
-    "symbol": "THEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "THEFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "THETRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "THEUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "APEUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BOMEEUR",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "EIGENUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "HBARFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "MEMEUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "WLDEUR",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "1MBABYDOGEUSDC",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "CETUSUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "COWUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "DYDXUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HMSTRUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "TURBOUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "ENABRL",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "EOSFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAIAUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SANDUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XLMFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHZUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "PYTHUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "RSRUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "WUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "XTZUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACXUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORCAUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVEUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVEBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVEFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVETRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MEBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MEUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "MEFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "METRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACXUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORCAUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACXFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORCAFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACXTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "ORCATRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "KSMTRY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "CELOTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "HIVEFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HIVEUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "IDEXFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "IDEXUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "TLMFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "TLMUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "VELODROMEUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "VANAUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "VANAFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "VANATRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000CATUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000CATBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000CATFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000CATTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENGUUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENGUFDUSD",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENGUTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USUALBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "USUALFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USUALTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000CATUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "PENGUUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "BIOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BIOBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BIOFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BIOTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BIOUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HIVETRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "MOVEUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PHATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUSHITRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "DUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "DTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "APTJPY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUIJPY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "XLMJPY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PEPEJPY",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "PHAUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDCPLN",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "STEEMUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USUALUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AIXBTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "AIXBTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CGPTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CGPTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "COOKIEUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "COOKIEUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "SETH",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "SEUR",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "STRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTXJPY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SEIJPY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLVUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLVBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLVFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLVTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUMPUSDT",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUMPUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "AIXBTTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUMPTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ANIMEUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ANIMEUSDC",
-    "decimals": 5
-  },
-  {
-    "symbol": "ANIMEBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ANIMEFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ANIMETRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BERABTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BERAUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BERAUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BERAFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "BERABNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "BERATRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000CHEEMSUSDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "1000CHEEMSUSDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "TSTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TSTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LAYERBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "LAYERUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LAYERUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LAYERBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "LAYERFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LAYERTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "QTUMTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUMPEUR",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "VTHOTRY",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HEIBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "HEIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "CAKEUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "HEIUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUMPFDUSD",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TSTFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "LTCJPY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BCHJPY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "LINKJPY",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAITOBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAITOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAITOUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAITOBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAITOFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAITOTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ETHMXN",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "KAITOBRL",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLMXN",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "BNBARS",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "SOLARS",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRUMPBRL",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "TRXFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TSTTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHELLBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHELLUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHELLUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHELLBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHELLFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SHELLTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "REDUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GPSUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GPSUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GPSFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "GPSTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GPSBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "REDBTC",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "REDUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "REDFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "REDTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "CHESSUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EGLDUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "OSMOUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "UTKUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "TUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "CVCUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EURIUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "SYNUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDCRON",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "VELODROMEUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "EPICUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "DFUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "EPICUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "GMXUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "MKRUSDC",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "RPLUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BMTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BMTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BMTBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "BMTFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BMTTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "FORMUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FORMUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "FORMTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "XUSDUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "IOTAUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "JUVUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "THEUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "VANRYUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "USDCCZK",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "NILUSDT",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "NILBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "NILFDUSD",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "NILUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "NILTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BEAMXUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "VANAUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "PARTIFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PARTITRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "PARTIUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PARTIUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PARTIBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "MUBARAKUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "MUBARAKUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "TUTUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BROCCOLI714USDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "TUTUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANANAS31USDT",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANANAS31USDC",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "BROCCOLI714USDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "GUNUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "GUNBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "GUNFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "GUNTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "THETAUSDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "API3USDC",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "AUCTIONTRY",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "AUCTIONUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BANANAUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "GUNUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "QNTUSDC",
-    "decimals": 1
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "VETUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ZENUSDC",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BABYUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BABYUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BABYBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "BABYFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BABYTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONDOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONDOUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "BIGTIMEUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "BIGTIMEUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "VIRTUALUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "VIRTUALUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "KERNELBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "KERNELFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "KERNELTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "KERNELUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "KERNELUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WCTTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "WCTFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WCTBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "WCTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "WCTUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "PAXGUSDC",
-    "decimals": 0
+    "price": null,
+    "decimals": 1,
+    "timeframe": "1m"
   },
   {
     "symbol": "ONDOTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "BABYEUR",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "ACHUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "GMTUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HYPERUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HYPERUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HYPERBNB",
-    "decimals": 7
+    "price": null,
+    "decimals": 7,
+    "timeframe": "1m"
   },
   {
     "symbol": "HYPERFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "HYPERTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "INITUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "INITUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "INITBNB",
-    "decimals": 6
+    "price": null,
+    "decimals": 6,
+    "timeframe": "1m"
   },
   {
     "symbol": "INITFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "INITTRY",
-    "decimals": 2
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
   },
   {
     "symbol": "SIGNUSDT",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SIGNUSDC",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SIGNBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "SIGNFDUSD",
-    "decimals": 5
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
   },
   {
     "symbol": "SIGNTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   },
   {
     "symbol": "STOUSDT",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "STOUSDC",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "STOBNB",
-    "decimals": 8
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
   },
   {
     "symbol": "STOFDUSD",
-    "decimals": 4
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
   },
   {
     "symbol": "STOTRY",
-    "decimals": 3
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "ENJUSDC",
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "VIRTUALTRY",
+    "price": null,
+    "decimals": 2,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "SYRUPUSDT",
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "SYRUPUSDC",
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "KMNOUSDT",
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "KMNOUSDC",
+    "price": null,
+    "decimals": 5,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "SXTUSDT",
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "SXTUSDC",
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "SXTBNB",
+    "price": null,
+    "decimals": 8,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "SXTFDUSD",
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "SXTTRY",
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "PUNDIXUSDC",
+    "price": null,
+    "decimals": 4,
+    "timeframe": "1m"
+  },
+  {
+    "symbol": "SYRUPTRY",
+    "price": null,
+    "decimals": 3,
+    "timeframe": "1m"
   }
 ]

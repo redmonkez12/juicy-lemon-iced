@@ -155,13 +155,6 @@ impl<Message> canvas::Program<Message> for State {
 type Timeframe = String;
 type CandleCache = HashMap<String, HashMap<Timeframe, VecDeque<Candle>>>;
 
-#[derive(Debug, Clone)]
-struct DisplayedSymbol {
-    symbol: String,
-    timeframe: String,
-    decimals: u32,
-}
-
 struct State {
     instruments: Vec<Symbol>,
     watchlist: Vec<Symbol>,
@@ -172,7 +165,7 @@ struct State {
     timeframe_select_state: combo_box::State<String>,
     selected_timeframe: Option<String>,
     selected_symbol: Option<String>,
-    displayed_symbol: Option<DisplayedSymbol>,
+    displayed_symbol: Option<Symbol>,
     candles: CandleCache,
     graph: Cache,
 }

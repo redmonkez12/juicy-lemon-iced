@@ -1,3 +1,4 @@
+use iced::window::close;
 use rust_decimal::Decimal;
 use serde::{Deserialize, Serialize};
 
@@ -35,14 +36,16 @@ pub struct Symbol {
     pub symbol: String,
     pub price: Option<Decimal>,
     pub decimals: u32,
+    pub timeframe: String,
 }
 
 impl Symbol {
-    fn new(symbol: String, price: Decimal, decimals: u32) -> Self {
+    pub fn new(symbol: String, price: Option<Decimal>, decimals: u32, timeframe: String) -> Self {
         Self {
             symbol,
-            price: Some(price),
+            price,
             decimals,
+            timeframe,
         }
     }
 }
@@ -56,10 +59,18 @@ pub async fn get_symbols() -> Result<Vec<Symbol>, String> {
                 .into_iter()
                 .filter_map(|i| {
                     if i.status == "TRADING" {
+                        let price_filter = i.filters.iter().find(|f| f.filter_type == "PRICE_FILTER").unwrap();
+                        let tick_size = price_filter.tick_size.clone().unwrap();
+                        let normalized = tick_size.parse::<f32>().unwrap();
+                        let number_str = normalized.to_string();
+                        let parts = number_str.split('.');
+                        let decimals = parts.last().unwrap().len() as u32;
+
                         Some(Symbol {
                             symbol: i.symbol.clone(),
-                            decimals: i.base_asset_precision as u32,
+                            decimals,
                             price: None,
+                            timeframe: "1m".to_string(),
                         })
                     } else {
                         None
@@ -84,8 +95,6 @@ pub async fn fetch_symbol_prices(symbols: Vec<String>) -> Result<Vec<SymbolWithP
             .collect::<Vec<_>>()
             .join(",")
     );
-
-    println!("Fetching prices: {}", url);
 
     match reqwest::get(&url).await {
         Ok(response) => match response.text().await {

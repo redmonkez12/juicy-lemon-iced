@@ -3,19 +3,19 @@ use crate::ui::timeframe_select::render_timeframe_select;
 use crate::{Message, State};
 use iced::widget::image::{self, Image};
 use iced::widget::{Column, Row, Rule, button, canvas, container, text};
-use iced::{Background, Element, Fill, Length, Padding, Theme, widget};
+use iced::{Background, Element, Fill, Length, Padding, Theme, widget, Shrink};
 
 fn vertical_rule() -> Column<'static, Message> {
     Column::new()
-        .height(Length::Fill)
-        .width(Length::Shrink)
+        .height(Fill)
+        .width(Shrink)
         .push(Rule::vertical(1))
 }
 
 fn horizontal_rule() -> Row<'static, Message> {
     Row::new()
-        .height(Length::Shrink)
-        .width(Length::Fill)
+        .height(Shrink)
+        .width(Fill)
         .push(Rule::horizontal(1))
 }
 
@@ -50,13 +50,10 @@ pub fn view(state: &State) -> Element<Message> {
     };
 
     for item in &state.watchlist {
-        let formatted_price = if item.price == "-9999" {
+        let formatted_price = if item.price == None {
             "Loading...".to_string()
         } else {
-            item.price
-                .parse::<f64>()
-                .map(|p| format!("{:.1$}", p, item.decimals as usize))
-                .unwrap_or_else(|_| "N/A".to_string())
+            item.price.as_ref().unwrap().to_string()
         };
 
         let icon_handle = image::Handle::from_path("icons/trash.png");

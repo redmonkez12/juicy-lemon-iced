@@ -33,7 +33,7 @@ pub fn get_current_select_state(
 
 pub fn get_default_select_state(
     instruments: &[Symbol],
-    watchlist: &[WatchListItem],
+    watchlist: &[Symbol],
 ) -> Vec<String> {
     let mut sorted_instruments: Vec<&Symbol> = instruments.iter().collect();
     sorted_instruments.sort_by_key(|i| i.symbol.clone());
